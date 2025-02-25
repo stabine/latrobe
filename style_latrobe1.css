@@ -1,0 +1,58 @@
+.leaflet-popup {
+    background-color: #fff;
+    border: 2px solid #004641;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2)
+}
+
+.leaflet-popup-content h2 {
+    font-size: 18px;
+    color: #008078;
+    margin-bottom: 10px !important;
+  }
+
+.leaflet-popup-content h3 {
+    font-size: 14px;
+    color: #004641;
+    margin-top: 5px !important;
+    margin-bottom: 2px !important;
+  }
+
+.leaflet-popup-content p {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  
+.leaflet-popup-content a {
+    color: #00BAAD;
+    text-decoration: none;
+  }
+  
+.leaflet-popup-content a:hover {
+    text-decoration: underline;
+  }
+
+.leaflet-popup-content {
+    padding: 10px;  /* Padding innerhalb des Popups für ein wenig Innenabstand */
+    background-color: #fff;
+  }  /* Weißer Hintergrund für bessere Lesbarkeit */
+
+.info-group {
+    margin-bottom: 20px;
+  }
+
+.subtitle {
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 0.8px;  /* Kursiv für den Untertitel */
+    color: #666;         /* Ein sanfteres Grau für den Untertitel */
+    margin-top: 0;       /* Kein Abstand nach oben */
+    margin-bottom: 10px; /* Abstand nach unten, um den Abstand zu den anderen Elementen zu definieren */
+}
+
+.custom-tooltip {
+    z-index: 1000 !important;  /* Hoher Z-Index für den Tooltip */
+    background-color: rgba(255, 255, 255, 0.7); /* Optional: Ein halbtransparentes Hintergrund für den Tooltip */
+}
