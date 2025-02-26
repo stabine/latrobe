@@ -20,7 +20,7 @@ const certain_icon = L.icon({
 
 // probable
 
-const probable_icon = L.icon({
+const less_certain_icon = L.icon({
     iconUrl: 'marker_icons/first_nation_reserve.png',  // relative path to image!
     iconSize: [40, 40],
     iconAnchor: [40, 20],
@@ -29,7 +29,7 @@ const probable_icon = L.icon({
     
 //vague
     
-const vague_icon = L.icon({
+const uncertain_icon = L.icon({
     iconUrl: 'marker_icons/continent.png',  // relative path to image!
     iconSize: [40, 40],
     iconAnchor: [40, 20],
@@ -44,9 +44,9 @@ const allMarkersLayer = L.layerGroup(); // Layer for all Markers
 // Create LayerGroups for each certanty-type ???
 const certaintyLayers = {
     'Select All': allMarkersLayer, // Der kombinierte Layer für alle Marker
-    'Certain Place': L.layerGroup(),
-    'Probable Place': L.layerGroup(),
-    'Vague Place': L.layerGroup(),
+    'Certain Waypoint': L.layerGroup(),
+    'Less Certain Waypoint': L.layerGroup(),
+    'Uncertain Waypoint': L.layerGroup(),
   };
 
 
@@ -57,69 +57,68 @@ fetch('latrobe1.json')
   .then(data => {
 
 // Iterate through each place and create markers
-    data.forEach(place => {
+    data.forEach(waypoint => {
       let markerIcon;
 
       // Selecting correct icon based on AAT-type
-      switch (place.certanty) {
+      switch (waypoint.certainty) {
         case 'certain':
           markerIcon = certain_icon;
           break;
-        case 'probable':
-          markerIcon = probable_icon;
+        case 'less-certain':
+          markerIcon = less_certain_icon;
           break;
-        case 'vague':
-          markerIcon = vague_icon_icon;
+        case 'uncertain':
+          markerIcon = uncertain_icon;
           break;
         default:
-          markerIcon = certain_icon_icon; // default setting
+          markerIcon = certain_icon; // default setting
       }
 
       //---------------------HTML----------------------- 
       //Creating the popup content for each place --> anpassen, wenn json geschrieben
       const popupContent = `
-        <h2>${place.bezeichnung}</h2>
+        <h2>${waypoint.title}</h2>
         <div class="info-group">
-          ${place.aktuelle_bezeichnung ? `<p class="subtitle">aktuelle Bezeichnung:</p> ${place.aktuelle_bezeichnung}`: ''}
-          <p><strong>AAT Getty Klasse:</strong> <a href="http://vocab.getty.edu/page/aat/${place.aat_id}" target="_blank">${place.aat}</a></p>
+          ${waypoint.role ? `<p class="subtitle">Role:</p> ${waypoint.role}`: ''}
+          <p><strong>References:</strong> <a href="${waypoint.closeMatch}" target="_blank">${waypoint.closeMatch}</a></p>
         </div>
 
         <div class="info-group">
-          <p><strong>Land:</strong> ${place.land}<br>
-          <strong>Kontinent:</strong> ${place.kontinent}</p>
+          <p><strong>Certainty:</strong> ${waypoint.certainty}<br>
+          <strong>Role:</strong> ${waypoint.role}</p>
         </div>
 
         <div class="info-group">
-          <h3>Beschreibung:</h3>
-          <p>${place.beschreibung}</p>
+          <h3>Notes:</h3>
+          <p>${waypoint.note}</p>
         </div>
 
         <div class="info-group">
-          <p><strong>Koordinaten:</strong> ${place.latitude}, ${place.longitude}</p>
-          <p><strong>Wikidata:</strong> <a href="${place.wikidata_url}" target="_blank">${place.wikidata_id}</a></p>
+          <p><strong>Coordinates:</strong> ${waypoint.coordinates}</p>
+          <p><strong>Date:</strong> <a>${waypoint.time}</a></p>
+          <p><strong>Source:</strong> <a>${waypoint.wasDerivedFrom}
         </div>
       `;
 
       // ---------------Create marker--------------------
-      const marker = L.marker([place.latitude, place.longitude], { icon: markerIcon })
+      const marker = L.marker([waypoint.coordinates], { icon: markerIcon })
         .bindPopup(popupContent) // Popup when clicking
-        .bindTooltip(place.bezeichnung, { permanent: false, direction: "top", offset: [0, -10], className: 'custom-tooltip' }); // Tooltip when hovering;
+        .bindTooltip(waypoint.title, { permanent: false, direction: "top", offset: [0, -10], className: 'custom-tooltip' }); // Tooltip when hovering;
 
       // Add Marker to allMarkersLayer (for "Select All")
       allMarkersLayer.addLayer(marker);
 
       // -----------------------------Add marker to the appropriate LayerGroup based on AAT-type-------------------------------
-      switch (place.aat) {
+      switch (waypoint.certainty) {
         case 'certain':
-          certaintyLayers['Certain Place'].addLayer(marker);
+          certaintyLayers['Certain Waypoint'].addLayer(marker);
           break;
-        case 'probable':
-          aatLayers['Probable Place'].addLayer(marker);
+        case 'less-certain':
+          aatLayers['Less Certain Waypoint'].addLayer(marker);
           break;
-        case 'vague':
-          aatLayers['Vague place'].addLayer(marker);
-          break;
-        default:
+        case 'uncertain':
+          aatLayers['Uncertain Waypoint'].addLayer(marker);
           break;
       }
     });
