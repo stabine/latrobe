@@ -1,0 +1,842 @@
+
+{
+
+    "type": "FeatureCollection",
+
+    "conformsTo": [
+
+        "[ogc-json-fg-1-0.2:core]",
+
+        "[ogc-json-fg-1-0.2:types-schemas]"
+
+    ],
+
+    "coordRefSys": 
+"http://www.opengis.net/def/crs/EPSG/0/4326",
+
+    "featureType": 
+"Waypoint",
+
+    "featureSchema": 
+"https://example.com/schema/waypoint",
+
+    "features": [
+
+        {
+
+            "id": "l1_01",
+            "properties": {
+
+                "title": "Gravesend",
+                "note": "Smal settlement on the english east coast. Starting point of the journey.", 
+                "role": "visited",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 1",
+                "closeMatch": [
+
+                    "http://sws.geonames.org/12265368/",
+                    "http://www.wikidata.org/entity/Q676689"
+                ],
+                "certainty": "certain" 
+
+            },
+
+            "time": "1815-10-01", 
+
+            "geometry": {
+
+                "type": "Point", 
+                "coordinates": [
+
+                    0.368611,
+                    51.441667
+                ] 
+            }
+        },
+
+        {
+            "id": "l1_02",
+            "properties": {
+
+                "title": "Margate Roads",
+                "note": "Coast town, which is called Margate today. Anchoring place for overnight stay.", 
+                "role": "visited",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 1",
+                "closeMatch": [
+
+                    "https://www.geonames.org/2643044/margate.html",
+                    "https://www.wikidata.org/wiki/Q618045"
+                ],
+                "certainty": "certain" 
+            },
+
+            "time": "1815-10-02", 
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    1.3838,
+                    51.385
+                ] 
+            }
+        },
+
+        {
+            "id": "l1_03",
+            "properties": {
+
+                "title": "South Foreland",
+                "note": "Southeastern headland near Dover, England, Great Britain.", 
+                "role": "visited_nearby",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 1",
+                "closeMatch": [
+
+                    "https://www.geonames.org/2637420/south-foreland.html",
+                    "https://www.wikidata.org/wiki/Q15278681"
+                ],
+                "certainty": "certain" 
+            },
+
+            "time": "1815-10-02", 
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    1.373611,
+                    51.143611
+                ] 
+            }
+        },
+
+        {
+            "id": "l1_04",
+
+            "properties": {
+
+                "title": "Strait of Dover",
+                "note": "Described in the Journal by <i>the coasts of England and France as we passed between Dover and Calais</i>", 
+                "role": "visited",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 1",
+                "closeMatch": [
+                    "https://www.geonames.org/3020870/strait-of-dover.html",
+                    "https://www.wikidata.org/wiki/Q159898"
+                ],
+
+                "certainty": "certain" 
+            },
+
+            "time": "1815-10-02", 
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    1.50734,
+                    51.01692
+                ] 
+
+            }
+        },
+
+        {
+            "id": "l1_05",
+
+            "properties": {
+
+                "title": "Dover",
+                "note": "The english coast town Dover was visible when passing through the Strait of Dover.", 
+                "role": "visited_nearby",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 1",
+                "closeMatch": [
+                    "https://www.geonames.org/2651048/dover.html",
+                    "https://www.wikidata.org/wiki/Q179224"
+                ],
+
+                "certainty": "certain" 
+            },
+
+            "time": "1815-10-02", 
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    1.312222,
+                    51.1275
+                ] 
+
+            }
+        },
+
+        {
+            "id": "l1_06",
+
+            "properties": {
+
+                "title": "Calais",
+                "note": "The french coast town Calais was visible when passing through the Strait of Dover.", 
+                "role": "visited_nearby",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 1",
+                "closeMatch": [
+                    "https://www.geonames.org/3029162/calais.html",
+                    "https://www.wikidata.org/wiki/Q6454"
+                ],
+
+                "certainty": "" 
+            },
+
+            "time": "1815-10-02", 
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    1.855556,
+                    50.9475
+                ] 
+
+            }
+        },
+
+        {
+            "id": "l1_07",
+
+            "properties": {
+
+                "title": "Isle of Wight",
+                "note": "The ship passed the isle on the south.", 
+                "role": "visited_nearby",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 1",
+                "closeMatch": [
+                    "https://www.geonames.org/2633939/isle-of-wight.html",
+                    "https://www.wikidata.org/wiki/Q9679"
+                ],
+
+                "certainty": "certain" 
+            },
+
+            "time": "1815-10-04", 
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    -1.266667,
+                    50.666667
+                ] 
+
+            }
+        },
+
+        {
+            "id": "l1_08",
+
+            "properties": {
+
+                "title": "240 miles off the coast of Portugal",
+                "note": "The ship passes the coast of Portugal in a distance of 240 english miles (admiralty miles). Since there is no further description, the waypoint is an estimated coordinate, set to give an idea of the distance to the coast.", 
+                "role": "visited",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 5",
+                "closeMatch": [ "null"],
+
+                "certainty": "uncertain" 
+            },
+
+            "time": "1815-10-12", 
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    -16.1828,
+                    38.6726
+                ] 
+
+            }
+        },
+
+        {
+            "id": "l1_09",
+
+            "properties": {
+
+                "title": "Portugal",
+                "note": "The ship passed the coast of portugal in a distance of 240 miles (admiralty miles). An exact point is not given.", 
+                "role": "visited_nearby",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 5",
+                "closeMatch": [
+                    "https://www.geonames.org/2264397/portuguese-republic.html",
+                    "https://www.wikidata.org/wiki/Q45"
+                ],
+
+                "certainty": "less-certain" 
+            },
+
+            "time": "1815-10-12", 
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    -9.183333,
+                    38.7
+                ] 
+
+            }
+        },
+
+        {
+            "id": "l1_10",
+
+            "properties": {
+
+                "title": "Porto Santo",
+                "note": "The Journal describes <i>Certain rocks, marked in our charts as lying to the north of Porto Santo, and called the eight stones</i>. The ship therefore probably passes the island in the north. However the mentioned rocks are by now proven to be a myth. Furthermore Latrobe describes the difficulties of navigation and mentiones that the dead reckoning differed from chronometer by around 100 to 140 Miles (admiralty miles).", 
+                "role": "visited_nearby",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 9",
+                "closeMatch": [
+                    "https://www.geonames.org/2264401/ilha-de-porto-santo.html",
+                    "https://www.wikidata.org/wiki/Q14206042"
+                ],
+
+                "certainty": "uncertain" 
+            },
+
+            "time": "1815-10-20", 
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    -16.356389,
+                    33.061944
+                ] 
+
+            }
+        },
+
+        {
+            "id": "l1_11",
+
+            "properties": {
+
+                "title": "Madeira",
+                "note": "The ship passes the island far east, but still in visible distance.", 
+                "role": "visited_nearby",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 9",
+                "closeMatch": [
+                    "https://www.geonames.org/2266874/ilha-da-madeira.html",
+                    "https://www.wikidata.org/wiki/Q30188"
+                ],
+
+                "certainty": "certain" 
+            },
+
+            "time": "1815-10-21", 
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    -16.98,
+                    32.75
+                ] 
+
+            }
+        },
+
+        {
+            "id": "l1_12",
+
+            "properties": {
+
+                "title": "Salvages",
+                "note": "The ship passed the islands which are by today refered to as Ilhas Selvagens in the northwest.", 
+                "role": "visited_nearby",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 11",
+                "closeMatch": [
+                    "https://www.geonames.org/2263082/ilhas-selvagens.html",
+                    "https://www.wikidata.org/wiki/Q63378400"
+                ],
+
+                "certainty": "certain" 
+            },
+
+            "time": "1815-10-24", 
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    -15.8831,
+                    30.125
+                ] 
+
+            }
+        },
+
+        {
+            "id": "l1_13",
+
+            "properties": {
+
+                "title": "Piton Rocks",
+                "note": "Latrobe referes to these while describing the Ilhas Selvagens. It is possible, that he referes to the isles of Selvagem Pequena and Fora Islet, but sources for these names are very rare and ought to be questioned critically.", 
+                "role": "visited_nearby",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 11",
+                "closeMatch": [
+                    "https://en.wikipedia.org/wiki/Savage_Islands#Geography"
+                ],
+
+                "certainty": "uncertain" 
+            },
+
+            "time": "1815-10-24", 
+            "geometry": {
+
+                "type": "Polygon",
+                "coordinates": [
+
+                    [
+                        [
+                          -16.054103336468245,
+                          30.032397993205507
+                        ],
+                        [
+                          -16.052651600418983,
+                          30.028600109097866
+                        ],
+                        [
+                          -16.049653449883124,
+                          30.02769843178355
+                        ],
+                        [
+                          -16.017746816284387,
+                          30.030649345218606
+                        ],
+                        [
+                          -16.013801881368323,
+                          30.03264389435506
+                        ],
+                        [
+                          -16.0147486657485,
+                          30.034665725114877
+                        ],
+                        [
+                          -16.018756719622473,
+                          30.0362503744427
+                        ],
+                        [
+                          -16.02762493331315,
+                          30.03832677313744
+                        ],
+                        [
+                          -16.033274080112392,
+                          30.038709262887423
+                        ],
+                        [
+                          -16.051610137601386,
+                          30.037042689604604
+                        ],
+                        [
+                          -16.0543873717817,
+                          30.03362749284912
+                        ],
+                        [
+                          -16.054103336468245,
+                          30.032397993205507
+                        ]
+                      ]
+                ] 
+
+            }
+        },
+
+        {
+            "id": "l1_14",
+
+            "properties": {
+
+                "title": "Peak of Teneriffe, at about eighty miles distance",
+                "note": "The Ship is going south from the Ilhas Sevagens. Latrobe describes this point vaguely since he is not giving any direction towards which the peak is visible. Therefore the point set here is more of an estimation.", 
+                "role": "visited",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 12",
+                "closeMatch": [
+                    "https://www.geonames.org/2510569/pico-de-teide.html",
+                    "https://www.wikidata.org/wiki/Q38954"
+                ],
+
+                "certainty": "less-certain" 
+            },
+
+            "time": "1815-10-25", 
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    -16.64259165852859,
+                    29.609319152602882
+                ] 
+
+            }
+        },
+
+        {
+            "id": "l1_15",
+
+            "properties": {
+
+                "title": "Teneriffe",
+                "note": "The Ship passes the island of Tenerife probably in the northwest within a distance of approximately 80 Miles (admiralty miles).", 
+                "role": "visited_nearby",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 12",
+                "closeMatch": [
+                    "https://www.geonames.org/2510529/tenerife.html",
+                    "https://www.wikidata.org/wiki/Q40846"
+                ],
+
+                "certainty": "certain" 
+            },
+
+            "time": "1815-10-25", 
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    -16.605556,
+                    28.268611
+                ] 
+
+            }
+        },
+
+        {
+            "id": "l1_16",
+
+            "properties": {
+
+                "title": "Palma",
+                "note": "The island of La Palma is described as in sight since 25th but to no specified direction. The ship passed it west of the island three days later and described as <i>so close [...] that we could distinctly discern every object on shore.</i>.", 
+                "role": "visited_nearby",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 12",
+                "closeMatch": [
+                    "https://www.geonames.org/2515680/la-palma.html",
+                    "https://www.wikidata.org/wiki/Q201689"
+                ],
+
+                "certainty": "certain" 
+            },
+
+            "time": "1815-10-28", 
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    -17.86,
+                    28.66
+                ] 
+
+            }
+        },
+
+        {
+            "id": "l1_17",
+
+            "properties": {
+
+                "title": "Sal",
+                "note": "The island of Sal as part of the Cape Verde was aproached, most likely from the north. An exact distance or direction however is not given.", 
+                "role": "visited_nearby",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 15",
+                "closeMatch": [
+                    "https://www.geonames.org/3374248/sal-island.html",
+                    "https://www.wikidata.org/wiki/Q111989"
+                ],
+
+                "certainty": "certain" 
+            },
+
+            "time": "1815-11-05", 
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    -22.936111,
+                    16.737222
+                ] 
+
+            }
+        },
+
+        {
+            "id": "l1_18",
+
+            "properties": {
+
+                "title": "Bonavista",
+                "note": "The island today known as Boa Vista was passed by the Ship on its eastern coast. An exact distance or coordinates were not described. ", 
+                "role": "visited_nearby",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 16",
+                "closeMatch": [
+                    "https://www.geonames.org/3374854/ilha-da-boa-vista.html",
+                    "https://www.wikidata.org/wiki/Q110440"
+                ],
+
+                "certainty": "certain" 
+            },
+
+            "time": "1815-11-05", 
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    -22.803611,
+                    16.103333
+                ] 
+
+            }
+        },
+
+        {
+            "id": "l1_19",
+
+            "properties": {
+
+                "title": "Mayo",
+                "note": "The ship passes the isle of Maio without Latrobe beeing able to see the isle because of <i>thick mist</i> as he describes it.", 
+                "role": "visited_nearby",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 16",
+                "closeMatch": [
+                    "https://www.geonames.org/3374486/ilha-do-maio.html",
+                    "https://www.wikidata.org/wiki/Q492551"
+                ],
+
+                "certainty": "certain" 
+            },
+
+            "time": "1815-11-05", 
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    -23.156111,
+                    15.230556
+                ] 
+
+            }
+        },
+
+        {
+            "id": "l1_20",
+
+            "properties": {
+
+                "title": "Atlantic Ocean - Letter 1",
+                "note": "Latrobe has given these coordinates at the beginning of a letter dedicated to his eldest son Peter.", 
+                "role": "visited",
+                "wasDerivedFrom": "Letters to my Children; written at sea during a Voyage to the Cape of Good Hope, in 1815, Containing a Memorial of some occurrences in my past life. - Page 1",
+                "closeMatch": [
+                    null
+                ],
+
+                "certainty": "certain" 
+            },
+
+            "time": "1815-12-04", 
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    -20.366666666666667,
+                    -27.0666667
+                ] 
+
+            }
+        },
+
+        {
+            "id": "l1_21",
+
+            "properties": {
+
+                "title": "Atlantic Ocean - Letter 2",
+                "note": "Latrobe has given these coordinates at the beginning of a letter dedicated to his eldest daugther Charlotte.", 
+                "role": "visited",
+                "wasDerivedFrom": "Letters to my Children; written at sea during a Voyage to the Cape of Good Hope, in 1815, Containing a Memorial of some occurrences in my past life. - Page 13",
+                "closeMatch": [
+                    null
+                ],
+
+                "certainty": "certain" 
+            },
+
+            "time": "1815-12-05", 
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    -18.633333333333333,
+                    -28.2
+                ] 
+
+            }
+        },
+
+        {
+            "id": "l1_22",
+
+            "properties": {
+
+                "title": "Atlantic Ocean - Letter 3",
+                "note": "Latrobe has given these coordinates at the beginning of a letter dedicated to his second eldest daugther Agnes.", 
+                "role": "visited",
+                "wasDerivedFrom": "Letters to my Children; written at sea during a Voyage to the Cape of Good Hope, in 1815, Containing a Memorial of some occurrences in my past life. - Page 26",
+                "closeMatch": [
+                    null
+                ],
+
+                "certainty": "certain" 
+            },
+
+            "time": "1815-12-06", 
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    -16.633333333333333,
+                    -29.4833333
+                ] 
+
+            }
+        },
+
+        {
+            "id": "l1_23",
+            "properties": {
+
+                "title": "Atlantic Ocean - Letter 4",
+                "note": "Latrobe has given these coordinates at the beginning of a letter dedicated to his second eldest son John.", 
+                "role": "visited",
+                "wasDerivedFrom": "Letters to my Children; written at sea during a Voyage to the Cape of Good Hope, in 1815, Containing a Memorial of some occurrences in my past life. - Page 46",
+                "closeMatch": [
+                    null
+                ],
+
+                "certainty": "certain" 
+            },
+
+            "time": "1815-12-07", 
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    -14.216666666666667,
+                    -33.85
+                ] 
+
+            }
+        },
+
+        {
+            "id": "l1_24",
+
+            "properties": {
+
+                "title": "Atlantic Ocean - Letter 5",
+                "note": "Latrobe has given these coordinates at the beginning of a letter dedicated to his son Joseph.", 
+                "role": "visited",
+                "wasDerivedFrom": "Letters to my Children; written at sea during a Voyage to the Cape of Good Hope, in 1815, Containing a Memorial of some occurrences in my past life. - Page 66",
+                "closeMatch": [
+                    null
+                ],
+
+                "certainty": "certain" 
+            },
+
+            "time": "1815-12-09", 
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    -10.45,
+                    -32.35
+                ] 
+
+            }
+        },
+
+        {
+            "id": "l1_25",
+
+            "properties": {
+
+                "title": "Robben Island",
+                "note": "The ship approached the island coming from northwest into the Table Bay and passed it close by its west coast.", 
+                "role": "visited_nearby",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 31",
+                "closeMatch": [
+                    "https://www.geonames.org/3362356/robben-island.html",
+                    "https://www.wikidata.org/wiki/Q192493"
+                ],
+
+                "certainty": "certain" 
+            },
+
+            "time": "1815-12-24", 
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    18.37,
+                    -33.805
+                ] 
+
+            }
+        },
+
+        {
+            "id": "l1_26",
+
+            "properties": {
+
+                "title": "Capetown",
+                "note": "On christmas eve 1815 Latrobe's ship reached the city of Cape Town, in the Colony of South Africa.", 
+                "role": "",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page X",
+                "closeMatch": [
+                    "https://www.geonames.org/3369157/cape-town.html",
+                    "https://www.wikidata.org/wiki/Q5465"
+                ],
+
+                "certainty": "certain" 
+            },
+
+            "time": "1815-12-24", 
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    18.423889,
+                    -33.925278
+                ] 
+
+            }
+        }
+    ]
+
+}
+
