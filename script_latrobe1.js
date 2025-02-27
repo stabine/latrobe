@@ -1,13 +1,13 @@
 // -------------------Map initialization, pre-set location unitaetsarchive herrnhut------------------------------
-const map = L.map('map1').setView([0.368611, 51.441667], 15);
+const map1 = L.map('map1').setView([51.441667,0.368611 ], 12);
 
 // osm layer (baselayer)
 var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 });
-osm.addTo(map);
+osm.addTo(map1);
 
-// -------------Marker Icons for different levels of certanty----------------- 
+// -------------Marker Icons for different levels of certainty----------------- is das sinnvoll???
 // Icons for marker 
 // starting certain 
 
@@ -129,10 +129,31 @@ fetch('latrobe1.json')
     };
 
     // -----------------Create and add layer control to the map--------------------------------------
-    L.control.layers(baseMaps, certaintyLayers).addTo(map);
+    L.control.layers(baseMaps, certaintyLayers).addTo(map1);
 
     // set "Select All"-Layer as default
-    map.addLayer(allMarkersLayer);
+    map1.addLayer(allMarkersLayer);
 
   })
   .catch(error => console.error('Fehler beim Laden der JSON-Daten:', error));
+
+
+  // -------------------Map initialization, pre-set location unitaetsarchive herrnhut------------------------------
+const map2 = L.map('map2').setView([-34.034086373788035, 19.557620864951964 ], 18);
+
+// osm layer (baselayer2)
+var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
+osm.addTo(map2);
+
+
+
+  // -------------------Map initialization, pre-set location unitaetsarchive herrnhut------------------------------
+  const map3 = L.map('map3').setView([-33.775120570267205, 22.333937355866688 ], 8);
+
+  // OpenTopoMap layer (baselayer3)
+  var OpenTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+    attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+  });
+  OpenTopoMap.addTo(map3);

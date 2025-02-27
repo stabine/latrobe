@@ -1,3 +1,38 @@
+h1 {
+  font-family: Verdana, sans-serif;
+  font-size: 30px;
+  color: #1B3852;
+  font-style: normal;
+}
+
+h2 {
+  font-family: Verdana, sans-serif;
+  font-size: 24px;
+  color: #264F73;
+  font-style: normal;
+}
+
+p {
+  line-break: auto;
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  color: #1B3852;
+}
+
+a:link {
+  color: #004641;
+}
+
+
+a:visited {
+  color: #00806b;
+}
+
+/* mouse over link */
+a:hover {
+  color: #50052b;
+}
+
 .leaflet-popup {
     background-color: #fff;
     border: 2px solid #004641;

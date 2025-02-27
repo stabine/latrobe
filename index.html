@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C. I. Latrobes SÜdafrikareise - Seefahrt</title>
+    <title>Christian Ignatius Latrobes Südafrikareise</title>
 
     <!-- leaflet css -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
@@ -11,19 +11,53 @@
 
     <style>
         body {
-            margin: 0;
-            padding: 0;
-        }
-        #map {
-            width: 100%;
+            margin: 40px;
+            padding: 40px;
+
+            background-image: url('latrobe2.png');
             height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        #map1 {
+            width: 100%;
+            height: 800px;
+        }
+        #map2 {
+            width: 100%;
+            height: 800px;
+        }
+        #map3 {
+            width: 100%;
+            height: 800px;
         }
     </style>
         
 </head>
     
 <body>
-   <div id="map1"></div>     
+    <div id="preface">
+        <h1>Christian Ignatius Latrobe's Voyage to South Africa <br>1815 - 1816</h1>
+        <p>In 1815 <a href="https://www.wikidata.org/wiki/Q2965351" target="_blank">Christian Ignatius Latrobe</a>, a Reverend of the Moravian Church in England sets off to South Africa. Send to search for new places for more missionary settlements to come.
+            He writes down his experiences and explorations, creating a very interessting travle journal which is published in 1818. In this Journal he not only...
+        </p>
+    
+    </div>
+    
+   <div id="section1">
+    <h2>Sea Voyage - Travle from Gravesend to Capetown</h2>
+    <div id="map1"></div>
+   </div>
+   <div id="section2">
+    <h2>A pleasant Stay - Time spend at Genadendal</h2>
+    <div id="map2"></div>
+   </div>
+   <div id="section3">
+    <h2>Exploring South Africa - A Search for a new Mission</h2>
+    <div id="map3"></div>
+   </div>     
 </body>
 </html>
 
