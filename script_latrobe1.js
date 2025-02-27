@@ -1,5 +1,28 @@
-// -------------------Map initialization, pre-set location unitaetsarchive herrnhut------------------------------
-const map1 = L.map('map1').setView([51.441667,0.368611 ], 12);
+// ---------------------Website-Setup--------------------------
+// Get the button:
+let BTTButton = document.getElementById("bttButton");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    BTTButton.style.display = "block";
+  } else {
+    BTTButton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+
+// -------------------Map initialization, pre-set location for each map------------------------------
+const map1 = L.map('map1').setView([51.441667,0.368611 ], 12); // set to Gravesend
 
 // osm layer (baselayer)
 var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -12,26 +35,26 @@ osm.addTo(map1);
 // starting certain 
 
 const certain_icon = L.icon({
-  iconUrl: 'marker_icons/inhabited_place.png',  // relative path to image!
-  iconSize: [40, 40],
+  iconUrl: 'marker_icons/certain_icon.png',  // relative path to image!
+  iconSize: [20, 20],
   iconAnchor: [40, 20],
   popupAnchor: [-3, -76]
 });
 
-// probable
+// less-certain
 
 const less_certain_icon = L.icon({
-    iconUrl: 'marker_icons/first_nation_reserve.png',  // relative path to image!
-    iconSize: [40, 40],
+    iconUrl: 'marker_icons/less_certain_icon.png',  // relative path to image!
+    iconSize: [20, 20],
     iconAnchor: [40, 20],
     popupAnchor: [-3, -76]
 });
     
-//vague
+//uncertain
     
 const uncertain_icon = L.icon({
-    iconUrl: 'marker_icons/continent.png',  // relative path to image!
-    iconSize: [40, 40],
+    iconUrl: 'marker_icons/uncertain_icon.png',  // relative path to image!
+    iconSize: [20, 20],
     iconAnchor: [40, 20],
     popupAnchor: [-3, -76]
 });
@@ -56,12 +79,26 @@ fetch('latrobe1.json')
   .then(response => response.json())
   .then(data => {
 
+
+    
 // Iterate through each place and create markers
-    data.forEach(waypoint => {
+    data.features.forEach(feature => {
+      
+      const [lng, lat] = feature.geometry.coordinates;
+
+    // Extrahiere Titel und Notiz
+      const title = feature.properties.title;
+      const note = feature.properties.note;
+      const role = feature.properties.role;
+      const wasDerivedFrom = feature.properties.wasDerivedFrom;
+      const closeMatch = feature.properties.closeMatch;
+      const certainty = feature.properties.certainty;
+      const time = feature.time;
+      
       let markerIcon;
 
       // Selecting correct icon based on AAT-type
-      switch (waypoint.certainty) {
+      switch (certainty) {
         case 'certain':
           markerIcon = certain_icon;
           break;
@@ -78,49 +115,54 @@ fetch('latrobe1.json')
       //---------------------HTML----------------------- 
       //Creating the popup content for each place --> anpassen, wenn json geschrieben
       const popupContent = `
-        <h2>${waypoint.title}</h2>
+        <h3>${title}</h3>
         <div class="info-group">
-          ${waypoint.role ? `<p class="subtitle">Role:</p> ${waypoint.role}`: ''}
-          <p><strong>References:</strong> <a href="${waypoint.closeMatch}" target="_blank">${waypoint.closeMatch}</a></p>
+          <p class="subtitle">Role: ${role}</p>
+          <p><strong>References:</strong> <a href="${closeMatch}" target="_blank">${closeMatch}</a></p>
         </div>
 
         <div class="info-group">
-          <p><strong>Certainty:</strong> ${waypoint.certainty}<br>
-          <strong>Role:</strong> ${waypoint.role}</p>
+          <p><strong>Certainty:</strong> <br>${certainty}<br>
+          <strong>Role:</strong> <br>${role}</p>
         </div>
 
         <div class="info-group">
           <h3>Notes:</h3>
-          <p>${waypoint.note}</p>
+          <p>${note}</p>
         </div>
 
         <div class="info-group">
-          <p><strong>Coordinates:</strong> ${waypoint.coordinates}</p>
-          <p><strong>Date:</strong> <a>${waypoint.time}</a></p>
-          <p><strong>Source:</strong> <a>${waypoint.wasDerivedFrom}
+          <p><strong>Coordinates:</strong> [${lng}, ${lat}]</p>
+          <p><strong>Date:</strong> ${time}</p>
+          ${wasDerivedFrom ? `<p><strong>Source:</strong> <a>${wasDerivedFrom}`: ''}
         </div>
       `;
 
       // ---------------Create marker--------------------
-      const marker = L.marker([waypoint.coordinates], { icon: markerIcon })
+      const marker = L.marker([lat,lng], { icon: markerIcon })
         .bindPopup(popupContent) // Popup when clicking
-        .bindTooltip(waypoint.title, { permanent: false, direction: "top", offset: [0, -10], className: 'custom-tooltip' }); // Tooltip when hovering;
+        .bindTooltip(title, { permanent: false, direction: "top", offset: [0, -10], className: 'custom-tooltip' }); // Tooltip when hovering;
 
       // Add Marker to allMarkersLayer (for "Select All")
       allMarkersLayer.addLayer(marker);
 
+      
+
       // -----------------------------Add marker to the appropriate LayerGroup based on AAT-type-------------------------------
-      switch (waypoint.certainty) {
+      switch (certainty) {
         case 'certain':
           certaintyLayers['Certain Waypoint'].addLayer(marker);
           break;
         case 'less-certain':
-          aatLayers['Less Certain Waypoint'].addLayer(marker);
+          certaintyLayers['Less Certain Waypoint'].addLayer(marker);
           break;
         case 'uncertain':
-          aatLayers['Uncertain Waypoint'].addLayer(marker);
+          certaintyLayers['Uncertain Waypoint'].addLayer(marker);
           break;
       }
+
+       // set "Select All"-Layer as default
+       map1.addLayer(allMarkersLayer);
     });
 
     // Layer control for switching between base maps and overlay layers
@@ -131,8 +173,7 @@ fetch('latrobe1.json')
     // -----------------Create and add layer control to the map--------------------------------------
     L.control.layers(baseMaps, certaintyLayers).addTo(map1);
 
-    // set "Select All"-Layer as default
-    map1.addLayer(allMarkersLayer);
+   
 
   })
   .catch(error => console.error('Fehler beim Laden der JSON-Daten:', error));

@@ -11,37 +11,36 @@
 
     <style>
         body {
-            margin: 40px;
-            padding: 40px;
-
+            
             background-image: url('latrobe2.png');
+            background-color: rgba(255,255,255,0.2);
+            background-blend-mode: lighten;
             height: 100vh;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-        }
-        #map1 {
+            margin: 0;
+            padding: 0;
             width: 100%;
-            height: 800px;
+            
         }
-        #map2 {
-            width: 100%;
-            height: 800px;
-        }
-        #map3 {
-            width: 100%;
-            height: 800px;
-        }
+
     </style>
         
 </head>
     
 <body>
+    
     <div id="preface">
         <h1>Christian Ignatius Latrobe's Voyage to South Africa <br>1815 - 1816</h1>
         <p>In 1815 <a href="https://www.wikidata.org/wiki/Q2965351" target="_blank">Christian Ignatius Latrobe</a>, a Reverend of the Moravian Church in England sets off to South Africa. Send to search for new places for more missionary settlements to come.
             He writes down his experiences and explorations, creating a very interessting travle journal which is published in 1818. In this Journal he not only...
+        </p>
+        <p>The following maps display 3 different excursions within Latrobe's voyage. Each excursion has a different degree of granularity.
+            The <a href="#section1">first map</a> shows the way the Albion, a brigg on which Latrobe travled. 
+            The <a href="#section2">second map</a> zooms in on his stay in Gnadenthal (today known as Genadendal) and his explorations around the settlement. 
+            The <a href="#section3">third map</a> shows Latrobe's actual exploration of the south african "bushland" from Genadendal all the way up to a point behind Uitenhagen.
         </p>
     
     </div>
@@ -57,8 +56,17 @@
    <div id="section3">
     <h2>Exploring South Africa - A Search for a new Mission</h2>
     <div id="map3"></div>
-   </div>     
+   </div>  
+   
+   
 </body>
+
+<button onclick="topFunction()" id="bttButton" title="Go to top"><b>Back to Top</b></button>
+
+<footer>
+    <h3>Master Thesis Project of Sabine Hollmann, Digital Humanities, TU Dresden</h3>
+</footer>
+
 </html>
 
 <!-- leaflet js -->
