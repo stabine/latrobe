@@ -22,7 +22,7 @@ function topFunction() {
 
 
 // -------------------Map initialization, pre-set location for each map------------------------------
-const map1 = L.map('map1').setView([51.441667,0.368611 ], 12); // set to Gravesend
+const map1 = L.map('map1').setView([16.737222, -22.936111], 3); // set to Gravesend
 
 // osm layer (baselayer)
 var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -36,8 +36,8 @@ osm.addTo(map1);
 
 const certain_icon = L.icon({
   iconUrl: 'marker_icons/certain_icon.png',  // relative path to image!
-  iconSize: [20, 20],
-  iconAnchor: [40, 20],
+  iconSize: [15, 15],
+  iconAnchor: [0, 0],
   popupAnchor: [-3, -76]
 });
 
@@ -45,8 +45,8 @@ const certain_icon = L.icon({
 
 const less_certain_icon = L.icon({
     iconUrl: 'marker_icons/less_certain_icon.png',  // relative path to image!
-    iconSize: [20, 20],
-    iconAnchor: [40, 20],
+    iconSize: [15, 15],
+    iconAnchor: [0, 0],
     popupAnchor: [-3, -76]
 });
     
@@ -54,8 +54,8 @@ const less_certain_icon = L.icon({
     
 const uncertain_icon = L.icon({
     iconUrl: 'marker_icons/uncertain_icon.png',  // relative path to image!
-    iconSize: [20, 20],
-    iconAnchor: [40, 20],
+    iconSize: [15, 15],
+    iconAnchor: [0, 0],
     popupAnchor: [-3, -76]
 });
     
@@ -97,7 +97,7 @@ fetch('latrobe1.json')
       
       let markerIcon;
 
-      // Selecting correct icon based on AAT-type
+      // Selecting correct icon based on certainty-type
       switch (certainty) {
         case 'certain':
           markerIcon = certain_icon;
@@ -112,13 +112,17 @@ fetch('latrobe1.json')
           markerIcon = certain_icon; // default setting
       }
 
+      // Test selecting icon size and icon opacity by role
+      
+
       //---------------------HTML----------------------- 
       //Creating the popup content for each place --> anpassen, wenn json geschrieben
       const popupContent = `
         <h3>${title}</h3>
         <div class="info-group">
           <p class="subtitle">Role: ${role}</p>
-          <p><strong>References:</strong> <a href="${closeMatch}" target="_blank">${closeMatch}</a></p>
+          <p><strong>References:</strong><br><a href="${closeMatch[0]}" target="_blank">GeoNames</a>
+          <br><a href="${closeMatch[1]}" target="_blank">WikiData</a></p>
         </div>
 
         <div class="info-group">
@@ -134,7 +138,7 @@ fetch('latrobe1.json')
         <div class="info-group">
           <p><strong>Coordinates:</strong> [${lng}, ${lat}]</p>
           <p><strong>Date:</strong> ${time}</p>
-          ${wasDerivedFrom ? `<p><strong>Source:</strong> <a>${wasDerivedFrom}`: ''}
+          ${wasDerivedFrom ? `<p><strong>Source:</strong><br>${wasDerivedFrom}`: ''}
         </div>
       `;
 

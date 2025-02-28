@@ -1,4 +1,4 @@
-div {
+div#preface {
   padding-left: 60px;
   padding-right: 60px;
   
@@ -6,6 +6,18 @@ div {
 
 div#section1 {
   margin-top: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+div#section2 {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+div#section3 {
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 div#map1 {
@@ -121,6 +133,7 @@ footer {
     border: 2px solid #004641;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2)
+    
 }
 
 .leaflet-popup-content h2 {
