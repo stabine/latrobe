@@ -22,7 +22,12 @@ function topFunction() {
 
 
 // -------------------Map initialization, pre-set location for each map------------------------------
-const map1 = L.map('map1').setView([16.737222, -22.936111], 3); // set to Gravesend
+const map1 = L.map('map1', {
+  center: [16.737222, -22.936111], // set to Gravesend
+  zoom: 3,
+  minZoom: 3,
+  maxZoom: 11
+}); 
 
 // osm layer (baselayer)
 var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -44,19 +49,19 @@ const certain_icon = L.icon({
 // less-certain
 
 const less_certain_icon = L.icon({
-    iconUrl: 'marker_icons/less_certain_icon.png',  // relative path to image!
-    iconSize: [15, 15],
-    iconAnchor: [0, 0],
-    popupAnchor: [-3, -76]
+  iconUrl: 'marker_icons/less_certain_icon.png',  // relative path to image!
+  iconSize: [15, 15],
+  iconAnchor: [0, 0],
+  popupAnchor: [-3, -76]
 });
     
 //uncertain
     
 const uncertain_icon = L.icon({
-    iconUrl: 'marker_icons/uncertain_icon.png',  // relative path to image!
-    iconSize: [15, 15],
-    iconAnchor: [0, 0],
-    popupAnchor: [-3, -76]
+  iconUrl: 'marker_icons/uncertain_icon.png',  // relative path to image!
+  iconSize: [15, 15],
+  iconAnchor: [0, 0],
+  popupAnchor: [-3, -76]
 });
     
 
@@ -112,7 +117,33 @@ fetch('latrobe1.json')
           markerIcon = certain_icon; // default setting
       }
 
-      // Test selecting icon size and icon opacity by role
+      let iconSize, opacity;
+
+      switch(role) {
+        case 'visited':
+          iconSize = [15, 15]; // Kleinere Marker für 'visited'
+          opacity = 1; // Vollständig sichtbar
+          break;
+        case 'visited_nearby':
+          iconSize = [35, 35]; // Größere Marker für 'visited_nearby'
+          opacity = 0.4; // Marker sind weniger sichtbar
+          break;
+        default:
+          iconSize = [15, 15]; // Standardgröße
+          opacity = 1; // Standarddeckkraft
+      }
+      
+      // Erstelle das Icon mit den finalen Einstellungen
+      const finalIcon = L.icon({
+        iconUrl: markerIcon.options.iconUrl,
+        iconAnchor: markerIcon.options.iconAnchor,
+        popupAnchor: markerIcon.options.popupAnchor,
+        iconSize: iconSize,
+        opacity: opacity
+      });
+
+
+      
       
 
       //---------------------HTML----------------------- 
@@ -143,7 +174,7 @@ fetch('latrobe1.json')
       `;
 
       // ---------------Create marker--------------------
-      const marker = L.marker([lat,lng], { icon: markerIcon })
+      const marker = L.marker([lat,lng], { icon: finalIcon, opacity: opacity })
         .bindPopup(popupContent) // Popup when clicking
         .bindTooltip(title, { permanent: false, direction: "top", offset: [0, -10], className: 'custom-tooltip' }); // Tooltip when hovering;
 
@@ -165,6 +196,8 @@ fetch('latrobe1.json')
           break;
       }
 
+      
+
        // set "Select All"-Layer as default
        map1.addLayer(allMarkersLayer);
     });
@@ -180,7 +213,7 @@ fetch('latrobe1.json')
    
 
   })
-  .catch(error => console.error('Fehler beim Laden der JSON-Daten:', error));
+  .catch(error => console.error('Fehler beim Laden der GeoJSON-Daten:', error));
 
 
   // -------------------Map initialization, pre-set location unitaetsarchive herrnhut------------------------------

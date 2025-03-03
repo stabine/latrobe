@@ -141,66 +141,6 @@
 
             "properties": {
 
-                "title": "Dover",
-                "note": "The english coast town Dover was visible when passing through the Strait of Dover.", 
-                "role": "visited_nearby",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 1",
-                "closeMatch": [
-                    "https://www.geonames.org/2651048/dover.html",
-                    "https://www.wikidata.org/wiki/Q179224"
-                ],
-
-                "certainty": "certain" 
-            },
-
-            "time": "1815-10-02", 
-            "geometry": {
-
-                "type": "Point",
-                "coordinates": [
-
-                    1.312222,
-                    51.1275
-                ] 
-
-            }
-        },
-
-        {
-            "id": "l1_06",
-
-            "properties": {
-
-                "title": "Calais",
-                "note": "The french coast town Calais was visible when passing through the Strait of Dover.", 
-                "role": "visited_nearby",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 1",
-                "closeMatch": [
-                    "https://www.geonames.org/3029162/calais.html",
-                    "https://www.wikidata.org/wiki/Q6454"
-                ],
-
-                "certainty": "" 
-            },
-
-            "time": "1815-10-02", 
-            "geometry": {
-
-                "type": "Point",
-                "coordinates": [
-
-                    1.855556,
-                    50.9475
-                ] 
-
-            }
-        },
-
-        {
-            "id": "l1_07",
-
-            "properties": {
-
                 "title": "Isle of Wight",
                 "note": "The ship passed the isle on the south.", 
                 "role": "visited_nearby",
@@ -227,7 +167,7 @@
         },
 
         {
-            "id": "l1_08",
+            "id": "l1_06",
 
             "properties": {
 
@@ -254,37 +194,7 @@
         },
 
         {
-            "id": "l1_09",
-
-            "properties": {
-
-                "title": "Portugal",
-                "note": "The ship passed the coast of portugal in a distance of 240 miles (admiralty miles). An exact point is not given.", 
-                "role": "visited_nearby",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 5",
-                "closeMatch": [
-                    "https://www.geonames.org/2264397/portuguese-republic.html",
-                    "https://www.wikidata.org/wiki/Q45"
-                ],
-
-                "certainty": "less-certain" 
-            },
-
-            "time": "1815-10-12", 
-            "geometry": {
-
-                "type": "Point",
-                "coordinates": [
-
-                    -9.183333,
-                    38.7
-                ] 
-
-            }
-        },
-
-        {
-            "id": "l1_10",
+            "id": "l1_07",
 
             "properties": {
 
@@ -314,7 +224,7 @@
         },
 
         {
-            "id": "l1_11",
+            "id": "l1_08",
 
             "properties": {
 
@@ -344,7 +254,7 @@
         },
 
         {
-            "id": "l1_12",
+            "id": "l1_09",
 
             "properties": {
 
@@ -374,7 +284,7 @@
         },
 
         {
-            "id": "l1_13",
+            "id": "l1_10",
 
             "properties": {
 
@@ -403,7 +313,7 @@
         },
 
         {
-            "id": "l1_14",
+            "id": "l1_11",
 
             "properties": {
 
@@ -433,7 +343,7 @@
         },
 
         {
-            "id": "l1_15",
+            "id": "l1_12",
 
             "properties": {
 
@@ -463,7 +373,7 @@
         },
 
         {
-            "id": "l1_16",
+            "id": "l1_13",
 
             "properties": {
 
@@ -493,7 +403,7 @@
         },
 
         {
-            "id": "l1_17",
+            "id": "l1_14",
 
             "properties": {
 
@@ -523,7 +433,7 @@
         },
 
         {
-            "id": "l1_18",
+            "id": "l1_15",
 
             "properties": {
 
@@ -553,7 +463,7 @@
         },
 
         {
-            "id": "l1_19",
+            "id": "l1_16",
 
             "properties": {
 
@@ -583,7 +493,7 @@
         },
 
         {
-            "id": "l1_20",
+            "id": "l1_17",
 
             "properties": {
 
@@ -612,7 +522,7 @@
         },
 
         {
-            "id": "l1_21",
+            "id": "l1_18",
 
             "properties": {
 
@@ -641,7 +551,7 @@
         },
 
         {
-            "id": "l1_22",
+            "id": "l1_19",
 
             "properties": {
 
@@ -670,7 +580,7 @@
         },
 
         {
-            "id": "l1_23",
+            "id": "l1_20",
             "properties": {
 
                 "title": "Atlantic Ocean - Letter 4",
@@ -698,7 +608,7 @@
         },
 
         {
-            "id": "l1_24",
+            "id": "l1_21",
 
             "properties": {
 
@@ -727,7 +637,7 @@
         },
 
         {
-            "id": "l1_25",
+            "id": "l1_22",
 
             "properties": {
 
@@ -757,7 +667,7 @@
         },
 
         {
-            "id": "l1_26",
+            "id": "l1_23",
 
             "properties": {
 
