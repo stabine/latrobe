@@ -183,7 +183,7 @@ fetch('latrobe1.json')
 
       
 
-      // -----------------------------Add marker to the appropriate LayerGroup based on AAT-type-------------------------------
+      // -----------------------------Add marker to the appropriate LayerGroup based on Certainty-type-------------------------------
       switch (certainty) {
         case 'certain':
           certaintyLayers['Certain Waypoint'].addLayer(marker);
@@ -214,6 +214,32 @@ fetch('latrobe1.json')
 
   })
   .catch(error => console.error('Fehler beim Laden der GeoJSON-Daten:', error));
+
+fetch('traderoute.json')
+  .then(response => response.json())
+  .then(data2 => {
+
+  // GeoJSON korrekt geladen
+  console.log(data2);
+
+  // Polyline direkt aus GeoJSON
+    L.geoJSON(data2, {
+      style: function () {
+        return {
+          color: "#004641",
+          weight: 10,
+          opacity: 0.2,
+          dashArray: "4, 15"
+       };
+     }
+    })
+    .bindTooltip("Historical sailing route for trade ships.", { permanent: false, direction: "top", offset: [0, -10] })
+    .bindPopup("<h3>Historical Trade Route</h3><p>This line shows one of the most common routes sailing ships used during the 19th century due to trade winds.</p>")
+    .addTo(map1);
+  })
+  .catch(error => {
+    console.error('Fehler beim Laden des GeoJSON:', error);
+  });
 
 
   // -------------------Map initialization, pre-set location unitaetsarchive herrnhut------------------------------
