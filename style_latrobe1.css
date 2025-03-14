@@ -101,7 +101,7 @@ a:hover {
 button {
   
   border-radius: 12px;
-  border: none;
+  border: 1px dashed #50052b;
   outline: none;
   color:#50052b;
   background-color: #fff;
@@ -111,7 +111,8 @@ button {
   font-size: 14px;
   position: fixed; 
   bottom: 20px; 
-  right: 30px; 
+  right: 30px;
+  transform: translateX(-50%); 
   z-index: 1000;
   padding: 15px;
   cursor: pointer
@@ -172,6 +173,10 @@ footer {
     padding: 10px;  /* Padding innerhalb des Popups für ein wenig Innenabstand */
     background-color: #fff;
   }  /* Weißer Hintergrund für bessere Lesbarkeit */
+
+.leaflet-control-layers {
+    z-index: 10000 !important;
+  }
 
 .info-group {
     margin-bottom: 0px;

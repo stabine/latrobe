@@ -1,0 +1,218 @@
+{
+    "type": "FeatureCollection",
+
+    "conformsTo": [
+
+        "[ogc-json-fg-1-0.2:core]",
+
+        "[ogc-json-fg-1-0.2:types-schemas]"
+
+    ],
+
+    "coordRefSys": "http://www.opengis.net/def/crs/EPSG/0/4326",
+
+    "featureType": "Waypoint",
+
+    "featureSchema": "https://example.com/schema/waypoint",
+
+    "features": [
+
+        {
+
+            "id": "l2_01",
+            "properties": {
+
+                "title": "Missionhouse",
+                "note": "This mark is pinned to the Mission House. It's western part was inhabited by Sister Kohrhammer who moved to a different place during Latrobes visit, so he could stay there at a maximum of comfort. It is a very likely starting point for Latrobes explorations of the village and the surroundings.", 
+                "role": "visited",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 63",
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "less-certain" 
+
+            },
+
+            "time": "1816-01-15", 
+
+            "geometry": {
+
+                "type": "Point", 
+                "coordinates": [
+
+                    19.55725422607344, 
+                    -34.03353630266554
+                ] 
+            }
+        },
+        {
+            "id": "l2_02",
+            "properties": {
+
+                "title": "Settlement",
+                "note": "In a plan of the Missionary and Settlement of 1799 it shows this place to be where the huts of the Khoikhois where situated.", 
+                "role": "visited",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 61",
+                "closeMatch": [
+
+                    "https://dfg-viewer.de/show/?tx_dlf%5Bpage%5D=1&tx_dlf%5Bdouble%5D=0&tx_dlf%5Bid%5D=https://www.unitaetsarchiv.findbuch.net/php/view.php?link=5453x5859#path=../pics/B.._Grafik%20f%C3%BCr%20Augias._~TS%20f%C3%BCr%20Augias._~Mp_343_11-.jpg"
+                ],
+                "certainty": "less-certain" 
+
+            },
+
+            "time": "1816-01-15T13:00", 
+
+            "geometry": {
+
+                "type": "Point", 
+                "coordinates": [
+
+                    19.5577714329323, 
+                    -34.0346340638989
+                ] 
+            }
+        },
+        {
+            "id": "l2_03",
+            "properties": {
+
+                "title": "Brother Schmidt's Pear Tree",
+                "note": "This marks the place of the first peartree planted by the first Missionar Brother George Schmidt. At the very same spot the Moravians planted pear trees again and again until this day.", 
+                "role": "visited",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 62",
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "certain" 
+
+            },
+
+            "time": "1816-01-15T15:00", 
+
+            "geometry": {
+
+                "type": "Point", 
+                "coordinates": [
+
+                    19.556421935574157, 
+                    -34.033645707053935
+                ] 
+            }
+        },
+        {
+            "id": "l2_04",
+            "properties": {
+
+                "title": "Burial Ground",
+                "note": "The Burial Ground of Gnadenthal was moved severaal times due to too many tombs. While in a plan of 1799 it is marked south of the great garden, Latrobe describes it 1816 as westward to it. There until today old gravestones can be found.", 
+                "role": "visited",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 62",
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "certain" 
+
+            },
+
+            "time": "1816-01-15T16:00", 
+
+            "geometry": {
+
+                "type": "Point", 
+                "coordinates": [
+
+                    19.555671608576567, 
+                    -34.0340496799078
+                ] 
+            }
+        },
+        {
+            "id": "l2_05",
+            "properties": {
+
+                "title": "Bavians Kloof",
+                "note": "The valley behind the Settlement is called Baviaans Kloof (Baboon valley) and was formed by the Baviaans River, which passes trhough the village and later joines into the River Sonderend.", 
+                "role": "visited",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 62",
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "less-certain" 
+
+            },
+
+            "time": "1816-01-15T17:00", 
+
+            "geometry": {
+
+                "type": "Point", 
+                "coordinates": [
+
+                    19.556398391760386, 
+                    -34.029511076007545
+                ] 
+            }   
+        },
+        {
+            "id": "l2_06",
+            "properties": {
+
+                "title": "Church of Gnadenthal",
+                "note": "The Church is the central point of the village. Build in 1799 it lastet nearly a century and was rebuild at the very same place in 1891.", 
+                "role": "visited",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 62",
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "certain" 
+
+            },
+
+            "time": "1816-01-15T20:00", 
+
+            "geometry": {
+
+                "type": "Point", 
+                "coordinates": [
+
+                    19.55772991007163,
+                    -34.034070214967
+                ] 
+            }   
+        },
+        {
+            "id": "l2_07",
+            "properties": {
+
+                "title": "Mission House",
+                "note": "After evening service Latrobe spend the night at the appartment given to him by sister Kohrhammer.", 
+                "role": "visited",
+                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 63",
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "certain"
+            },
+
+           "time": "1816-01-15T21:00", 
+
+            "geometry": {
+
+                "type": "Point", 
+                "coordinates": [
+
+                    19.55725422607344,
+                    -34.03353630266554 
+                    
+                ] 
+            } 
+        }
+    ]
+}

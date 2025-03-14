@@ -2,7 +2,7 @@
 // Get the button:
 let BTTButton = document.getElementById("bttButton");
 
-// When the user scrolls down 20px from the top of the document, show the button
+// When scrolled down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -25,45 +25,17 @@ function topFunction() {
 const map1 = L.map('map1', {
   center: [16.737222, -22.936111], // set to Gravesend
   zoom: 3,
-  minZoom: 3,
+  minZoom: 3,  //preset zoom-span 
   maxZoom: 11
 }); 
 
 // osm layer (baselayer)
-var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+var osm1 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 });
-osm.addTo(map1);
+osm1.addTo(map1);
 
-// -------------Marker Icons for different levels of certainty----------------- is das sinnvoll???
-// Icons for marker 
-// starting certain 
-
-const certain_icon = L.icon({
-  iconUrl: 'marker_icons/certain_icon.png',  // relative path to image!
-  iconSize: [15, 15],
-  iconAnchor: [0, 0],
-  popupAnchor: [-3, -76]
-});
-
-// less-certain
-
-const less_certain_icon = L.icon({
-  iconUrl: 'marker_icons/less_certain_icon.png',  // relative path to image!
-  iconSize: [15, 15],
-  iconAnchor: [0, 0],
-  popupAnchor: [-3, -76]
-});
-    
-//uncertain
-    
-const uncertain_icon = L.icon({
-  iconUrl: 'marker_icons/uncertain_icon.png',  // relative path to image!
-  iconSize: [15, 15],
-  iconAnchor: [0, 0],
-  popupAnchor: [-3, -76]
-});
-    
+   
 
 
 // Initialisation of Layer for all Markers ???
@@ -84,142 +56,168 @@ fetch('latrobe1.json')
   .then(response => response.json())
   .then(data => {
 
-
-    
 // Iterate through each place and create markers
     data.features.forEach(feature => {
       
-      const [lng, lat] = feature.geometry.coordinates;
+      const [lng1, lat1] = feature.geometry.coordinates;
 
-    // Extrahiere Titel und Notiz
-      const title = feature.properties.title;
-      const note = feature.properties.note;
-      const role = feature.properties.role;
-      const wasDerivedFrom = feature.properties.wasDerivedFrom;
-      const closeMatch = feature.properties.closeMatch;
-      const certainty = feature.properties.certainty;
-      const time = feature.time;
+    // setting properties as constantes 
+      const title1 = feature.properties.title;
+      const note1 = feature.properties.note;
+      const role1 = feature.properties.role;
+      const wasDerivedFrom1 = feature.properties.wasDerivedFrom;
+      const closeMatch1 = feature.properties.closeMatch;
+      const certainty1 = feature.properties.certainty;
+      const time1 = feature.time;
       
-      let markerIcon;
+      
+      let color = "green";
+      let opacity;
+      
 
-      // Selecting correct icon based on certainty-type
-      switch (certainty) {
+      // adjust size and opacity based on level of certainty
+      switch (certainty1) {
         case 'certain':
-          markerIcon = certain_icon;
+          color = "green";
           break;
         case 'less-certain':
-          markerIcon = less_certain_icon;
+          color = "yellow";
           break;
         case 'uncertain':
-          markerIcon = uncertain_icon;
+          color = "red";
           break;
-        default:
-          markerIcon = certain_icon; // default setting
       }
 
-      let iconSize, opacity;
 
-      switch(role) {
+      switch(role1) {
         case 'visited':
-          iconSize = [15, 15]; // Kleinere Marker für 'visited'
-          opacity = 1; // Vollständig sichtbar
+          opacity = 1; // opaque
           break;
         case 'visited_nearby':
-          iconSize = [35, 35]; // Größere Marker für 'visited_nearby'
-          opacity = 0.4; // Marker sind weniger sichtbar
+          opacity = 0.4; // slightly translucent
           break;
         default:
-          iconSize = [15, 15]; // Standardgröße
-          opacity = 1; // Standarddeckkraft
+          opacity = 1; // default opacity
       }
-      
-      // Erstelle das Icon mit den finalen Einstellungen
-      const finalIcon = L.icon({
-        iconUrl: markerIcon.options.iconUrl,
-        iconAnchor: markerIcon.options.iconAnchor,
-        popupAnchor: markerIcon.options.popupAnchor,
-        iconSize: iconSize,
-        opacity: opacity
-      });
-
 
       
       
-
-      //---------------------HTML----------------------- 
-      //Creating the popup content for each place --> anpassen, wenn json geschrieben
-      const popupContent = `
-        <h3>${title}</h3>
+      //---------------------HTML-ish----------------------- 
+      //Creating the popup content for each place 
+      const popupContent1 = `
+        <h3>${title1}</h3>
         <div class="info-group">
-          <p class="subtitle">Role: ${role}</p>
-          <p><strong>References:</strong><br><a href="${closeMatch[0]}" target="_blank">GeoNames</a>
-          <br><a href="${closeMatch[1]}" target="_blank">WikiData</a></p>
+          <p class="subtitle">Role: ${role1}</p>
+          <p><strong>References:</strong><br><a href="${closeMatch1[0]}" target="_blank">GeoNames</a>
+          <br><a href="${closeMatch1[1]}" target="_blank">WikiData</a></p>
         </div>
 
         <div class="info-group">
-          <p><strong>Certainty:</strong> <br>${certainty}<br>
-          <strong>Role:</strong> <br>${role}</p>
+          <p><strong>Certainty:</strong> <br>${certainty1}<br>
+          <strong>Role:</strong> <br>${role1}</p>
         </div>
 
         <div class="info-group">
           <h3>Notes:</h3>
-          <p>${note}</p>
+          <p>${note1}</p>
         </div>
 
         <div class="info-group">
-          <p><strong>Coordinates:</strong> [${lng}, ${lat}]</p>
-          <p><strong>Date:</strong> ${time}</p>
-          ${wasDerivedFrom ? `<p><strong>Source:</strong><br>${wasDerivedFrom}`: ''}
+          <p><strong>Coordinates:</strong> [${lng1}, ${lat1}]</p>
+          <p><strong>Date:</strong> ${time1}</p>
+          ${wasDerivedFrom1 ? `<p><strong>Source:</strong><br>${wasDerivedFrom1}`: ''}
         </div>
       `;
 
-      // ---------------Create marker--------------------
-      const marker = L.marker([lat,lng], { icon: finalIcon, opacity: opacity })
-        .bindPopup(popupContent) // Popup when clicking
-        .bindTooltip(title, { permanent: false, direction: "top", offset: [0, -10], className: 'custom-tooltip' }); // Tooltip when hovering;
+      // ---------------------Function to calculate radius based on Zoom level-----------------------
+      function getMarkerRadius(role, zoomLevel) {
+        let baseRadius = 15;  // Default radius for the marker
 
-      // Add Marker to allMarkersLayer (for "Select All")
-      allMarkersLayer.addLayer(marker);
+        // Adjust base size according to 'role'
+        switch(role) {
+          case 'visited':
+            baseRadius = 15;
+            break;
+          case 'visited_nearby':
+            baseRadius = 35;
+            break;
+          default:
+            baseRadius = 15;
+            break;
+        }
+
+        // Adjust size based on the zoom level (e.g. more zoom -> bigger marker)
+        return baseRadius * (zoomLevel / 15);
+      }
+
+      // ---------------Create circle marker for each waypoint--------------------
+      const initialRadius = getMarkerRadius(role1, map1.getZoom());
+
+      const marker1 = L.circleMarker([lat1,lng1], { 
+        radius: initialRadius,
+        color: color,
+        opacity: opacity,
+        fillOpacity: opacity
+      })
+        .bindPopup(popupContent1) // Popup when clicking
+        .bindTooltip(title1, { permanent: false, direction: "top", offset: [0, -10], className: 'custom-tooltip' }); // Tooltip when hovering;
+
+    // Add Marker to allMarkersLayer (for "Select All")
+    allMarkersLayer.addLayer(marker1);
 
       
 
       // -----------------------------Add marker to the appropriate LayerGroup based on Certainty-type-------------------------------
-      switch (certainty) {
+      switch (certainty1) {
         case 'certain':
-          certaintyLayers['Certain Waypoint'].addLayer(marker);
+          certaintyLayers['Certain Waypoint'].addLayer(marker1);
           break;
         case 'less-certain':
-          certaintyLayers['Less Certain Waypoint'].addLayer(marker);
+          certaintyLayers['Less Certain Waypoint'].addLayer(marker1);
           break;
         case 'uncertain':
-          certaintyLayers['Uncertain Waypoint'].addLayer(marker);
+          certaintyLayers['Uncertain Waypoint'].addLayer(marker1);
           break;
       }
-
+    });
       
 
-       // set "Select All"-Layer as default
-       map1.addLayer(allMarkersLayer);
-    });
+  // set "Select All"-Layer as default
+    map1.addLayer(allMarkersLayer);
+
+    map1.addLayer(certaintyLayers['Certain Waypoint']);
+    map1.addLayer(certaintyLayers['Less Certain Waypoint']);
+    map1.addLayer(certaintyLayers['Uncertain Waypoint']);
+    
 
     // Layer control for switching between base maps and overlay layers
     const baseMaps = {
-      "OpenStreetMap": osm //naming the variables mit strings; add ',' after 'osm' when using more map-layers
+      "OpenStreetMap": osm1 //naming the variables mit strings; add ',' after 'osm' when using more map-layers
     };
 
-    // -----------------Create and add layer control to the map--------------------------------------
-    L.control.layers(baseMaps, certaintyLayers).addTo(map1);
+    // -----------------Create and add layer control to the map (still not sure wether I need it)--------------------------------------
+    L.control.layers(baseMaps, certaintyLayers, {
+      position: 'topright'
+    }).addTo(map1);
 
-   
+    //----------------------------- Update marker radius and position when zooming or panning--------------------------------------------------------------
+    function updateMarker() {
+      allMarkersLayer.eachLayer(function(marker) {
+        marker.setLatLng(marker.getLatLng()); // Re-set position to update it correctly
+      });
+    }
+
+    // Update markers on zoom or pan
+    map1.on('moveend', updateMarker); // When panning ends
 
   })
-  .catch(error => console.error('Fehler beim Laden der GeoJSON-Daten:', error));
+    .catch(error => console.error('Fehler beim Laden der GeoJSON-Daten:', error));
 
 fetch('traderoute.json')
   .then(response => response.json())
   .then(data2 => {
 
-  // GeoJSON korrekt geladen
+  // GeoJSON laden
   console.log(data2);
 
   // Polyline direkt aus GeoJSON
@@ -242,18 +240,118 @@ fetch('traderoute.json')
   });
 
 
-  // -------------------Map initialization, pre-set location unitaetsarchive herrnhut------------------------------
-const map2 = L.map('map2').setView([-34.034086373788035, 19.557620864951964 ], 18);
+  // -------------------Map2 initialization, pre-set location Gnadenthal, very close------------------------------
+const map2 = L.map('map2', {
+  center: [-34.034086373788035, 19.557620864951964], // set to Gnadenthal
+  zoom: 18,
+  minZoom: 15,  //preset zoom-span 
+  maxZoom: 19.5
+});
 
 // osm layer (baselayer2)
-var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+var osm2 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 });
-osm.addTo(map2);
+osm2.addTo(map2);
 
+fetch('latrobe2.json')
+  .then(response => response.json())
+  .then(data3 => {
 
+    const latlngs = [];
 
-  // -------------------Map initialization, pre-set location unitaetsarchive herrnhut------------------------------
+    // iterate through GeoJSON to creat points of polyline
+    data3.features.forEach(feature => {
+      const [lng2, lat2] = feature.geometry.coordinates;
+      
+   // setting properties as constantes 
+      const title2 = feature.properties.title;
+      const note2 = feature.properties.note;
+      const role2 = feature.properties.role;
+      const wasDerivedFrom2 = feature.properties.wasDerivedFrom;
+      const closeMatch2 = feature.properties.closeMatch;
+      const certainty2 = feature.properties.certainty;
+      const time2 = feature.time;
+    
+
+    // set markers and popup
+
+    
+
+      const popupContent2 = `
+          <h3>${title2}</h3>
+          <div class="info-group">
+            <p class="subtitle">Role: ${role2}</p>
+            <p><strong>References:</strong><br><a href="${closeMatch2[0]}" target="_blank">GeoNames</a>
+            <br><a href="${closeMatch2[1]}" target="_blank">WikiData</a></p>
+          </div>
+
+          <div class="info-group">
+            <p><strong>Certainty:</strong> <br>${certainty2}<br>
+            <strong>Role:</strong> <br>${role2}</p>
+          </div>
+
+          <div class="info-group">
+            <h3>Notes:</h3>
+            <p>${note2}</p>
+          </div>
+
+          <div class="info-group">
+            <p><strong>Coordinates:</strong> [${lng2}, ${lat2}]</p>
+            <p><strong>Date:</strong> ${time2}</p>
+            ${wasDerivedFrom2 ? `<p><strong>Source:</strong><br>${wasDerivedFrom2}`: ''}
+          </div>
+        `;
+
+      // Berechnung der Markergröße und Opazität basierend auf dem Certainty-Level
+      let radius = 25; // Standardgröße
+      let opacity = 1; // Standardopazität
+      let color = "green";
+
+      switch(certainty2) {
+        case 'certain':
+          radius = 5; // Größer für 'certain'
+          opacity = 1;
+          color = "green";
+          break;
+        case 'less-certain':
+          radius = 20; // Kleiner für 'less-certain'
+          opacity = 0.6;
+          color = "yellow";
+          break;
+        case 'uncertain':
+          radius = 30; // Noch kleiner für 'uncertain'
+          opacity = 0.4;
+          color = "red";
+          break;
+      }
+
+    // create marker, select opacity and size
+    const marker2 = L.circleMarker([lat2, lng2],{
+      radius: radius,
+      color: 'green',
+      opacity: opacity,
+      fillOpacity: opacity
+    })
+      .bindPopup(popupContent2) // Popup when clicking
+      .bindTooltip(title2, { permanent: false, direction: "top", offset: [0, -10], className: 'custom-tooltip' });
+
+    //add marker to map   
+    marker2.addTo(map2)
+
+    // get coordinates for polyline
+    latlngs.push([lat2, lng2]);
+  
+  });
+
+  // create polyline with collected coordinates
+  if (latlngs.length > 1) {  // Stelle sicher, dass es mehr als einen Punkt gibt
+    L.polyline(latlngs, { color: 'green' }).addTo(map2);
+  }
+})
+.catch(err => console.error('Fehler beim Laden der GeoJSON-Datei:', err));
+
+  // -------------------Map initialization, pre-set location Cape Colony; topografical map------------------------------
   const map3 = L.map('map3').setView([-33.775120570267205, 22.333937355866688 ], 8);
 
   // OpenTopoMap layer (baselayer3)
