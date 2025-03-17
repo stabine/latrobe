@@ -1,0 +1,1723 @@
+{
+    "type": "FeatureCollection",
+
+    "conformsTo": [
+
+        "[ogc-json-fg-1-0.2:core]",
+
+        "[ogc-json-fg-1-0.2:types-schemas]"
+
+    ],
+
+    "coordRefSys": "http://www.opengis.net/def/crs/EPSG/0/4326",
+
+    "featureType": "Waypoint",
+
+    "featureSchema": "https://example.com/schema/waypoint",
+
+    "features": [
+
+        {
+            "id": "l3_01",
+            "properties": {
+
+                "title": "Gnadenthal",
+                "note": "Startingpoint of C. I. Latrobes easternmost Excursion throughout the Cape Colony of 1816 nearly to the borders of former so called Kaffraria. Latrobe was acompanied by the missionaries John Melville, John Henry Schmitt, Alice Schmitt, John Jürgen Stein, as well as the Khoikhoi Marcus Moses, Christian Hector, Jeremias Waly, Lebrecht Aris, Johannes Paerl and his father Leonhard Paerl.", 
+                "role": "visited",
+                "wasDerivedFrom": [
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 117",
+                    "https://archive.org/details/journalofvisitto00latr/page/116/mode/2up"
+                ],
+                "closeMatch": [
+
+                    "https://www.wikidata.org/wiki/Q114720753",
+                    "https://www.geonames.org/3367707/genadendal.html"
+                ],
+                "certainty": "certain" 
+
+            },
+
+            "time": "1816-03-05", 
+
+            "geometry": {
+
+                "type": "Point", 
+                "coordinates": [
+
+                    19.55725422607344, 
+                    -34.03353630266554
+                ] 
+            }
+        },
+        {
+            "id": "l3_02",
+            "properties": {
+
+                "title": "Mr. Von Helsland's farm on Bock Revier",
+                "note": "The first stopp was made on a local farm of a Mister Von Helsland on the Bock River. The farm's position is not described any further, therefore the position is more of a guess than a secured information, since the farm is not existing anymore today.", 
+                "role": "visited",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 120",
+                    "https://archive.org/details/journalofvisitto00latr/page/120/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-06", 
+
+            "geometry": {
+
+                "type": "Point", 
+                "coordinates": [
+
+                    19.8437370278806, 
+                    -34.11932205776797
+                ] 
+            }
+        },
+        {
+            "id": "l3_03",
+            "properties": {
+
+                "title": "Union of River Sonderend and Breede Revier",
+                "note": "The Travellers rested at the Banks of the River Sonderend on a wasteland called Storms Valley, from which they could see the place where River Sonderend united with Breede Revier. The exact place can not be determined anymore.", 
+                "role": "visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_04",
+            "properties": {
+
+                "title": "Banks of the Breede Revier",
+                "note": "Latrobe and his traveller party forded the Breede Revier and restet the night of March 7th 1816 on the eastern Banks of the River.", 
+                "role": "visited",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    "https://www.geonames.org/1015748/bree.html",
+                    "https://www.wikidata.org/wiki/Q904992"
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.289041950078218,
+                    -34.072119092149215
+                ]
+            }
+        },
+        {
+            "id": "l3_05",
+            "properties": {
+
+                "title": "Leuwe Revier",
+                "note": "The Travellers forded the Leuwe Revier (Leeurivier) near a farm. An exact position can not be determined since there are no further descriptions.", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-08", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.320584717246547,
+                    -34.081500607524205
+                ]
+            }
+        },
+        {
+            "id": "l3_06",
+            "properties": {
+
+                "title": "Zwellendam",
+                "note": "Latrobe reached the settlement of Zwellendam (Swellendam) about two p.m. in the afternoon, where they stayed at the landdrost Mr. Von Buissini's house. The marker therefore is set on the drosty house which by today is a museum.", 
+                "role": "visited",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124 ff.",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    "https://www.geonames.org/950709/swellendam.html",
+                    "https://www.wikidata.org/wiki/Q1023257",
+                    "https://www.drostdymuseum.co.za/drostdy-building/"
+                ],
+                "certainty": "certain" 
+
+            },
+
+            "time": "1816-03-08T14:00", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.4529284212358,
+                    -34.01925894262244
+                ]
+            }
+        },
+        {
+            "id": "l3_07",
+            "properties": {
+
+                "title": "Bueffeljagd's Revier ",
+                "note": "The Group fords the River today called Buffeljagsrivier after leaving Zwellendam to the east. The exact position was not described, therefore the marker remains less certain.", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 128",
+                    "https://archive.org/details/journalofvisitto00latr/page/128/mode/2up"
+                ],
+                "closeMatch": [
+
+                    "https://www.geonames.org/1015226/buffeljagsrivier.html",
+                    "https://www.wikidata.org/wiki/Q4787901"
+                ],
+                "certainty": "less-certain" 
+
+            },
+
+            "time": "1816-03-09", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.534633328562357,
+                    -34.045657136259685
+                ]
+            }
+        },
+        {
+            "id": "l3_08",
+            "properties": {
+
+                "title": "Zuurbrack",
+                "note": "The Mission Station of the London Missionary Society formed a settlement today calles Suurbaak. Latrobe and his travellers stayed there for only a few hours before continuing their journey.", 
+                "role": "visited",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 128",
+                    "https://archive.org/details/journalofvisitto00latr/page/128/mode/2up"
+                ],
+                "closeMatch": [
+
+                    "https://www.geonames.org/951242/suurbraak.html",
+                    "https://www.wikidata.org/wiki/Q540535"
+                ],
+                "certainty": "certain" 
+
+            },
+
+            "time": "1816-03-09", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.65275,
+                    -34.004917
+                ]
+            }
+        },
+        {
+            "id": "l3_09",
+            "properties": {
+
+                "title": "Groot Vader's Bosch",
+                "note": "The vast forest at the foot of the Langeberg Mountain is today a protected area called Grootvadersbosch Nature Reserve.", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 131",
+                    "https://archive.org/details/journalofvisitto00latr/page/130/mode/2up"
+                ],
+                "closeMatch": [
+
+                    "https://www.wikidata.org/wiki/Q1547391"
+                ],
+                "certainty": "certain" 
+
+            },
+
+            "time": "1816-03-10", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.8,
+                    -33.94
+                ]
+            }
+        },
+        {
+            "id": "l3_10",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        },
+        {
+            "id": "l3_XX",
+            "properties": {
+
+                "title": "new",
+                "note": "here", 
+                "role": "visited/visited_nearby",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
+                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                ],
+                "closeMatch": [
+
+                    null
+                ],
+                "certainty": "uncertain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "point",
+                "coordinates": [
+
+                    20.28520379343737,
+                    -34.07059575831272
+                ]
+            }
+        }
+    ]
+}
