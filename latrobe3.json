@@ -291,7 +291,8 @@
                     "https://archive.org/details/journalofvisitto00latr/page/130/mode/2up"
                 ],
                 "closeMatch": [
-
+                    
+                    null,
                     "https://www.wikidata.org/wiki/Q1547391"
                 ],
                 "certainty": "certain" 
