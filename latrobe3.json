@@ -674,12 +674,12 @@
             "properties": {
 
                 "title": "Jackal's Kraal",
-                "note": "here", 
+                "note": "Latrobe and his fellows visited Jackal's Kraal - at that time an empty vale - as a potential place for a new settlement. The place is not described any further. The position is estimated upon hiistorical cards and today only a road called Jackalskraal Road reminds of the former Name of the vale.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
-                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
-                    "https://archive.org/details/journalofvisitto00latr/page/124/mode/2up"
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 161 f.",
+                    "https://archive.org/details/journalofvisitto00latr/page/160/mode/2up"
                 ],
                 "closeMatch": [
 
@@ -703,7 +703,7 @@
         },
 
         {
-            "id": "l3_XX",
+            "id": "l3_22",
             "properties": {
 
                 "title": "new",
