@@ -137,7 +137,8 @@ footer {
     background-color: #fff;
     border: 2px solid #004641;
     border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2)
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width: 500px  
     
 }
 
@@ -195,4 +196,22 @@ footer {
 .custom-tooltip {
     z-index: 99 !important;  /* Hoher Z-Index für den Tooltip */
     background-color: rgba(255, 255, 255, 0.7); /* Optional: Ein halbtransparentes Hintergrund für den Tooltip */
+}
+
+
+.info.legend {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid hsl(0, 0%, 63%);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.info.legend i {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 5px;
 }

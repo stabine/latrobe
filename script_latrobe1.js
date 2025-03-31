@@ -35,7 +35,7 @@ var osm1 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 });
 osm1.addTo(map1);
 
-   
+var legend1 = L.control({ position: 'bottomleft' });   
 
 
 // Initialisation of Layer for all Markers ???
@@ -77,20 +77,20 @@ fetch('latrobe1.json')
       // adjust size and opacity based on level of certainty and role
       switch (certainty1) {
         case 'certain':
-          color1 = "green";
+          color1 = "#09556B";
           break;
         case 'less-certain':
-          color1 = "yellow";
+          color1 = "#BF4D00";
           break;
         case 'uncertain':
-          color1 = "red";
+          color1 = "#e91e63";
           break;
       }
 
 
       switch(role1) {
         case 'visited':
-          radius1 = 800;
+          radius1 = 5000;
           opacity1 = 1; // opaque
           break;
         case 'visited_nearby':
@@ -166,7 +166,25 @@ fetch('latrobe1.json')
     map1.addLayer(roleLayers1['Visited']);
     map1.addLayer(roleLayers1['Visited nearby']);
     
+  // Legende
 
+  legend1.onAdd = function () {
+    var div = L.DomUtil.create('div', 'info legend');
+    var levels1 = ["certain", "less-certain", "uncertain"];
+    var colors1 = ["#09556B", "#BF4D00", "#e91e63"];
+    
+    // Füge Einträge für jedes Level hinzu
+    for (var i = 0; i < levels1.length; i++) {
+      div.innerHTML +=
+        '<i style="background:' + colors1[i] + '"></i> ' +
+        (levels1[i] === "certain" ? 'Certain' :
+        (levels1[i] === "less-certain" ? 'Less Certain' : 'Uncertain')) + '<br>';
+    }
+  
+    return div;
+  };
+
+  legend1.addTo(map1)
     // Layer control for switching between base maps and overlay layers
     const baseMaps = {
       "OpenStreetMap": osm1 //naming the variables mit strings; add ',' after 'osm' when using more map-layers
@@ -201,7 +219,7 @@ fetch('traderoute.json')
     L.geoJSON(data2, {
       style: function () {
         return {
-          color: "#004641",
+          color: "#50052b",
           weight: 10,
           opacity: 0.2,
           dashArray: "4, 15"
@@ -442,7 +460,7 @@ fetch('latrobe2.json')
           </div>
 
           <div class="info-group">
-            <p><strong>Coordinates:</strong> [${lng3}, ${lat3}]</p>
+            <p><strong>Coordinates:</strong><br> [${lat3}, ${lng3}]</p>
             <p><strong>Date:</strong> ${time3}</p>
             ${wasDerivedFrom3 ? `<p><strong>Source:</strong><br><a href="${wasDerivedFrom3[1]}" target="blank">${wasDerivedFrom3[0]}</a>`: ''}
           </div>
@@ -455,19 +473,19 @@ fetch('latrobe2.json')
 
       switch(certainty3) {
         case 'certain':
-          radius3 = 100; // Größer für 'certain'
+          radius3 = 600; // Größer für 'certain'
           opacity3 = 1;
-          color3 = "green";
+          color3 = "#008078";
           break;
         case 'less-certain':
-          radius3 = 3000; // Kleiner für 'less-certain'
+          radius3 = 2000; // Kleiner für 'less-certain'
           opacity3 = 0.6;
-          color3 = "yellow";
+          color3 = "#FF9800";
           break;
         case 'uncertain':
-          radius3 = 3000; // Noch kleiner für 'uncertain'
+          radius3 = 2000; // Noch kleiner für 'uncertain'
           opacity3 = 0.4;
-          color3 = "red";
+          color3 = "#50052b";
           break;
       }
 
@@ -509,8 +527,8 @@ fetch('latrobe2.json')
   // create polyline with collected coordinates
   if (latlngs.length > 1) {  // Stelle sicher, dass es mehr als einen Punkt gibt
     L.polyline(latlngs, { 
-      color: '#50052b',
-      weight: 3 
+      color: '#004641',
+      weight: 4 
     })
     .addTo(map3);
   }
@@ -531,5 +549,133 @@ fetch('latrobe2.json')
   L.control.layers(baseMap3, certaintyLayers3, {
     position: 'topright'
   }).addTo(map3);
+})
+.catch(err => console.error('Fehler beim Laden der GeoJSON-Datei:', err));
+
+
+fetch('latrobe4.json')
+  .then(response => response.json())
+  .then(data5 => {
+
+    const latlngs2 = [];
+
+    // iterate through GeoJSON to creat points of polyline
+    data5.features.forEach(feature => {
+      const [lng4, lat4] = feature.geometry.coordinates;
+      
+   // setting properties as constantes 
+      const title4 = feature.properties.title;
+      const note4 = feature.properties.note;
+      const role4 = feature.properties.role;
+      const wasDerivedFrom4 = feature.properties.wasDerivedFrom;
+      const closeMatch4 = feature.properties.closeMatch;
+      const certainty4 = feature.properties.certainty;
+      const time4 = feature.time;
+    
+
+    // set markers and popup
+
+    
+
+      const popupContent4 = `
+          <h3>${title4}</h3>
+          <div class="info-group">
+            <p class="subtitle">Role: ${role4}</p>
+            <p><strong>References:</strong><br><a href="${closeMatch4[0]}" target="_blank">GeoNames</a>
+            <br><a href="${closeMatch4[1]}" target="_blank">WikiData</a></p>
+          </div>
+
+          <div class="info-group">
+            <p><strong>Certainty:</strong> <br>${certainty4}<br><br>
+            <strong>Role:</strong> <br>${role4}</p>
+          </div>
+
+          <div class="info-group">
+            <h3>Notes:</h3>
+            <p>${note4}</p>
+          </div>
+
+          <div class="info-group">
+            <p><strong>Coordinates:</strong><br> [${lat4}, ${lng4}]</p>
+            <p><strong>Date:</strong> ${time4}</p>
+            ${wasDerivedFrom4 ? `<p><strong>Source:</strong><br><a href="${wasDerivedFrom4[1]}" target="blank">${wasDerivedFrom4[0]}</a>`: ''}
+          </div>
+        `;
+
+      // Berechnung der Markergröße und Opazität basierend auf dem Certainty-Level
+      let radius4 = 100; // Standardgröße
+      let opacity4 = 1; // Standardopazität
+      let color4 = "green";
+
+      switch(certainty4) {
+        case 'certain':
+          radius3 = 600; // Größer für 'certain'
+          opacity3 = 1;
+          color3 = "#008078";
+          break;
+        case 'less-certain':
+          radius3 = 2000; // Kleiner für 'less-certain'
+          opacity3 = 0.6;
+          color3 = "#FF9800";
+          break;
+        case 'uncertain':
+          radius3 = 2000; // Noch kleiner für 'uncertain'
+          opacity3 = 0.4;
+          color3 = "#50052b";
+          break;
+      }
+
+    // create marker, select opacity and size
+    const marker4 = L.circle([lat4, lng4],{
+      radius: radius4,
+      color: color4,
+      opacity: opacity4,
+      fillOpacity: opacity4
+    })
+      .bindPopup(popupContent4) // Popup when clicking
+      .bindTooltip(title4, { permanent: false, direction: "top", offset: [0, -10], className: 'custom-tooltip' });
+
+
+    // Add Marker to allMarkersLayer (for "Select All")
+    allMarkersLayer4.addLayer(marker4);
+
+      
+
+    // -----------------------------Add marker to the appropriate LayerGroup based on Certainty-type-------------------------------
+      switch (certainty4) {
+        case 'certain':
+          certaintyLayers4['Certain Waypoint'].addLayer(marker4);
+          break;
+        case 'less-certain':
+          certaintyLayers4['Less certain Waypoint'].addLayer(marker4);
+          break;
+        case 'uncertain':
+          certaintyLayers4['Uncertain Waypoint'].addLayer(marker4);
+      }
+
+    
+
+    // get coordinates for polyline
+    latlngs2.push([lat4, lng4]);
+  
+  });
+
+  // create polyline with collected coordinates
+  if (latlngs2.length > 1) {  // Stelle sicher, dass es mehr als einen Punkt gibt
+    L.polyline(latlngs2, { 
+      color: '#004641',
+      weight: 4 
+    })
+    .addTo(map3);
+  }
+
+  // set "Select All"-Layer as default
+  map3.addLayer(allMarkersLayer4);
+
+  map3.addLayer(certaintyLayers4['Certain Waypoint']);
+  map3.addLayer(certaintyLayers4['Less certain Waypoint']);
+  map3.addLayer(certaintyLayers4['Uncertain Waypoint']);
+
+  
 })
 .catch(err => console.error('Fehler beim Laden der GeoJSON-Datei:', err));
