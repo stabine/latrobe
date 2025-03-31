@@ -406,6 +406,12 @@ fetch('latrobe2.json')
   });
   OpenTopoMap.addTo(map3);
 
+map3.createPane('markersPane3');  
+map3.getPane('markersPane3').style.zIndex = 650; // Höherer z-Index für Marker  
+
+map3.createPane('linesPane3');  
+map3.getPane('linesPane3').style.zIndex = 600; // Niedrigerer z-Index für Linien  
+
   // Initialisation of Layer for all Markers ???
   const allMarkersLayer3 = L.layerGroup(); // Layer for all Markers
 
@@ -491,6 +497,7 @@ fetch('latrobe2.json')
 
     // create marker, select opacity and size
     const marker3 = L.circle([lat3, lng3],{
+      pane: 'markersPane3',
       radius: radius3,
       color: color3,
       opacity: opacity3,
@@ -503,7 +510,7 @@ fetch('latrobe2.json')
     // Add Marker to allMarkersLayer (for "Select All")
     allMarkersLayer3.addLayer(marker3);
 
-      
+    marker3.bringToFront();  
 
     // -----------------------------Add marker to the appropriate LayerGroup based on Certainty-type-------------------------------
       switch (certainty3) {
@@ -528,31 +535,19 @@ fetch('latrobe2.json')
   if (latlngs.length > 1) {  // Stelle sicher, dass es mehr als einen Punkt gibt
     L.polyline(latlngs, { 
       color: '#004641',
-      weight: 4 
+      weight: 4,
+      pane: 'linesPane3' 
     })
     .addTo(map3);
   }
 
-  // set "Select All"-Layer as default
-  map3.addLayer(allMarkersLayer3);
-
-  map3.addLayer(certaintyLayers3['Certain Waypoint']);
-  map3.addLayer(certaintyLayers3['Less certain Waypoint']);
-  map3.addLayer(certaintyLayers3['Uncertain Waypoint']);
-
-  // Layer control for switching between base maps and overlay layers
-  const baseMap3 = {
-    "OpenTopoMap": OpenTopoMap //naming the variables mit strings; add ',' after 'osm' when using more map-layers
-  };
-
-  // -----------------Create and add layer control to the map (still not sure wether I need it)--------------------------------------
-  L.control.layers(baseMap3, certaintyLayers3, {
-    position: 'topright'
-  }).addTo(map3);
+ 
 })
 .catch(err => console.error('Fehler beim Laden der GeoJSON-Datei:', err));
 
-
+ // set "Select All"-Layer as default
+ map3.addLayer(allMarkersLayer3);
+ 
 fetch('latrobe4.json')
   .then(response => response.json())
   .then(data5 => {
@@ -609,24 +604,25 @@ fetch('latrobe4.json')
 
       switch(certainty4) {
         case 'certain':
-          radius3 = 600; // Größer für 'certain'
-          opacity3 = 1;
-          color3 = "#008078";
+          radius4 = 600; // Größer für 'certain'
+          opacity4 = 1;
+          color4 = "#008078";
           break;
         case 'less-certain':
-          radius3 = 2000; // Kleiner für 'less-certain'
-          opacity3 = 0.6;
-          color3 = "#FF9800";
+          radius4 = 2000; // Kleiner für 'less-certain'
+          opacity4 = 0.6;
+          color4 = "#FF9800";
           break;
         case 'uncertain':
-          radius3 = 2000; // Noch kleiner für 'uncertain'
-          opacity3 = 0.4;
-          color3 = "#50052b";
+          radius4 = 2000; // Noch kleiner für 'uncertain'
+          opacity4 = 0.4;
+          color4 = "#50052b";
           break;
       }
 
     // create marker, select opacity and size
     const marker4 = L.circle([lat4, lng4],{
+      pane: 'markersPane3',
       radius: radius4,
       color: color4,
       opacity: opacity4,
@@ -637,20 +633,20 @@ fetch('latrobe4.json')
 
 
     // Add Marker to allMarkersLayer (for "Select All")
-    allMarkersLayer4.addLayer(marker4);
+    allMarkersLayer3.addLayer(marker4);
 
-      
+    marker4.bringToFront();  
 
     // -----------------------------Add marker to the appropriate LayerGroup based on Certainty-type-------------------------------
       switch (certainty4) {
         case 'certain':
-          certaintyLayers4['Certain Waypoint'].addLayer(marker4);
+          certaintyLayers3['Certain Waypoint'].addLayer(marker4);
           break;
         case 'less-certain':
-          certaintyLayers4['Less certain Waypoint'].addLayer(marker4);
+          certaintyLayers3['Less certain Waypoint'].addLayer(marker4);
           break;
         case 'uncertain':
-          certaintyLayers4['Uncertain Waypoint'].addLayer(marker4);
+          certaintyLayers3['Uncertain Waypoint'].addLayer(marker4);
       }
 
     
@@ -663,19 +659,53 @@ fetch('latrobe4.json')
   // create polyline with collected coordinates
   if (latlngs2.length > 1) {  // Stelle sicher, dass es mehr als einen Punkt gibt
     L.polyline(latlngs2, { 
-      color: '#004641',
-      weight: 4 
+      color: '#8B0000',
+      weight: 4,
+      pane: 'linesPane3'
+
     })
     .addTo(map3);
   }
 
-  // set "Select All"-Layer as default
-  map3.addLayer(allMarkersLayer4);
+ 
 
-  map3.addLayer(certaintyLayers4['Certain Waypoint']);
-  map3.addLayer(certaintyLayers4['Less certain Waypoint']);
-  map3.addLayer(certaintyLayers4['Uncertain Waypoint']);
+  map3.addLayer(certaintyLayers3['Certain Waypoint']);
+  map3.addLayer(certaintyLayers3['Less certain Waypoint']);
+  map3.addLayer(certaintyLayers3['Uncertain Waypoint']);
 
   
 })
 .catch(err => console.error('Fehler beim Laden der GeoJSON-Datei:', err));
+
+
+
+  // Layer control for switching between base maps and overlay layers
+  const baseMap3 = {
+    "OpenTopoMap": OpenTopoMap //naming the variables mit strings; add ',' after 'osm' when using more map-layers
+  };
+  // -----------------Create and add layer control to the map (still not sure wether I need it)--------------------------------------
+  L.control.layers(baseMap3, certaintyLayers3, {
+    position: 'topright'
+  }).addTo(map3);
+
+  // Legende erstellen
+const legend3 = L.control({ position: "bottomleft" });
+
+legend3.onAdd = function (map3) {
+    const div = L.DomUtil.create("div", "legend-map3");
+    div.innerHTML = `
+        <div><strong>Certainty Levels</strong></div>
+        <div class="legend-item"><span class="legend-circle" style="background:#008078;"></span> Certain</div>
+        <div class="legend-item"><span class="legend-circle" style="background:#FF9800;"></span> Less certain</div>
+        <div class="legend-item"><span class="legend-circle" style="background:#50052b;"></span> Uncertain</div>
+        
+        <div style="margin-top:10px;"><strong>Routes</strong></div>
+        <div class="legend-item"><span class="legend-line" style="background:#004641;"></span> Route Outbound</div>
+        <div class="legend-item"><span class="legend-line" style="background:#8B0000;"></span> Route Return</div>
+    `;
+
+    return div;
+};
+
+// Legende zur Karte hinzufügen
+legend3.addTo(map3);
