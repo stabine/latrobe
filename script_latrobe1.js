@@ -19,6 +19,8 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+
 
 
 // -------------------Map initialization, pre-set location for each map------------------------------
@@ -37,7 +39,6 @@ osm1.addTo(map1);
 
 var legend1 = L.control({ position: 'bottomleft' });   
 
-
 // Initialisation of Layer for all Markers ???
 const allMarkersLayer1 = L.layerGroup(); // Layer for all Markers
 
@@ -47,6 +48,37 @@ const roleLayers1 = {
     'Visited': L.layerGroup(),
     'Visited nearby': L.layerGroup(),
   };
+
+let markersWithDates1 = [];
+let uniqueDates1 = new Set();
+
+// -----Time Slider Setup 1-----
+const slider1 = document.createElement("input");
+slider1.type = "range";
+slider1.min = 0;
+slider1.value = 0;
+slider1.className = "time-slider1";
+document.getElementById("slider-container1").appendChild(slider1);
+
+const sliderValue1 = document.createElement("span");
+sliderValue1.id = "slider-value1";
+document.getElementById("slider-container1").appendChild(sliderValue1);
+
+function formatDate(date) {
+  let day = date.getDate().toString().padStart(2, '0'); // Tag
+  let month = (date.getMonth() + 1).toString().padStart(2, '0'); // Monat
+  let year = date.getFullYear(); // Jahr
+  
+  return `${day}.${month}.${year}`;
+}
+
+slider1.addEventListener("input", function () {
+  let selectedDate1 = [...uniqueDates1][slider1.value]; // Holen des Datums aus der Set
+  let dateObj = new Date(selectedDate1); // Umwandeln in ein Date-Objekt
+  let formattedDate = formatDate(dateObj); // Formatieren des Datums
+  sliderValue1.textContent = `Selected Date: ${formattedDate}`; // Wert anzeigen
+});
+
 
 
 // ------------------Fetching data from JSON-File-----------------------------
@@ -69,6 +101,8 @@ fetch('latrobe1.json')
       const certainty1 = feature.properties.certainty;
       const time1 = feature.time;
       
+      const date1 = new Date(time1);
+
       let radius1 = 35;
       let color1 = "green";
       let opacity1 = 1;
@@ -101,7 +135,7 @@ fetch('latrobe1.json')
           opacity1 = 1; // default opacity
       }
 
-      
+      uniqueDates1.add(date1);
       
       //---------------------HTML-ish----------------------- 
       //Creating the popup content for each place 
@@ -145,7 +179,9 @@ fetch('latrobe1.json')
 
     // Add Marker to allMarkersLayer (for "Select All")
     allMarkersLayer1.addLayer(marker1);
-
+    marker1.time = date1;
+    markersWithDates1.push(marker1);
+    
       
 
       // -----------------------------Add marker to the appropriate LayerGroup based on Certainty-type-------------------------------
@@ -165,6 +201,25 @@ fetch('latrobe1.json')
 
     map1.addLayer(roleLayers1['Visited']);
     map1.addLayer(roleLayers1['Visited nearby']);
+
+    slider1.max = [...uniqueDates1].length - 1;
+    slider1.oninput = function () {
+      let selectedDate1 = [...uniqueDates1][this.value];
+      markersWithDates1.forEach(marker1 => {
+        if (marker1.time <= selectedDate1) {
+          map1.addLayer(marker1);
+        } else {
+          map1.removeLayer(marker1);
+        }
+      });
+    };
+
+    let selectedDate1 = [...uniqueDates1][slider1.value];
+    markersWithDates1.forEach(marker1 => {
+      if (marker1.time <= selectedDate1) {
+        map1.addLayer(marker1);
+      }
+    });
     
   // Legende
 
@@ -207,6 +262,16 @@ fetch('latrobe1.json')
 
   })
     .catch(error => console.error('Fehler beim Laden der GeoJSON-Daten:', error));
+
+
+  // Zeige den Startwert an, formatiert
+
+if (uniqueDates1.size > 0) {
+  slider1.max = [...uniqueDates1].length - 1;
+  let initialDate = [...uniqueDates1][slider1.value];
+  let initialDateObj = new Date(initialDate);
+  sliderValue1.textContent = `Date: ${formatDate(initialDateObj)}`;
+}
 
 fetch('traderoute.json')
   .then(response => response.json())
@@ -707,3 +772,5 @@ legend3.onAdd = function (map3) {
 
 // Legende zur Karte hinzufügen
 legend3.addTo(map3);
+
+});

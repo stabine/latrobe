@@ -244,3 +244,25 @@ footer {
   display: inline-block;
   margin-right: 8px;
 }
+
+#slider-container1{
+  margin-top: 20px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#slider-value1 {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.time-slider1 {
+  width: 20%; /* Slider auf volle Breite setzen */
+  margin: 20px 0; /* Abstand oben und unten */
+  display: block; /* Block-Level-Element, um Platz zu nehmen */
+  position: relative; /* Fixiert den Slider unten auf der Seite */
+  bottom: 10px; /* 10px vom unteren Rand */
+  left: 40%;
+  z-index: 1000000; /* Über andere Inhalte legen */
+}
