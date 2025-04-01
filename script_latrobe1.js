@@ -479,8 +479,8 @@ map3.getPane('linesPane3').style.zIndex = 600; // Niedrigerer z-Index für Linie
 
       switch(certainty3) {
         case 'certain':
-          radius3 = 600; // Größer für 'certain'
-          opacity3 = 1;
+          radius3 = 500; // Größer für 'certain'
+          opacity3 = 0.9;
           color3 = "#008078";
           break;
         case 'less-certain':
@@ -604,8 +604,8 @@ fetch('latrobe4.json')
 
       switch(certainty4) {
         case 'certain':
-          radius4 = 600; // Größer für 'certain'
-          opacity4 = 1;
+          radius4 = 500; // Größer für 'certain'
+          opacity4 = 0.9;
           color4 = "#008078";
           break;
         case 'less-certain':
@@ -667,9 +667,7 @@ fetch('latrobe4.json')
     .addTo(map3);
   }
 
- 
-
-  map3.addLayer(certaintyLayers3['Certain Waypoint']);
+   map3.addLayer(certaintyLayers3['Certain Waypoint']);
   map3.addLayer(certaintyLayers3['Less certain Waypoint']);
   map3.addLayer(certaintyLayers3['Uncertain Waypoint']);
 

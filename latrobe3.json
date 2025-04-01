@@ -44,8 +44,8 @@
                 "type": "Point", 
                 "coordinates": [
 
-                    19.55725422607344, 
-                    -34.03353630266554
+                    19.55716346379812, 
+                    -34.03331858424924
                 ] 
             }
         },
@@ -63,7 +63,8 @@
                 ],
                 "closeMatch": [
 
-                    null
+                    "https://www.geonames.org/3369727/bokrivier.html",
+                    "https://www.wikidata.org/wiki/Q56460587"
                 ],
                 "certainty": "uncertain" 
 
@@ -76,8 +77,8 @@
                 "type": "Point", 
                 "coordinates": [
 
-                    19.8437370278806, 
-                    -34.11932205776797
+                    19.85478, 
+                    -34.11450
                 ] 
             }
         },
@@ -240,8 +241,8 @@
                 "type": "point",
                 "coordinates": [
 
-                    20.534633328562357,
-                    -34.045657136259685
+                    20.53375,
+                    -34.01969
                 ]
             }
         },
@@ -761,8 +762,8 @@
                 "type": "point",
                 "coordinates": [
 
-                    23.35007443731331,
-                    -33.862396830605576
+                    23.169613521338068,
+                    -33.795291642431934
                 ]
             }
         },
@@ -899,30 +900,31 @@
             "properties": {
 
                 "title": "Mr. Mey's Farm",
-                "note": "The travellers reached a hill above a farm belonging to Mr. Mey. Here the party splitted to visit Mr. Mey and the farm Ellandsfonteyn in the close surrounding to get new oxen to proceed further. Comparing Latrobes map and a historical map of the same year, it shows that the farm has been called Miegunst. A small settlement of nearly the same name (Misgund) remains until today.", 
+                "note": "The travellers halted at the farmland belonging to Mr. Mey, both on their outbound and return routes. On their outbound here the party splitted to visit Mr. Mey and the farm Ellandsfonteyn in the close surrounding to get new oxen to proceed further. On the return they tried the same but could not get any new oxen. Comparing Latrobes map and a historical map of the same year, it shows that the farm has been called Miegunst. A small settlement of nearly the same name (Misgund) remains until today.", 
                 "role": "visited_nearby",
                 "wasDerivedFrom": [
 
-                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 185",
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 185 (Description of the return route on Page 247 f.)",
                     "https://archive.org/details/journalofvisitto00latr/page/184/mode/2up"
                 ],
                 "closeMatch": [
 
-                    null
+                    "https://www.geonames.org/975726/misgund.html",
+                    "https://www.wikidata.org/wiki/Q13035467"
                 ],
                 "certainty": "certain" 
 
             },
 
-            "time": "1816-03-30", 
+            "time": ["1816-03-30", "1816-04-27"], 
 
             "geometry": {
 
                 "type": "point",
                 "coordinates": [
 
-                    23.494949,
-                    -33.752890
+                    23.493925,
+                    -33.752561
                 ]
             }
         },
@@ -974,7 +976,7 @@
 
                     null
                 ],
-                "certainty": "uncertain" 
+                "certainty": "less-certain" 
 
             },
 
@@ -1027,7 +1029,7 @@
             "properties": {
 
                 "title": "Van Staades Revier",
-                "note": "Before reaching the Van Staades Revier or Van Stadensrivier, as it is called today, Latrobe and his fellows visited two farms - Klaarefonteyn and Kaffre Kraal - of a Mr. Neukirch. Both farms are marked in the map attached to Latrobe's journal but are not to determine on a recent map, since the rivers depickted are traced very poorly or have changed their course drastically since 1816. Thus not beeing able to determine, where the travellers might have been, it is nearly impossible to estimated the exact point, where they forded the Van Staades Revier. The only hint givin is suggesting it must have been south of the mountain range since the party was able to see the indian ocean for a very short periode of time.", 
+                "note": "Before reaching the Van Staades Revier or Van Stadensrivier, as it is called today, Latrobe and his fellows visited two farms - Klaarefonteyn and Kaffre Kraal - of two Brothers Neukirch. Both farms are marked in the map attached to Latrobe's journal but are not to determine on a recent map, since the rivers depickted are traced very poorly or have changed their course drastically since 1816. Thus not beeing able to determine, where the travellers might have been, it is nearly impossible to estimated the exact point, where they forded the Van Staades Revier. The only hint givin is suggesting it must have been south of the mountain range since the party was able to see the indian ocean for a very short periode of time.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -1123,7 +1125,7 @@
             "properties": {
 
                 "title": "Uitenhagen",
-                "note": "Latrobe and his fellows reached the settlement and its drosty and stayed there where they met the landdrost, who helped them with their furtehr journey, but could not house them, since their group was too large. The former Drosty still exists and houses the Drosty Museum of Uitenhage, as the city is called today.", 
+                "note": "Latrobe and his fellows reached the settlement and its drosty on their outbound as well as on their return route. They met the landdrost Colonel Cuyler, who helped them with their furtehr journey, Mr. Allen, the secretary of the Governer at Cape Town and a german Gentleman Mr. Von Buchenrode who supported the groupe by providing meals and supplies on both visits. The former Drosty still exists and houses the Drosty Museum of Uitenhage or Kariega, as the city is called today. (Descriptions of the retourn bound are found on page 239)", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -1138,7 +1140,7 @@
 
             },
 
-            "time": "1816-04-04", 
+            "time": ["1816-04-04", "1816-04-20"], 
 
             "geometry": {
 
@@ -1304,8 +1306,8 @@
                 "type": "point",
                 "coordinates": [
 
-                    25.76809,
-                    -33.27443
+                    25.76343,
+                    -33.27282
                 ]
             }
         },
