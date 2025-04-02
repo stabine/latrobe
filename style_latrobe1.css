@@ -25,7 +25,7 @@ div#map1 {
   border-style: dashed;
   border-width: 2px;
   width: "device-width";
-  height: 100vh;
+  height: 80vh;
 }
 
 div#map2 {
@@ -33,7 +33,7 @@ div#map2 {
   border-style: dashed;
   border-width: 2px;
   width: "device-width";
-  height: 100vh;
+  height: 80vh;
 }
 
 div#map3 {
@@ -42,7 +42,7 @@ div#map3 {
   border-width: 2px;
   margin-bottom: 20px;
   width: "device-width";
-  height: 100vh;
+  height: 80vh;
 }
 
 h1 {
@@ -138,8 +138,23 @@ footer {
     border: 2px solid #004641;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    width: 500px  
+    width: 600px; 
+    max-height: 400px;  
+    box-sizing: border-box;
     
+}
+
+.leaflet-popup-content {
+  padding: 0;  /* Padding innerhalb des Popups für ein wenig Innenabstand */
+  background-color: #fff;
+  max-height: 300px;
+  width: 550px !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: content-box;
+  word-wrap: break-word;
+  white-space: normal;
+  
 }
 
 .leaflet-popup-content h2 {
@@ -170,22 +185,18 @@ footer {
     text-decoration: underline;
   }
 
-.leaflet-popup-content {
-    padding: 10px;  /* Padding innerhalb des Popups für ein wenig Innenabstand */
-    background-color: #fff;
-  }  /* Weißer Hintergrund für bessere Lesbarkeit */
-
+ 
 .leaflet-control-layers {
     z-index: 10000 !important;
   }
 
 .info-group {
     margin-bottom: 0px;
-    padding: 0px;
+    padding-left: 10px;
+    width: 100%;
   }
 
 .subtitle {
-    display: inline-block;
     font-size: 13px;
     letter-spacing: 0.8px;  /* Kursiv für den Untertitel */
     color: #666;         /* Ein sanfteres Grau für den Untertitel */
@@ -216,12 +227,71 @@ footer {
   margin-right: 5px;
 }
 
+.legend-map1 {
+  background: white;
+  padding: 10px;
+  line-height: 1.5;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.legend-map1 .legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.legend-map1 .legend-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.legend-map1 .legend-line {
+  width: 30px;
+  height: 5px;
+  display: inline-block;
+  opacity: 0.4;
+  margin-right: 8px;
+}
+
+.legend-map2 {
+  background: white;
+  padding: 10px;
+  line-height: 1.5;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.legend-map2 .legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.legend-map2 .legend-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.legend-map2 .legend-line {
+  width: 30px;
+  height: 5px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
 .legend-map3 {
   background: white;
   padding: 10px;
   line-height: 1.5;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .legend-map3 .legend-item {
@@ -231,8 +301,8 @@ footer {
 }
 
 .legend-map3 .legend-circle {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   display: inline-block;
   margin-right: 8px;
@@ -249,20 +319,31 @@ footer {
   margin-top: 20px;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 12px;
+  line-height: 1.5;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 30%;
+  height: 120px;
+  position: relative;
+  left: 35%;
 }
+
 
 #slider-value1 {
   display: block;
-  margin-top: 10px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .time-slider1 {
-  width: 20%; /* Slider auf volle Breite setzen */
+  width: 80%; /* Slider auf volle Breite setzen */
   margin: 20px 0; /* Abstand oben und unten */
   display: block; /* Block-Level-Element, um Platz zu nehmen */
   position: relative; /* Fixiert den Slider unten auf der Seite */
   bottom: 10px; /* 10px vom unteren Rand */
-  left: 40%;
-  z-index: 1000000; /* Über andere Inhalte legen */
+  left: 10%;
+  z-index: 600; /* Über andere Inhalte legen */
 }

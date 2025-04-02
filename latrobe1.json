@@ -27,7 +27,12 @@
                 "title": "Gravesend",
                 "note": "Smal settlement on the english east coast. Starting point of the journey.", 
                 "role": "visited",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 1",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 1",
+                    "https://archive.org/details/journalofvisitto00latr/page/1/mode/2up"
+                    
+                    ],
                 "closeMatch": [
 
                     "http://sws.geonames.org/12265368/",
@@ -57,7 +62,13 @@
                 "title": "Margate Roads",
                 "note": "Coast town, which is called Margate today. Anchoring place for overnight stay.", 
                 "role": "visited",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 1",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 1",
+                    "https://archive.org/details/journalofvisitto00latr/page/1/mode/2up"
+
+                ],
+
                 "closeMatch": [
 
                     "https://www.geonames.org/2643044/margate.html",
@@ -85,7 +96,11 @@
                 "title": "South Foreland",
                 "note": "Southeastern headland near Dover, England, Great Britain.", 
                 "role": "visited_nearby",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 1",
+                "wasDerivedFrom": [
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 1",
+                    "https://archive.org/details/journalofvisitto00latr/page/1/mode/2up"
+                ],
+
                 "closeMatch": [
 
                     "https://www.geonames.org/2637420/south-foreland.html",
@@ -114,7 +129,12 @@
                 "title": "Strait of Dover",
                 "note": "Described in the Journal by <i>the coasts of England and France as we passed between Dover and Calais</i>", 
                 "role": "visited",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 1",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 1",
+                    "https://archive.org/details/journalofvisitto00latr/page/1/mode/2up"
+                ],
+
                 "closeMatch": [
                     "https://www.geonames.org/3020870/strait-of-dover.html",
                     "https://www.wikidata.org/wiki/Q159898"
@@ -144,7 +164,12 @@
                 "title": "Isle of Wight",
                 "note": "The ship passed the isle on the south.", 
                 "role": "visited_nearby",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 1",
+                "wasDerivedFrom": [
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 1",
+                    "https://archive.org/details/journalofvisitto00latr/page/1/mode/2up"
+                ],
+                
+                
                 "closeMatch": [
                     "https://www.geonames.org/2633939/isle-of-wight.html",
                     "https://www.wikidata.org/wiki/Q9679"
@@ -174,8 +199,15 @@
                 "title": "240 miles off the coast of Portugal",
                 "note": "The ship passes the coast of Portugal in a distance of 240 english miles (admiralty miles). Since there is no further description, the waypoint is an estimated coordinate, set to give an idea of the distance to the coast.", 
                 "role": "visited",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 5",
-                "closeMatch": [ "null"],
+                "wasDerivedFrom": [
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 5",
+                    "https://archive.org/details/journalofvisitto00latr/page/4/mode/2up"
+                ],
+
+                "closeMatch": [ 
+                    null,
+                    null
+                ],
 
                 "certainty": "uncertain" 
             },
@@ -201,7 +233,11 @@
                 "title": "Porto Santo",
                 "note": "The Journal describes <i>Certain rocks, marked in our charts as lying to the north of Porto Santo, and called the eight stones</i>. The ship therefore probably passes the island in the north. However the mentioned rocks are by now proven to be a myth. Furthermore Latrobe describes the difficulties of navigation and mentiones that the dead reckoning differed from chronometer by around 100 to 140 Miles (admiralty miles).", 
                 "role": "visited_nearby",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 9",
+                "wasDerivedFrom": [
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 9",
+                    "https://archive.org/details/journalofvisitto00latr/page/8/mode/2up"
+                ],
+
                 "closeMatch": [
                     "https://www.geonames.org/2264401/ilha-de-porto-santo.html",
                     "https://www.wikidata.org/wiki/Q14206042"
@@ -231,7 +267,7 @@
                 "title": "Madeira",
                 "note": "The ship passes the island far east, but still in visible distance.", 
                 "role": "visited_nearby",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 9",
+                "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 9", "https://archive.org/details/journalofvisitto00latr/page/8/mode/2up"],
                 "closeMatch": [
                     "https://www.geonames.org/2266874/ilha-da-madeira.html",
                     "https://www.wikidata.org/wiki/Q30188"
@@ -261,7 +297,7 @@
                 "title": "Salvages",
                 "note": "The ship passed the islands which are by today refered to as Ilhas Selvagens in the northwest.", 
                 "role": "visited_nearby",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 11",
+                "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 11","https://archive.org/details/journalofvisitto00latr/page/10/mode/2up"],
                 "closeMatch": [
                     "https://www.geonames.org/2263082/ilhas-selvagens.html",
                     "https://www.wikidata.org/wiki/Q63378400"
@@ -291,7 +327,7 @@
                 "title": "Piton Rocks",
                 "note": "Latrobe referes to these while describing the Ilhas Selvagens. It is possible, that he referes to the isles of Selvagem Pequena and Fora Islet, but sources for these names are very rare and ought to be questioned critically.", 
                 "role": "visited_nearby",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 11",
+                "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 11","https://archive.org/details/journalofvisitto00latr/page/10/mode/2up"],
                 "closeMatch": [
                     "https://en.wikipedia.org/wiki/Savage_Islands#Geography"
                 ],
@@ -320,7 +356,7 @@
                 "title": "Peak of Teneriffe, at about eighty miles distance",
                 "note": "The Ship is going south from the Ilhas Sevagens. Latrobe describes this point vaguely since he is not giving any direction towards which the peak is visible. Therefore the point set here is more of an estimation.", 
                 "role": "visited",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 12",
+                "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 12", "https://archive.org/details/journalofvisitto00latr/page/12/mode/2up"],
                 "closeMatch": [
                     "https://www.geonames.org/2510569/pico-de-teide.html",
                     "https://www.wikidata.org/wiki/Q38954"
@@ -350,7 +386,7 @@
                 "title": "Teneriffe",
                 "note": "The Ship passes the island of Tenerife probably in the northwest within a distance of approximately 80 Miles (admiralty miles).", 
                 "role": "visited_nearby",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 12",
+                "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 12", "https://archive.org/details/journalofvisitto00latr/page/12/mode/2up"],
                 "closeMatch": [
                     "https://www.geonames.org/2510529/tenerife.html",
                     "https://www.wikidata.org/wiki/Q40846"
@@ -380,7 +416,7 @@
                 "title": "Palma",
                 "note": "The island of La Palma is described as in sight since 25th but to no specified direction. The ship passed it west of the island three days later and described as <i>so close [...] that we could distinctly discern every object on shore.</i>.", 
                 "role": "visited_nearby",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 12",
+                "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 12", "https://archive.org/details/journalofvisitto00latr/page/12/mode/2up"],
                 "closeMatch": [
                     "https://www.geonames.org/2515680/la-palma.html",
                     "https://www.wikidata.org/wiki/Q201689"
@@ -410,7 +446,7 @@
                 "title": "Sal",
                 "note": "The island of Sal as part of the Cape Verde was aproached, most likely from the north. An exact distance or direction however is not given.", 
                 "role": "visited_nearby",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 15",
+                "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 15", "https://archive.org/details/journalofvisitto00latr/page/14/mode/2up"],
                 "closeMatch": [
                     "https://www.geonames.org/3374248/sal-island.html",
                     "https://www.wikidata.org/wiki/Q111989"
@@ -440,7 +476,7 @@
                 "title": "Bonavista",
                 "note": "The island today known as Boa Vista was passed by the Ship on its eastern coast. An exact distance or coordinates were not described. ", 
                 "role": "visited_nearby",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 16",
+                "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 16", "https://archive.org/details/journalofvisitto00latr/page/16/mode/2up"],
                 "closeMatch": [
                     "https://www.geonames.org/3374854/ilha-da-boa-vista.html",
                     "https://www.wikidata.org/wiki/Q110440"
@@ -470,7 +506,7 @@
                 "title": "Mayo",
                 "note": "The ship passes the isle of Maio without Latrobe beeing able to see the isle because of <i>thick mist</i> as he describes it.", 
                 "role": "visited_nearby",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 16",
+                "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 16", "https://archive.org/details/journalofvisitto00latr/page/16/mode/2up"],
                 "closeMatch": [
                     "https://www.geonames.org/3374486/ilha-do-maio.html",
                     "https://www.wikidata.org/wiki/Q492551"
@@ -500,7 +536,7 @@
                 "title": "Atlantic Ocean - Letter 1",
                 "note": "Latrobe has given these coordinates at the beginning of a letter dedicated to his eldest son Peter.", 
                 "role": "visited",
-                "wasDerivedFrom": "Letters to my Children; written at sea during a Voyage to the Cape of Good Hope, in 1815, Containing a Memorial of some occurrences in my past life. - Page 1",
+                "wasDerivedFrom": ["Letters to my Children; written at sea during a Voyage to the Cape of Good Hope, in 1815, Containing a Memorial of some occurrences in my past life. - Page 1", "https://searchworks.stanford.edu/view/15032921"],
                 "closeMatch": [
                     null
                 ],
@@ -529,7 +565,7 @@
                 "title": "Atlantic Ocean - Letter 2",
                 "note": "Latrobe has given these coordinates at the beginning of a letter dedicated to his eldest daugther Charlotte.", 
                 "role": "visited",
-                "wasDerivedFrom": "Letters to my Children; written at sea during a Voyage to the Cape of Good Hope, in 1815, Containing a Memorial of some occurrences in my past life. - Page 13",
+                "wasDerivedFrom": ["Letters to my Children; written at sea during a Voyage to the Cape of Good Hope, in 1815, Containing a Memorial of some occurrences in my past life. - Page 13", "https://searchworks.stanford.edu/view/15032921"],
                 "closeMatch": [
                     null
                 ],
@@ -558,7 +594,7 @@
                 "title": "Atlantic Ocean - Letter 3",
                 "note": "Latrobe has given these coordinates at the beginning of a letter dedicated to his second eldest daugther Agnes.", 
                 "role": "visited",
-                "wasDerivedFrom": "Letters to my Children; written at sea during a Voyage to the Cape of Good Hope, in 1815, Containing a Memorial of some occurrences in my past life. - Page 26",
+                "wasDerivedFrom": ["Letters to my Children; written at sea during a Voyage to the Cape of Good Hope, in 1815, Containing a Memorial of some occurrences in my past life. - Page 26", "https://searchworks.stanford.edu/view/15032921"],
                 "closeMatch": [
                     null
                 ],
@@ -586,7 +622,7 @@
                 "title": "Atlantic Ocean - Letter 4",
                 "note": "Latrobe has given these coordinates at the beginning of a letter dedicated to his second eldest son John.", 
                 "role": "visited",
-                "wasDerivedFrom": "Letters to my Children; written at sea during a Voyage to the Cape of Good Hope, in 1815, Containing a Memorial of some occurrences in my past life. - Page 46",
+                "wasDerivedFrom": ["Letters to my Children; written at sea during a Voyage to the Cape of Good Hope, in 1815, Containing a Memorial of some occurrences in my past life. - Page 46", "https://searchworks.stanford.edu/view/15032921"],
                 "closeMatch": [
                     null
                 ],
@@ -615,7 +651,7 @@
                 "title": "Atlantic Ocean - Letter 5",
                 "note": "Latrobe has given these coordinates at the beginning of a letter dedicated to his son Joseph.", 
                 "role": "visited",
-                "wasDerivedFrom": "Letters to my Children; written at sea during a Voyage to the Cape of Good Hope, in 1815, Containing a Memorial of some occurrences in my past life. - Page 66",
+                "wasDerivedFrom": ["Letters to my Children; written at sea during a Voyage to the Cape of Good Hope, in 1815, Containing a Memorial of some occurrences in my past life. - Page 66", "https://searchworks.stanford.edu/view/15032921"],
                 "closeMatch": [
                     null
                 ],
@@ -644,7 +680,7 @@
                 "title": "Robben Island",
                 "note": "The ship approached the island coming from northwest into the Table Bay and passed it close by its west coast.", 
                 "role": "visited_nearby",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 31",
+                "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 31", "https://archive.org/details/journalofvisitto00latr/page/30/mode/2up"],
                 "closeMatch": [
                     "https://www.geonames.org/3362356/robben-island.html",
                     "https://www.wikidata.org/wiki/Q192493"
@@ -673,8 +709,8 @@
 
                 "title": "Capetown",
                 "note": "On christmas eve 1815 Latrobe's ship reached the city of Cape Town, in the Colony of South Africa.", 
-                "role": "",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page X",
+                "role": "visited",
+                "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 31", "https://archive.org/details/journalofvisitto00latr/page/30/mode/2up"],
                 "closeMatch": [
                     "https://www.geonames.org/3369157/cape-town.html",
                     "https://www.wikidata.org/wiki/Q5465"

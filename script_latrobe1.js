@@ -76,7 +76,7 @@ slider1.addEventListener("input", function () {
   let selectedDate1 = [...uniqueDates1][slider1.value]; // Holen des Datums aus der Set
   let dateObj = new Date(selectedDate1); // Umwandeln in ein Date-Objekt
   let formattedDate = formatDate(dateObj); // Formatieren des Datums
-  sliderValue1.textContent = `Selected Date: ${formattedDate}`; // Wert anzeigen
+  sliderValue1.textContent = `Date: ${formattedDate}`; // Wert anzeigen
 });
 
 
@@ -117,14 +117,14 @@ fetch('latrobe1.json')
           color1 = "#BF4D00";
           break;
         case 'uncertain':
-          color1 = "#e91e63";
+          color1 = "#5B215E";
           break;
       }
 
 
       switch(role1) {
         case 'visited':
-          radius1 = 5000;
+          radius1 = 8000;
           opacity1 = 1; // opaque
           break;
         case 'visited_nearby':
@@ -140,11 +140,17 @@ fetch('latrobe1.json')
       //---------------------HTML-ish----------------------- 
       //Creating the popup content for each place 
       const popupContent1 = `
-        <h3>${title1}</h3>
+        
         <div class="info-group">
+          <h3>${title1}</h3>
           <p class="subtitle">Role: ${role1}</p>
-          <p><strong>References:</strong><br><a href="${closeMatch1[0]}" target="_blank">GeoNames</a>
-          <br><a href="${closeMatch1[1]}" target="_blank">WikiData</a></p>
+          ${closeMatch1[0] !== null || closeMatch1[1] !== null ? `
+            <p><strong>References:</strong><br>
+              ${closeMatch1[0] !== null ? `<a href="${closeMatch1[0]}" target="_blank">GeoNames</a>` : ''}
+              <br>
+              ${closeMatch1[1] !== null ? `<a href="${closeMatch1[1]}" target="_blank">WikiData</a>` : ''}
+            </p>
+          ` : ''}
         </div>
 
         <div class="info-group">
@@ -160,7 +166,7 @@ fetch('latrobe1.json')
         <div class="info-group">
           <p><strong>Coordinates:</strong> [${lng1}, ${lat1}]</p>
           <p><strong>Date:</strong> ${time1}</p>
-          ${wasDerivedFrom1 ? `<p><strong>Source:</strong><br>${wasDerivedFrom1}`: ''}
+          ${wasDerivedFrom1 ? `<p><strong>Source:</strong><br><a href="${wasDerivedFrom1[1]}" target="blank">${wasDerivedFrom1[0]}</a>`: ''}
         </div>
       `;
 
@@ -223,23 +229,25 @@ fetch('latrobe1.json')
     
   // Legende
 
-  legend1.onAdd = function () {
-    var div = L.DomUtil.create('div', 'info legend');
-    var levels1 = ["certain", "less-certain", "uncertain"];
-    var colors1 = ["#09556B", "#BF4D00", "#e91e63"];
-    
-    // Füge Einträge für jedes Level hinzu
-    for (var i = 0; i < levels1.length; i++) {
-      div.innerHTML +=
-        '<i style="background:' + colors1[i] + '"></i> ' +
-        (levels1[i] === "certain" ? 'Certain' :
-        (levels1[i] === "less-certain" ? 'Less Certain' : 'Uncertain')) + '<br>';
-    }
-  
-    return div;
-  };
+   // Legende erstellen
+const legend1= L.control({ position: "bottomleft" });
 
-  legend1.addTo(map1)
+legend1.onAdd = function () {
+    const div = L.DomUtil.create("div", "legend-map1");
+    div.innerHTML = `
+        <div style="margin-bottom:5px;"><strong>Certainty Levels</strong></div>
+        <div class="legend-item"><span class="legend-circle" style="background:#09556B;"></span> Certain</div>
+        <div class="legend-item"><span class="legend-circle" style="background:#BF4D00;"></span> Less certain</div>
+        <div class="legend-item"><span class="legend-circle" style="background:#5B215E;"></span> Uncertain</div>
+        <div class="legend-item" style="margin-top:10px;"><span class="legend-line" style="background:#50052b;"></span> Historical Trade Route</div>
+    `;
+
+    return div;
+};
+
+// Legende zur Karte hinzufügen
+legend1.addTo(map1);
+
     // Layer control for switching between base maps and overlay layers
     const baseMaps = {
       "OpenStreetMap": osm1 //naming the variables mit strings; add ',' after 'osm' when using more map-layers
@@ -347,11 +355,18 @@ fetch('latrobe2.json')
 
     // set markers and popup
       const popupContent2 = `
+          
           <h3>${title2}</h3>
           <div class="info-group">
             <p class="subtitle">Role: ${role2}</p>
-            <p><strong>References:</strong><br><a href="${closeMatch2[0]}" target="_blank">GeoNames</a>
-            <br><a href="${closeMatch2[1]}" target="_blank">WikiData</a></p>
+
+            ${closeMatch2[0] !== null || closeMatch2[1] !== null ? `
+            <p><strong>References:</strong><br>
+              ${closeMatch2[0] !== null ? `<a href="${closeMatch2[0]}" target="_blank">GeoNames</a>` : ''}
+              <br>
+              ${closeMatch2[1] !== null ? `<a href="${closeMatch2[1]}" target="_blank">WikiData</a>` : ''}
+            </p>
+            ` : ''}
           </div>
 
           <div class="info-group">
@@ -367,8 +382,9 @@ fetch('latrobe2.json')
           <div class="info-group">
             <p><strong>Coordinates:</strong> [${lng2}, ${lat2}]</p>
             <p><strong>Date:</strong> ${time2}</p>
-            ${wasDerivedFrom2 ? `<p><strong>Source:</strong><br>${wasDerivedFrom2}`: ''}
+            ${wasDerivedFrom2 ? `<p><strong>Source:</strong><br><a href="${wasDerivedFrom2[1]}" target="blank">${wasDerivedFrom2[0]}</a>`: ''}
           </div>
+          
         `;
 
       // set marker based on certainty level 
@@ -380,17 +396,17 @@ fetch('latrobe2.json')
         case 'certain':
           radius2 = 5; 
           opacity2 = 1;
-          color2 = "green";
+          color2 = "#008078";
           break;
         case 'less-certain':
           radius2 = 20; 
           opacity2 = 0.6;
-          color2 = "yellow";
+          color2 = "#FF9800";
           break;
         case 'uncertain':
           radius2 = 30; 
           opacity2 = 0.4;
-          color2 = "red";
+          color2 = "#50052b";
           break;
       }
 
@@ -454,6 +470,23 @@ fetch('latrobe2.json')
   })
   .catch(err => console.error('Fehler beim Laden der GeoJSON-Datei:', err));
 
+ // Legende erstellen
+const legend2 = L.control({ position: "bottomleft" });
+
+legend2.onAdd = function () {
+    const div = L.DomUtil.create("div", "legend-map2");
+    div.innerHTML = `
+        <div style="margin-bottom:5px;"><strong>Certainty Levels</strong></div>
+        <div class="legend-item"><span class="legend-circle" style="background:#008078;"></span> Certain</div>
+        <div class="legend-item"><span class="legend-circle" style="background:#FF9800;"></span> Less certain</div>
+        <div class="legend-item" style="margin-top:10px;"><span class="legend-line" style="background:#50052b;"></span> Route</div>
+    `;
+
+    return div;
+};
+
+// Legende zur Karte hinzufügen
+legend2.addTo(map2);
 
 
   // -------------------Map3 initialization, pre-set location Cape Colony; topografical map------------------------------
@@ -516,8 +549,14 @@ map3.getPane('linesPane3').style.zIndex = 600; // Niedrigerer z-Index für Linie
           <h3>${title3}</h3>
           <div class="info-group">
             <p class="subtitle">Role: ${role3}</p>
-            <p><strong>References:</strong><br><a href="${closeMatch3[0]}" target="_blank">GeoNames</a>
-            <br><a href="${closeMatch3[1]}" target="_blank">WikiData</a></p>
+
+            ${closeMatch3[0] !== null || closeMatch3[1] !== null ? `
+            <p><strong>References:</strong><br>
+              ${closeMatch3[0] !== null ? `<a href="${closeMatch3[0]}" target="_blank">GeoNames</a>` : ''}
+              <br>
+              ${closeMatch3[1] !== null ? `<a href="${closeMatch3[1]}" target="_blank">WikiData</a>` : ''}
+            </p>
+            ` : ''}
           </div>
 
           <div class="info-group">
@@ -526,8 +565,8 @@ map3.getPane('linesPane3').style.zIndex = 600; // Niedrigerer z-Index für Linie
           </div>
 
           <div class="info-group">
-            <h3>Notes:</h3>
-            <p>${note3}</p>
+            <p><strong>Notes:</strong><br>
+            ${note3}</p>
           </div>
 
           <div class="info-group">
@@ -575,7 +614,7 @@ map3.getPane('linesPane3').style.zIndex = 600; // Niedrigerer z-Index für Linie
     // Add Marker to allMarkersLayer (for "Select All")
     allMarkersLayer3.addLayer(marker3);
 
-    marker3.bringToFront();  
+      
 
     // -----------------------------Add marker to the appropriate LayerGroup based on Certainty-type-------------------------------
       switch (certainty3) {
@@ -641,8 +680,14 @@ fetch('latrobe4.json')
           <h3>${title4}</h3>
           <div class="info-group">
             <p class="subtitle">Role: ${role4}</p>
-            <p><strong>References:</strong><br><a href="${closeMatch4[0]}" target="_blank">GeoNames</a>
-            <br><a href="${closeMatch4[1]}" target="_blank">WikiData</a></p>
+
+            ${closeMatch4[0] !== null || closeMatch4[1] !== null ? `
+            <p><strong>References:</strong><br>
+              ${closeMatch4[0] !== null ? `<a href="${closeMatch4[0]}" target="_blank">GeoNames</a>` : ''}
+              <br>
+              ${closeMatch4[1] !== null ? `<a href="${closeMatch4[1]}" target="_blank">WikiData</a>` : ''}
+            </p>
+            ` : ''}
           </div>
 
           <div class="info-group">
@@ -700,8 +745,7 @@ fetch('latrobe4.json')
     // Add Marker to allMarkersLayer (for "Select All")
     allMarkersLayer3.addLayer(marker4);
 
-    marker4.bringToFront();  
-
+   
     // -----------------------------Add marker to the appropriate LayerGroup based on Certainty-type-------------------------------
       switch (certainty4) {
         case 'certain':
@@ -732,7 +776,7 @@ fetch('latrobe4.json')
     .addTo(map3);
   }
 
-   map3.addLayer(certaintyLayers3['Certain Waypoint']);
+  map3.addLayer(certaintyLayers3['Certain Waypoint']);
   map3.addLayer(certaintyLayers3['Less certain Waypoint']);
   map3.addLayer(certaintyLayers3['Uncertain Waypoint']);
 
@@ -754,15 +798,15 @@ fetch('latrobe4.json')
   // Legende erstellen
 const legend3 = L.control({ position: "bottomleft" });
 
-legend3.onAdd = function (map3) {
+legend3.onAdd = function () {
     const div = L.DomUtil.create("div", "legend-map3");
     div.innerHTML = `
-        <div><strong>Certainty Levels</strong></div>
+        <div style="margin-bottom:5px;"><strong>Certainty Levels</strong></div>
         <div class="legend-item"><span class="legend-circle" style="background:#008078;"></span> Certain</div>
         <div class="legend-item"><span class="legend-circle" style="background:#FF9800;"></span> Less certain</div>
         <div class="legend-item"><span class="legend-circle" style="background:#50052b;"></span> Uncertain</div>
         
-        <div style="margin-top:10px;"><strong>Routes</strong></div>
+        <div style="margin-top:10px; margin-bottom:5px;"><strong>Routes</strong></div>
         <div class="legend-item"><span class="legend-line" style="background:#004641;"></span> Route Outbound</div>
         <div class="legend-item"><span class="legend-line" style="background:#8B0000;"></span> Route Return</div>
     `;

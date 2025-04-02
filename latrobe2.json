@@ -22,12 +22,13 @@
             "id": "l2_01",
             "properties": {
 
-                "title": "Missionhouse",
-                "note": "This mark is pinned to the Mission House. It's western part was inhabited by Sister Kohrhammer who moved to a different place during Latrobes visit, so he could stay there at a maximum of comfort. It is a very likely starting point for Latrobes explorations of the village and the surroundings.", 
+                "title": "Mission House",
+                "note": "This mark is pinned to the Mission House. Its western part was inhabited by Sister Kohrhammer who moved to a different place during Latrobes visit, so he could stay there at a maximum of comfort. It is a very likely starting point for Latrobes explorations of the village and the surroundings.", 
                 "role": "visited",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 63",
+                "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 63", "https://archive.org/details/journalofvisitto00latr/page/62/mode/2up"],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "less-certain" 
@@ -50,12 +51,14 @@
             "id": "l2_02",
             "properties": {
 
-                "title": "Settlement",
-                "note": "In a plan of the Missionary and Settlement of 1799 it shows this place to be where the huts of the Khoikhois where situated.", 
+                "title": "Khoikhoi Settlement",
+                "note": "In a map of the Missionary and Settlement of 1799 it shows this place to be where the huts of the Khoikhois where situated.", 
                 "role": "visited",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 61",
+                "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 61", "https://archive.org/details/journalofvisitto00latr/page/60/mode/2up"],
                 "closeMatch": [
 
+                    null,
+                    null,
                     "https://dfg-viewer.de/show/?tx_dlf%5Bpage%5D=1&tx_dlf%5Bdouble%5D=0&tx_dlf%5Bid%5D=https://www.unitaetsarchiv.findbuch.net/php/view.php?link=5453x5859#path=../pics/B.._Grafik%20f%C3%BCr%20Augias._~TS%20f%C3%BCr%20Augias._~Mp_343_11-.jpg"
                 ],
                 "certainty": "less-certain" 
@@ -79,11 +82,12 @@
             "properties": {
 
                 "title": "Brother Schmidt's Pear Tree",
-                "note": "This marks the place of the first peartree planted by the first Missionar Brother George Schmidt. At the very same spot the Moravians planted pear trees again and again until this day.", 
+                "note": "This marks the place of the first pear tree planted by the first Missionar Brother George Schmidt. At the very same spot the Moravians planted pear trees again and again until this day.", 
                 "role": "visited",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 62",
+                "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 62", "https://archive.org/details/journalofvisitto00latr/page/62/mode/2up"],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "certain" 
@@ -107,11 +111,12 @@
             "properties": {
 
                 "title": "Burial Ground",
-                "note": "The Burial Ground of Gnadenthal was moved severaal times due to too many tombs. While in a plan of 1799 it is marked south of the great garden, Latrobe describes it 1816 as westward to it. There until today old gravestones can be found.", 
+                "note": "The Burial Ground of Gnadenthal was moved several times due to too many tombs. While in a map of 1799 it is marked south of the great garden, Latrobe describes it 1816 as westward to it. There until today old gravestones can be found.", 
                 "role": "visited",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 62",
+                "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 62", "https://archive.org/details/journalofvisitto00latr/page/62/mode/2up"],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "certain" 
@@ -137,9 +142,10 @@
                 "title": "Bavians Kloof",
                 "note": "The valley behind the Settlement is called Baviaans Kloof (Baboon valley) and was formed by the Baviaans River, which passes trhough the village and later joines into the River Sonderend.", 
                 "role": "visited",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 62",
+                "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 62", "https://archive.org/details/journalofvisitto00latr/page/62/mode/2up"],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "less-certain" 
@@ -165,9 +171,10 @@
                 "title": "Church of Gnadenthal",
                 "note": "The Church is the central point of the village. Build in 1799 it lastet nearly a century and was rebuild at the very same place in 1891.", 
                 "role": "visited",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 62",
+                "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 62", "https://archive.org/details/journalofvisitto00latr/page/62/mode/2up"],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "certain" 
@@ -193,9 +200,10 @@
                 "title": "Mission House",
                 "note": "After evening service Latrobe spend the night at the appartment given to him by sister Kohrhammer.", 
                 "role": "visited",
-                "wasDerivedFrom": "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 63",
+                "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 63", "https://archive.org/details/journalofvisitto00latr/page/62/mode/2up"],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "certain"

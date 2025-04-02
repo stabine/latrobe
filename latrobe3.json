@@ -96,6 +96,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "uncertain" 
@@ -153,7 +154,7 @@
 
                 "title": "Leuwe Revier",
                 "note": "The Travellers forded the Leuwe Revier (Leeurivier) near a farm. An exact position can not be determined since there are no further descriptions.", 
-                "role": "visited/visited_nearby",
+                "role": "visited",
                 "wasDerivedFrom": [
 
                     "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 124",
@@ -161,6 +162,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "uncertain" 
@@ -219,7 +221,7 @@
 
                 "title": "Bueffeljagd's Revier ",
                 "note": "The Group fords the River today called Buffeljagsrivier after leaving Zwellendam to the east. The exact position was not described, therefore the marker remains less certain.", 
-                "role": "visited/visited_nearby",
+                "role": "visited",
                 "wasDerivedFrom": [
 
                     "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 128",
@@ -326,6 +328,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "uncertain" 
@@ -358,6 +361,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "uncertain" 
@@ -390,6 +394,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "less-certain" 
@@ -579,7 +584,7 @@
 
                 "title": "Kayman's Gat",
                 "note": "Latrobe describes this place as a beautiful glen which is very hard to pass. He writes of the Zwart Revier (Swartrivier) joining the glen too, which makes this point the most likely fording place of the travellers.", 
-                "role": "visited/visited_nearby",
+                "role": "visited",
                 "wasDerivedFrom": [
 
                     "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 150 ff.",
@@ -587,6 +592,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "less-certain" 
@@ -619,6 +625,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "uncertain" 
@@ -684,6 +691,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "uncertain" 
@@ -717,6 +725,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "less-certain" 
@@ -749,6 +758,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "uncertain" 
@@ -781,6 +791,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "uncertain" 
@@ -845,6 +856,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "uncertain" 
@@ -877,6 +889,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "uncertain" 
@@ -942,6 +955,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "less-certain" 
@@ -974,6 +988,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "less-certain" 
@@ -1006,6 +1021,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "less-certain" 
@@ -1038,6 +1054,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "uncertain" 
@@ -1070,6 +1087,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "certain" 
@@ -1102,6 +1120,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "certain" 
@@ -1134,6 +1153,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "certain" 
@@ -1166,6 +1186,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "uncertain" 
@@ -1198,6 +1219,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "less-certain" 
@@ -1229,6 +1251,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "certain" 
@@ -1261,6 +1284,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "uncertain" 
@@ -1293,6 +1317,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "uncertain" 
@@ -1325,6 +1350,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "less-certain" 
@@ -1390,6 +1416,7 @@
                 ],
                 "closeMatch": [
 
+                    null,
                     null
                 ],
                 "certainty": "uncertain" 
