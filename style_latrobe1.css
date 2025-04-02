@@ -347,3 +347,36 @@ footer {
   left: 10%;
   z-index: 600; /* Über andere Inhalte legen */
 }
+
+#slider-container2{
+  margin-top: 20px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 12px;
+  line-height: 1.5;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 30%;
+  height: 120px;
+  position: relative;
+  left: 35%;
+}
+
+
+#slider-value2 {
+  display: block;
+  font-size: 13px;
+}
+
+.time-slider2 {
+  width: 80%; /* Slider auf volle Breite setzen */
+  margin: 20px 0; /* Abstand oben und unten */
+  display: block; /* Block-Level-Element, um Platz zu nehmen */
+  position: relative; /* Fixiert den Slider unten auf der Seite */
+  bottom: 10px; /* 10px vom unteren Rand */
+  left: 10%;
+  z-index: 600; /* Über andere Inhalte legen */
+}

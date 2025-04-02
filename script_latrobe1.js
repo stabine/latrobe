@@ -37,7 +37,6 @@ var osm1 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 });
 osm1.addTo(map1);
 
-var legend1 = L.control({ position: 'bottomleft' });   
 
 // Initialisation of Layer for all Markers ???
 const allMarkersLayer1 = L.layerGroup(); // Layer for all Markers
@@ -333,6 +332,36 @@ const certaintyLayers2 = {
     'Uncertain Waypoint': L.layerGroup(),
 };
 
+let markersWithDates2 = [];
+let uniqueDates2 = new Set();
+
+// -----Time Slider Setup 2-----
+const slider2 = document.createElement("input");
+slider2.type = "range";
+slider2.min = 0;
+slider2.value = 0;
+slider2.className = "time-slider2";
+document.getElementById("slider-container2").appendChild(slider2);
+
+const sliderValue2 = document.createElement("span");
+sliderValue2.id = "slider-value2";
+document.getElementById("slider-container2").appendChild(sliderValue2);
+
+function formatDate(date) {
+  let day = date.getDate().toString().padStart(2, '0'); // Tag
+  let month = (date.getMonth() + 1).toString().padStart(2, '0'); // Monat
+  let year = date.getFullYear(); // Jahr
+  
+  return `${day}.${month}.${year}`;
+}
+
+slider2.addEventListener("input", function () {
+  let selectedDate2 = [...uniqueDates1][slider2.value]; // Holen des Datums aus der Set
+  let dateObj2 = new Date(selectedDate2); // Umwandeln in ein Date-Objekt
+  let formattedDate2 = formatDate(dateObj2); // Formatieren des Datums
+  sliderValue2.textContent = `Date: ${formattedDate2}`; // Wert anzeigen
+});
+
 fetch('latrobe2.json')
   .then(response => response.json())
   .then(data3 => {
@@ -351,7 +380,10 @@ fetch('latrobe2.json')
       const closeMatch2 = feature.properties.closeMatch;
       const certainty2 = feature.properties.certainty;
       const time2 = feature.time;
+
+      const date2 = new Date(time2);
     
+      uniqueDates2.add(date2);
 
     // set markers and popup
       const popupContent2 = `
@@ -423,6 +455,8 @@ fetch('latrobe2.json')
 
     // Add Marker to allMarkersLayer (for "Select All")
     allMarkersLayer2.addLayer(marker2);
+    marker2.time = date2;
+    markersWithDates2.push(marker2);
 
       
 
@@ -455,6 +489,25 @@ fetch('latrobe2.json')
     map2.addLayer(certaintyLayers2['Less certain Waypoint']);
     map2.addLayer(certaintyLayers2['Uncertain Waypoint']);
 
+    slider2.max = [...uniqueDates2].length - 1;
+    slider2.oninput = function () {
+      let selectedDate2 = [...uniqueDates2][this.value];
+      markersWithDates2.forEach(marker2 => {
+        if (marker2.time <= selectedDate2) {
+          map2.addLayer(marker2);
+        } else {
+          map2.removeLayer(marker2);
+        }
+      });
+    };
+
+    let selectedDate2 = [...uniqueDates2][slider2.value];
+    markersWithDates2.forEach(marker2 => {
+      if (marker2.time <= selectedDate2) {
+        map2.addLayer(marker2);
+      }
+    });
+
     // Layer control for switching between base maps and overlay layers
     const baseMap2 = {
       "OpenStreetMap": osm2 //naming the variables mit strings; add ',' after 'osm' when using more map-layers
@@ -469,6 +522,13 @@ fetch('latrobe2.json')
     
   })
   .catch(err => console.error('Fehler beim Laden der GeoJSON-Datei:', err));
+
+  if (uniqueDates2.size > 0) {
+    slider2.max = [...uniqueDates2].length - 1;
+    let initialDate2 = [...uniqueDates2][slider2.value];
+    let initialDateObj2 = new Date(initialDate2);
+    sliderValue2.textContent = `Date: ${formatDate(initialDateObj2)}`;
+  }
 
  // Legende erstellen
 const legend2 = L.control({ position: "bottomleft" });
