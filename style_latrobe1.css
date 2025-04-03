@@ -380,3 +380,70 @@ footer {
   left: 10%;
   z-index: 600; /* Über andere Inhalte legen */
 }
+
+#slider-container3{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 12px;
+  line-height: 1.5;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 30%;
+  height: 100px;
+  position: relative;
+  left: 35%;
+}
+
+
+#slider-value3 {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  
+
+}
+
+.time-slider3 {
+  width: 80%; /* Slider auf volle Breite setzen */
+  margin-top: 20px 0; /* Abstand oben und unten */
+  margin-bottom: 5px 0;
+  display: block; /* Block-Level-Element, um Platz zu nehmen */
+  position: relative; /* Fixiert den Slider unten auf der Seite */
+  bottom: 5px; /* 10px vom unteren Rand */
+  left: 10%;
+  z-index: 600; /* Über andere Inhalte legen */
+  -webkit-appearance: none; /* Entfernt die standardmäßige Erscheinung in Safari */
+  appearance: none; /* Entfernt die standardmäßige Erscheinung in modernen Browsern */
+  background: #ccc; /* Hintergrundfarbe des Sliders */
+  border-radius: 5px; /* Abgerundete Ecken */
+  transition: background 0.3s ease; /* Animation für die Hintergrundfarbe */
+  
+}
+
+.time-slider3:hover {
+  background: #919090; /* Hintergrundfarbe bei Hover */
+}
+
+/* Stil für den Schieberegler (der kleine Kreis) */
+.time-slider3::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 20%; /* Runder Schieberegler */
+  background: #50052b; /* Farbe des Schiebereglers */
+  cursor: pointer;
+}
+
+.time-slider3::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #50052b;
+  cursor: pointer;
+}
