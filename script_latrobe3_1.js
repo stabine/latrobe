@@ -166,4 +166,24 @@ document.addEventListener('DOMContentLoaded', function() {
   })
   .catch(err => console.error('Fehler beim Laden der GeoJSON-Dateien:', err));
 
+  // Legende erstellen
+const legend3 = L.control({ position: "bottomleft" });
+
+legend3.onAdd = function () {
+    const div = L.DomUtil.create("div", "legend-map3");
+    div.innerHTML = `
+        <div style="margin-bottom:5px;"><strong>Certainty Levels</strong></div>
+        <div class="legend-item"><span class="legend-circle" style="background:#008078;"></span> Certain</div>
+        <div class="legend-item"><span class="legend-circle" style="background:#FF9800;"></span> Less certain</div>
+        <div class="legend-item"><span class="legend-circle" style="background:#50052b;"></span> Uncertain</div>
+        
+        
+    `;
+
+    return div;
+};
+
+// Legende zur Karte hinzufügen
+legend3.addTo(map3);
+
 });
