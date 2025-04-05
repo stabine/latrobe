@@ -122,7 +122,7 @@ slider3.addEventListener("input", function () {
       // Berechnung der Markergröße und Opazität basierend auf dem Certainty-Level
       let radius3 = 100; // Standardgröße
       let opacity3 = 1; // Standardopazität
-      let color3 = "green";
+      let color3 = "#008078";
 
       switch(certainty3) {
         case 'certain':
