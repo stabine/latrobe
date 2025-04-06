@@ -23,7 +23,7 @@
             "properties": {
 
                 "title": "Mission House",
-                "note": "This mark is pinned to the Mission House. Its western part was inhabited by Sister Kohrhammer who moved to a different place during Latrobes visit, so he could stay there at a maximum of comfort. It is a very likely starting point for Latrobes explorations of the village and the surroundings.", 
+                "note": "This mark is pinned to the Mission House. Its western part was inhabited by Sister Kohrhammer who moved to a different place during Latrobes visit, so he could stay there at <i>a maximum of comfort</i>, as it is described by himself. It is a very likely starting point for Latrobes explorations of the village and the surroundings.", 
                 "role": "visited",
                 "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 63", "https://archive.org/details/journalofvisitto00latr/page/62/mode/2up"],
                 "closeMatch": [
@@ -35,7 +35,7 @@
 
             },
 
-            "time": "1816-01-15", 
+            "time": "1816-01-15T08:00", 
 
             "geometry": {
 
@@ -52,7 +52,7 @@
             "properties": {
 
                 "title": "Khoikhoi Settlement",
-                "note": "In a map of the Missionary and Settlement of 1799 it shows this place to be where the huts of the Khoikhois where situated.", 
+                "note": "In a historical map of the Missionary and Settlement of 1799, it shows this place to be where the huts of the Khoikhois where situated. Although only few huts are marked in the map, 17 Years later, Latrobe mentiones, that there were 256 huts with 1276 inhabitants.", 
                 "role": "visited",
                 "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 61", "https://archive.org/details/journalofvisitto00latr/page/60/mode/2up"],
                 "closeMatch": [

@@ -3,13 +3,15 @@ document.addEventListener('DOMContentLoaded', function() {
   // -------------------Map2 initialization, pre-set location Gnadenthal, very close------------------------------
   const map2 = L.map('map2', {
     center: [-34.034086373788035, 19.557620864951964], // set to Gnadenthal
-    zoom: 18,
+    zoom: 17,
+    zoomSnap: 0.5,
     minZoom: 15,  //preset zoom-span 
-    maxZoom: 19.5
+    maxZoom: 19
   });
   
   // osm layer (baselayer2)
   var osm2 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   });
   osm2.addTo(map2);

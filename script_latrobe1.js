@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 const map1 = L.map('map1', {
   center: [16.737222, -22.936111], // set to Gravesend
   zoom: 3,
+  zoomSnap: 0.5,
   minZoom: 3,  //preset zoom-span 
   maxZoom: 8
 }); 

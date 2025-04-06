@@ -6,18 +6,18 @@ div#preface {
 
 div#section1 {
   margin-top: 60px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 div#section2 {
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 div#section3 {
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 div#map1 {
@@ -145,7 +145,7 @@ footer {
 }
 
 .leaflet-popup-content {
-  padding: 0;  /* Padding innerhalb des Popups für ein wenig Innenabstand */
+  padding: 0;  
   background-color: #fff;
   max-height: 300px;
   width: 550px !important;
@@ -198,15 +198,15 @@ footer {
 
 .subtitle {
     font-size: 13px;
-    letter-spacing: 0.8px;  /* Kursiv für den Untertitel */
-    color: #666;         /* Ein sanfteres Grau für den Untertitel */
-    margin-top: 0;       /* Kein Abstand nach oben */
-    margin-bottom: 10px; /* Abstand nach unten, um den Abstand zu den anderen Elementen zu definieren */
+    letter-spacing: 0.8px;  
+    color: #666;         
+    margin-top: 0;       
+    margin-bottom: 10px; 
 }
 
 .custom-tooltip {
-    z-index: 99 !important;  /* Hoher Z-Index für den Tooltip */
-    background-color: rgba(255, 255, 255, 0.7); /* Optional: Ein halbtransparentes Hintergrund für den Tooltip */
+    z-index: 99 !important;  
+    background-color: rgba(255, 255, 255, 0.7); 
 }
 
 
@@ -317,6 +317,7 @@ footer {
 
 #slider-container1{
   margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: white;
@@ -329,27 +330,57 @@ footer {
   width: 30%;
   height: 120px;
   position: relative;
-  left: 35%;
+  left: 35%;  
 }
 
 
 #slider-value1 {
   display: block;
   font-size: 13px;
+  font-weight: bold;
 }
 
 .time-slider1 {
-  width: 80%; /* Slider auf volle Breite setzen */
-  margin: 20px 0; /* Abstand oben und unten */
-  display: block; /* Block-Level-Element, um Platz zu nehmen */
-  position: relative; /* Fixiert den Slider unten auf der Seite */
-  bottom: 10px; /* 10px vom unteren Rand */
+  width: 80%; 
+  margin: 20px 0; 
+  margin-bottom: 5px 0;
+  display: block; 
+  position: relative; 
+  bottom: 5px; 
   left: 10%;
-  z-index: 600; /* Über andere Inhalte legen */
+  z-index: 600; 
+  -webkit-appearance: none; 
+  appearance: none; 
+  background: #ccc; 
+  border-radius: 5px; 
+  transition: background 0.3s ease;
+}
+
+.time-slider1:hover {
+  background: #919090; 
+}
+
+.time-slider1::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 20%; 
+  background: #50052b; 
+  cursor: pointer;
+}
+
+.time-slider1::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #50052b;
+  cursor: pointer;
 }
 
 #slider-container2{
   margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: white;
@@ -369,16 +400,44 @@ footer {
 #slider-value2 {
   display: block;
   font-size: 13px;
+  font-weight: bold;
 }
 
 .time-slider2 {
-  width: 80%; /* Slider auf volle Breite setzen */
-  margin: 20px 0; /* Abstand oben und unten */
-  display: block; /* Block-Level-Element, um Platz zu nehmen */
-  position: relative; /* Fixiert den Slider unten auf der Seite */
-  bottom: 10px; /* 10px vom unteren Rand */
+  width: 80%; 
+  margin: 20px 0; 
+  display: block; 
+  position: relative;
+  bottom: 5px;
   left: 10%;
-  z-index: 600; /* Über andere Inhalte legen */
+  z-index: 600; 
+  -webkit-appearance: none; 
+  appearance: none; 
+  background: #ccc; 
+  border-radius: 5px; 
+  transition: background 0.3s ease;
+}
+
+.time-slider2:hover {
+  background: #919090; 
+}
+
+.time-slider2::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 20%; 
+  background: #50052b; 
+  cursor: pointer;
+}
+
+.time-slider2::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #50052b;
+  cursor: pointer;
 }
 
 #slider-container3{
@@ -409,34 +468,33 @@ footer {
 }
 
 .time-slider3 {
-  width: 80%; /* Slider auf volle Breite setzen */
-  margin-top: 20px 0; /* Abstand oben und unten */
+  width: 80%; 
+  margin-top: 20px 0; 
   margin-bottom: 5px 0;
-  display: block; /* Block-Level-Element, um Platz zu nehmen */
-  position: relative; /* Fixiert den Slider unten auf der Seite */
-  bottom: 5px; /* 10px vom unteren Rand */
+  display: block; 
+  position: relative; 
+  bottom: 5px; 
   left: 10%;
-  z-index: 600; /* Über andere Inhalte legen */
-  -webkit-appearance: none; /* Entfernt die standardmäßige Erscheinung in Safari */
-  appearance: none; /* Entfernt die standardmäßige Erscheinung in modernen Browsern */
-  background: #ccc; /* Hintergrundfarbe des Sliders */
-  border-radius: 5px; /* Abgerundete Ecken */
-  transition: background 0.3s ease; /* Animation für die Hintergrundfarbe */
+  z-index: 600; 
+  -webkit-appearance: none; 
+  appearance: none; 
+  background: #ccc; 
+  border-radius: 5px; 
+  transition: background 0.3s ease; 
   
 }
 
 .time-slider3:hover {
-  background: #919090; /* Hintergrundfarbe bei Hover */
+  background: #919090; 
 }
 
-/* Stil für den Schieberegler (der kleine Kreis) */
 .time-slider3::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 20px;
   height: 20px;
-  border-radius: 20%; /* Runder Schieberegler */
-  background: #50052b; /* Farbe des Schiebereglers */
+  border-radius: 20%; 
+  background: #50052b; 
   cursor: pointer;
 }
 

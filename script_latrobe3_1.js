@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // -------------------Map3 initialization, pre-set location Cape Colony; topografical map------------------------------
   const map3 = L.map('map3', {
     center: [-33.775120570267205, 22.333937355866688],
-    zoom: 8,
+    zoom: 15,
     minZoom: 8,  //preset zoom-span 
     maxZoom: 13
   });
