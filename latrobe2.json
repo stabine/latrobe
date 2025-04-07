@@ -13,7 +13,7 @@
 
     "featureType": "Waypoint",
 
-    "featureSchema": "https://example.com/schema/waypoint",
+    "featureSchema": "https://stabine.github.io/latrobe/schema/latrobe.schema.json",
 
     "features": [
 

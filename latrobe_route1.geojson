@@ -1,5 +1,6 @@
 {
   "type": "FeatureCollection",
+  "featureSchema": "https://stabine.github.io/latrobe/schema/route.schema.json",
   "features": [
     {
       "type": "Feature",

@@ -1,0 +1,61 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://stabine.github.io/latrobe/schema/route.schema.json",
+    "title": "Enrichments FeatureCollection",
+    "type": "object",
+    "required": ["type", "features"],
+    "properties": {
+      "type": {
+        "const": "FeatureCollection"
+      },
+      "features": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["type", "geometry", "properties"],
+          "properties": {
+            "type": {
+              "const": "Feature"
+            },
+            "geometry": {
+              "type": "object",
+              "required": ["type", "coordinates"],
+              "properties": {
+                "type": {
+                  "const": "LineString"
+                },
+                "coordinates": {
+                  "type": "array",
+                  "minItems": 2,
+                  "items": {
+                    "type": "array",
+                    "minItems": 2,
+                    "maxItems": 2,
+                    "items": [
+                      { "type": "number", "minimum": -180, "maximum": 180 },  
+                      { "type": "number", "minimum": -90, "maximum": 90 }     
+                    ]
+                  }
+                }
+              }
+            },
+            "properties": {
+              "type": "object",
+              "required": ["title", "source"],
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    "additionalProperties": false
+  }  
