@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // -------------------Map2 initialization, pre-set location Gnadenthal, very close------------------------------
   const map2 = L.map('map2', {
-    center: [-34.034086373788035, 19.557620864951964], // set to Gnadenthal
-    zoom: 17,
+    center: [-34.03143020008334, 19.55655308951873], // set to Gnadenthal
+    zoom: 16.5,
     zoomSnap: 0.5,
     minZoom: 15,  //preset zoom-span 
     maxZoom: 19
