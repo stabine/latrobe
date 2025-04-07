@@ -1,21 +1,58 @@
+div#contraster {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 30px;
+}
+
 div#preface {
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 2%;
+  padding-right: 2%;
   
 }
 
 div#section1 {
-  margin-top: 60px;
+  padding-top: 0;  
+}
+
+div#section1 h2 {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+div#section1 p {
   padding-left: 2%;
   padding-right: 2%;
 }
 
 div#section2 {
+  padding-top: 0;
+}
+
+div#section2 h2 {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+div#section2 p {
   padding-left: 2%;
   padding-right: 2%;
 }
 
 div#section3 {
+  padding-top 0;
+}
+
+div#section3 h2 {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+div#section3 p {
   padding-left: 2%;
   padding-right: 2%;
 }
@@ -24,25 +61,34 @@ div#map1 {
   border-color: #004641;
   border-style: dashed;
   border-width: 2px;
+  border-radius: 20px;
   width: "device-width";
   height: 80vh;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
 }
 
 div#map2 {
   border-color: #004641;
   border-style: dashed;
   border-width: 2px;
+  border-radius: 20px;
   width: "device-width";
   height: 80vh;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
 }
 
 div#map3 {
   border-color: #004641;
   border-style: dashed;
   border-width: 2px;
+  border-radius: 20px;
   margin-bottom: 20px;
   width: "device-width";
   height: 80vh;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
 }
 
 h1 {
@@ -50,7 +96,6 @@ h1 {
   font-size: 30px;
   color: #1B3852;
   font-style: normal;
-  margin-top: 40px;
   padding-bottom: 20px;
 }
 
@@ -253,7 +298,7 @@ footer {
   width: 30px;
   height: 5px;
   display: inline-block;
-  opacity: 0.4;
+  opacity: 0.6;
   margin-right: 8px;
 }
 

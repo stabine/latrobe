@@ -1,24 +1,4 @@
-// ---------------------Website-Setup--------------------------
-// Get the button:
-let BTTButton = document.getElementById("bttButton");
-
-// When scrolled down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    BTTButton.style.display = "block";
-  } else {
-    BTTButton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
+//Klammerfunktion, die Inhalte korrekt laden soll 
 document.addEventListener('DOMContentLoaded', function() {
 
 
@@ -32,17 +12,17 @@ const map1 = L.map('map1', {
   maxZoom: 8
 }); 
 
-// osm layer (baselayer)
+// osm tile (baselayer)
 var osm1 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 });
 osm1.addTo(map1);
 
 
-// Initialisation of Layer for all Markers ???
+// Initialisation of Layer for all Markers 
 const allMarkersLayer1 = L.layerGroup(); // Layer for all Markers
 
-// Create LayerGroups for each certanty-type ???
+// Create LayerGroups for each certanty-type 
 const roleLayers1 = {
     'Select All': allMarkersLayer1, // combined Layer for all markers
     'Visited': L.layerGroup(),
@@ -190,7 +170,7 @@ fetch('latrobe1.json')
     
       
 
-      // -----------------------------Add marker to the appropriate LayerGroup based on Certainty-type-------------------------------
+      // -----------------------------Add marker to the appropriate LayerGroup based on role-type-------------------------------
       switch (role1) {
         case 'visited':
           roleLayers1['Visited'].addLayer(marker1);
@@ -235,11 +215,12 @@ const legend1= L.control({ position: "bottomleft" });
 legend1.onAdd = function () {
     const div = L.DomUtil.create("div", "legend-map1");
     div.innerHTML = `
-        <div style="margin-bottom:5px;"><strong>Certainty Levels</strong></div>
-        <div class="legend-item"><span class="legend-circle" style="background:#09556B;"></span> Certain</div>
-        <div class="legend-item"><span class="legend-circle" style="background:#BF4D00;"></span> Less certain</div>
-        <div class="legend-item"><span class="legend-circle" style="background:#5B215E;"></span> Uncertain</div>
-        <div class="legend-item" style="margin-top:10px;"><span class="legend-line" style="background:#50052b;"></span> Historical Trade Route</div>
+        <div style="margin-bottom:5px;"><strong>Legend</strong></div>
+        <div class="legend-item"><span class="legend-circle" style="background:#09556B;"></span> certain waypoint</div>
+        <div class="legend-item"><span class="legend-circle" style="background:#BF4D00;"></span> less certain waypoint</div>
+        <div class="legend-item"><span class="legend-circle" style="background:#5B215E;"></span> uncertain waypoint</div>
+        <div class="legend-item" style="margin-top:10px;"><span class="legend-line" style="background:#50052b;"></span> historical trade route</div>
+        <div class="legend-item" style="margin-top:10px;"><span class="legend-line" style="background:#004641;"></span> likely route of Albion</div>
     `;
 
     return div;
@@ -281,9 +262,10 @@ if (uniqueDates1.size > 0) {
   sliderValue1.textContent = `Date: ${formatDate(initialDateObj)}`;
 }
 
-fetch('traderoute.json')
-  .then(response => response.json())
-  .then(data2 => {
+//-----------historical trade route added-----------
+  fetch('traderoute.json')
+    .then(response => response.json())
+    .then(data2 => {
 
   // load GeoJSON
   console.log(data2);
@@ -295,15 +277,42 @@ fetch('traderoute.json')
           color: "#50052b",
           weight: 10,
           opacity: 0.2,
-          dashArray: "4, 15"
+          dashArray: "6, 12"
        };
      }
     })
-    .bindTooltip("Historical sailing route for trade ships.", { permanent: false, direction: "top", offset: [0, -10] })
-    .bindPopup("<h3>Historical Trade Route</h3><p>This line shows one of the most common routes sailing ships used during the 19th century due to trade winds.</p>")
+    .bindTooltip("average Trade Ships", { permanent: false, direction: "top", offset: [0, -10] })
+    .bindPopup("<h3>Historical Trade Route</h3><p>This line shows one of the most common routes sailing ships used during the 19th century due to the influence of currents and trade winds.</p>")
     .addTo(map1);
   })
   .catch(error => {
     console.error('Fehler beim Laden des GeoJSON:', error);
   });
+
+  //-------------------most likely route for the Albion added--------------
+  fetch('latrobe_route1.geojson')
+  .then(response => response.json())
+  .then(data6 => {
+
+  // load GeoJSON
+  console.log(data6);
+
+  // polyline from GeoJSON
+    L.geoJSON(data6, {
+      style: function () {
+        return {
+          color: "#004641",
+          weight: 4,
+          opacity: 0.4
+       };
+     }
+    })
+    .bindTooltip("Albion", { permanent: false, direction: "top", offset: [0, -10] })
+    .bindPopup("<h3>Likely route of the brig Albion</h3><p>This line is an assumption of the most likely route of the Albion, derived from a combination of close reading and automated evaluation of the travel journal of Christian Igantius Latrobe.</p>")
+    .addTo(map1);
+  })
+  .catch(error => {
+    console.error('Fehler beim Laden des GeoJSON:', error);
+  });
+
 });
