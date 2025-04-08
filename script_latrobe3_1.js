@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // -------------------Map3 initialization, pre-set location Cape Colony; topografical map------------------------------
   const map3 = L.map('map3', {
     center: [-33.775120570267205, 22.333937355866688],
-    zoom: 15,
+    zoom: 8,
     minZoom: 8,  //preset zoom-span 
     maxZoom: 13
   });
@@ -135,35 +135,93 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       // Markergrößenanpassung
-      markersWithDates3.forEach(marker3 => {
-        const nextMarker = markersWithDates3[markersWithDates3.indexOf(marker3) + 1];
-        
+      markersWithDates3.forEach((marker3, index) => {
+        const nextMarker = markersWithDates3[index + 1];
+    
         if (marker3.time <= selectedDate3) {
           if (!map3.hasLayer(marker3)) {
             map3.addLayer(marker3);
           }
-
-          let size = 500;
-          if (nextMarker && selectedDate3 < nextMarker.time) {
-            const timeDiffInHours = Math.floor((nextMarker.time - marker3.time) / (1000 * 60 * 60));  // Zeitdifferenz in Stunden
-            const timeFraction = (selectedTimeInHours - accumulatedTimeInHours) / timeDiffInHours;
-
-            size = 500 + (timeFraction * 300); // Marker wächst zwischen 500px und 800px
-          } else if (nextMarker && selectedDate3 >= nextMarker.time) {
-            size = 800;
+    
+          let distance = 1000; // Standard-Fallback
+          if (nextMarker) {
+            distance = map3.distance(marker3.getLatLng(), nextMarker.getLatLng());
           }
-
+    
+          // Größe an Distanz anpassen
+          const maxSize = Math.min(2000, distance * 0.5); // Obergrenze für große Abstände
+          const minSize = 300;
+          let size = maxSize;
+    
+          if (nextMarker && selectedDate3 < nextMarker.time) {
+            const timeDiffInHours = Math.floor((nextMarker.time - marker3.time) / (1000 * 60 * 60));
+            const timeFraction = (selectedTimeInHours - accumulatedTimeInHours) / timeDiffInHours;
+    
+            // Schrumpfen statt wachsen
+            size = maxSize - (timeFraction * (maxSize - minSize));
+          } else if (nextMarker && selectedDate3 >= nextMarker.time) {
+            size = minSize;
+          }
+    
           marker3.setRadius(size);
+    
+              
         } else {
           if (map3.hasLayer(marker3)) {
-            map3.removeLayer(marker3);
+            map3.addLayer(marker3);
           }
-
-          marker3.setRadius(500); // Initialgröße
+          marker3.setRadius(1200);
         }
+        
       });
+      sliderValue3.textContent = `${selectedDate3.toISOString().split("T")[0]} (${selectedTimeInHours}h)`;
+
     };
-  })
+
+    
+
+    // Globale Variablen, um den aktuellen Zustand zu speichern
+    let currentValue = 0;
+    let isRunning = false;
+    let intervalId = null;
+
+    function autoRunSlider() {
+      const maxValue = slider3.max;
+      intervalId = setInterval(() => {
+        if (currentValue >= maxValue) {
+          currentValue = 0; // Slider zurücksetzen, wenn das Maximum erreicht ist
+        }
+        slider3.value = currentValue;
+        slider3.dispatchEvent(new Event('input')); // Auslösen des Events
+        currentValue += 1;
+      }, 25); // Intervall 
+    }
+
+    // Play/Pause Button hinzufügen
+    const playPauseButton = document.createElement("button");
+    playPauseButton.innerText = "Play";
+    playPauseButton.className = "play-pause-button";
+    document.getElementById("slider-container3").appendChild(playPauseButton);
+
+    // Wenn der Button geklickt wird, Play/Pause umschalten
+    playPauseButton.addEventListener("click", function() {
+      if (isRunning) {
+        // Wenn der Slider gerade läuft, stoppen
+        clearInterval(intervalId);
+        playPauseButton.innerText = "Play";
+        isRunning = false;
+        // currentValue wird nicht zurückgesetzt, behält den aktuellen Wert
+      } else {
+        // Wenn der Slider pausiert, von der aktuellen Position weitermachen
+        currentValue = parseInt(slider3.value); // Aktuelle Position des Sliders übernehmen
+        autoRunSlider();
+        playPauseButton.innerText = "Pause";
+        isRunning = true;
+      }
+    });
+
+   })
+  
   .catch(err => console.error('Fehler beim Laden der GeoJSON-Dateien:', err));
 
   // Legende erstellen
