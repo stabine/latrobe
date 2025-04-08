@@ -1,0 +1,715 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "l3_01",
+      "properties": {
+        "title": "Gnadenthal",
+        "time": "1816-03-05",
+        "certainty": "certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.55716346379812,
+          -34.03331858424924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_02",
+      "properties": {
+        "title": "Mr. Von Helsland's farm on Bock Revier",
+        "time": "1816-03-06",
+        "certainty": "uncertain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.85478,
+          -34.1145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_03",
+      "properties": {
+        "title": "Storm's Valley",
+        "time": "1816-03-07",
+        "certainty": "certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.09757009572911,
+          -34.0836239483671
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_04",
+      "properties": {
+        "title": "Union of River Sonderend and Breede Revier",
+        "time": "1816-03-07",
+        "certainty": "uncertain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.28520379343737,
+          -34.07059575831272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_05",
+      "properties": {
+        "title": "Banks of the Breede Revier",
+        "time": "1816-03-07",
+        "certainty": "uncertain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.289041950078218,
+          -34.072119092149215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_06",
+      "properties": {
+        "title": "Leuwe Revier",
+        "time": "1816-03-08",
+        "certainty": "uncertain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.320584717246547,
+          -34.081500607524205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_07",
+      "properties": {
+        "title": "Zwellendam",
+        "time": "1816-03-08",
+        "certainty": "certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4529284212358,
+          -34.01925894262244
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_08",
+      "properties": {
+        "title": "Bueffeljagd's Revier ",
+        "time": "1816-03-09",
+        "certainty": "less-certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.53375,
+          -34.01969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_09",
+      "properties": {
+        "title": "Zuurbrack",
+        "time": "1816-03-09",
+        "certainty": "certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.65275,
+          -34.004917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_10",
+      "properties": {
+        "title": "Groot Vader's Bosch",
+        "time": "1816-03-10",
+        "certainty": "certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.825761470789118,
+          -34.01251870346348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_11",
+      "properties": {
+        "title": "Tygerfonteyn",
+        "time": "1816-03-12",
+        "certainty": "uncertain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.68152,
+          -34.1756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_12",
+      "properties": {
+        "title": "Stinkrevier",
+        "time": "1816-03-13",
+        "certainty": "uncertain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.8272125450827,
+          -34.1780994817745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_13",
+      "properties": {
+        "title": "Kleinberg",
+        "time": "1816-03-14",
+        "certainty": "less-certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.91277811169705,
+          -34.1785348379963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_14",
+      "properties": {
+        "title": "Mossel-Bay",
+        "time": "1816-03-14",
+        "certainty": "certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.14605,
+          -34.18307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_15",
+      "properties": {
+        "title": "Hartenbosch",
+        "time": "1816-03-14",
+        "certainty": "certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.1129,
+          -34.13052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_16",
+      "properties": {
+        "title": "Great Brak Revier",
+        "time": "1816-03-15",
+        "certainty": "less-certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.22109352500541,
+          -34.04150555839996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_17",
+      "properties": {
+        "title": "Hoogtekraal",
+        "time": "1816-03-15",
+        "certainty": "certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.46666,
+          -34.02223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_18",
+      "properties": {
+        "title": "George",
+        "time": "1816-03-16",
+        "certainty": "certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.46173,
+          -33.963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_19",
+      "properties": {
+        "title": "Kayman's Gat",
+        "time": "1816-03-18",
+        "certainty": "less-certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.55150373297926,
+          -33.98921783132959
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_20",
+      "properties": {
+        "title": "Trekata'kou",
+        "time": "1816-03-18",
+        "certainty": "uncertain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.60542,
+          -33.98013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_21",
+      "properties": {
+        "title": "Melkhout Kraal",
+        "time": "1816-03-20",
+        "certainty": "certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.04713,
+          -34.03627
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_22",
+      "properties": {
+        "title": "Jackal's Kraal",
+        "time": "1816-03-22",
+        "certainty": "uncertain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.311894709006964,
+          -34.066392534982185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_23",
+      "properties": {
+        "title": "Wittedrift",
+        "time": "1816-03-23",
+        "certainty": "less-certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.340981746311947,
+          -33.99945220548751
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_24",
+      "properties": {
+        "title": "Paerdekop",
+        "time": "1816-03-24",
+        "certainty": "uncertain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.169613521338068,
+          -33.795291642431934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_25",
+      "properties": {
+        "title": "Welgelegen",
+        "time": "1816-03-28",
+        "certainty": "uncertain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.30489048275748,
+          -33.73531644327041
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_26",
+      "properties": {
+        "title": "Ungelegen",
+        "time": "1816-03-28",
+        "certainty": "certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.405991113360436,
+          -33.73494629782245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_27",
+      "properties": {
+        "title": "Kliphübel",
+        "time": "1816-03-29",
+        "certainty": "uncertain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.43461,
+          -33.73947
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_28",
+      "properties": {
+        "title": "Ellandsfonteyn",
+        "time": "1816-03-30",
+        "certainty": "uncertain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.453064,
+          -33.728337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_29",
+      "properties": {
+        "title": "Mr. Mey's Farm",
+        "time": "1816-03-30",
+        "certainty": "certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.493925,
+          -33.752561
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_30",
+      "properties": {
+        "title": "Jagerbosch",
+        "time": "1816-03-30",
+        "certainty": "less-certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.197195,
+          -33.913529
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_31",
+      "properties": {
+        "title": "Essenbosch",
+        "time": "1816-03-31",
+        "certainty": "less-certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.42789,
+          -33.96433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_32",
+      "properties": {
+        "title": "Chamtoos Revier",
+        "time": "1816-04-02",
+        "certainty": "less-certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.863286186949967,
+          -33.84303905517645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_33",
+      "properties": {
+        "title": "Van Staades Revier",
+        "time": "1816-04-04",
+        "certainty": "uncertain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.198400245853655,
+          -33.90538359828631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_34",
+      "properties": {
+        "title": "Uitenhagen",
+        "time": "1816-04-04",
+        "certainty": "certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.404531612429604,
+          -33.76940123467046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_35",
+      "properties": {
+        "title": "Bethelsdorp",
+        "time": "1816-04-06",
+        "certainty": "certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.502500911290305,
+          -33.87993461665629
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_36",
+      "properties": {
+        "title": "Uitenhagen",
+        "time": "1816-04-04",
+        "certainty": "certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.404531612429604,
+          -33.76940123467046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_37",
+      "properties": {
+        "title": "Geelhoutboom",
+        "time": "1816-04-09",
+        "certainty": "uncertain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.53406704879386,
+          -33.4840042032886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_38",
+      "properties": {
+        "title": "Zondag's Revier and Witte Revier Union",
+        "time": "1816-04-10",
+        "certainty": "less-certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.54789,
+          -33.46947
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_39",
+      "properties": {
+        "title": "Witte Revier Valley",
+        "time": "1816-04-10",
+        "certainty": "certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.546174403449832,
+          -33.393074323514796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_40",
+      "properties": {
+        "title": "Slagboom",
+        "time": "1816-04-10",
+        "certainty": "uncertain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.66831,
+          -33.37071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_41",
+      "properties": {
+        "title": "Zuurberg",
+        "time": "1816-04-11",
+        "certainty": "uncertain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.76343,
+          -33.27282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_42",
+      "properties": {
+        "title": "Military Post at Great Fish River",
+        "time": "1816-04-12",
+        "certainty": "less-certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.97938,
+          -33.08213
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_43",
+      "properties": {
+        "title": "Somerset Farm",
+        "time": "1816-04-14",
+        "certainty": "certain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.584979539451204,
+          -32.712650551514834
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "l3_44",
+      "properties": {
+        "title": "Mr. P.'s Farm",
+        "time": "1816-04-15",
+        "certainty": "uncertain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.49549,
+          -32.72115
+        ]
+      }
+    }
+  ]
+}

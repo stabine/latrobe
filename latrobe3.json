@@ -86,6 +86,39 @@
             "id": "l3_03",
             "properties": {
 
+                "title": "Storm's Valley",
+                "note": "The travellers stopp at this place to rest in their tents, to avoid the sun. Latrobe describes this place as <i>near the banks of the Sonderend, without a tree to screen us by its shade from the burning rays of the sun.</i> They therefore call it the Hot Outspann. Today, the place is calles .", 
+                "role": "visited",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 123",
+                    "https://archive.org/details/journalofvisitto00latr/page/122/mode/2up"
+                ],
+                "closeMatch": [
+
+                    "https://www.geonames.org/951902/stormsvlei.html",
+                    "https://www.wikidata.org/wiki/Q13036112"
+                ],
+                "certainty": "certain" 
+
+            },
+
+            "time": "1816-03-07", 
+
+            "geometry": {
+
+                "type": "Point", 
+                "coordinates": [
+
+                    20.09757009572911,
+                    -34.0836239483671
+                ] 
+            }
+        },
+        {
+            "id": "l3_04",
+            "properties": {
+
                 "title": "Union of River Sonderend and Breede Revier",
                 "note": "The Travellers rested at the Banks of the River Sonderend on a wasteland called Storms Valley, from which they could see the place where River Sonderend united with Breede Revier. The exact place can not be determined anymore.", 
                 "role": "visited_nearby",
@@ -107,7 +140,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     20.28520379343737,
@@ -116,7 +149,7 @@
             }
         },
         {
-            "id": "l3_04",
+            "id": "l3_05",
             "properties": {
 
                 "title": "Banks of the Breede Revier",
@@ -140,7 +173,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     20.289041950078218,
@@ -149,7 +182,7 @@
             }
         },
         {
-            "id": "l3_05",
+            "id": "l3_06",
             "properties": {
 
                 "title": "Leuwe Revier",
@@ -173,7 +206,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     20.320584717246547,
@@ -182,7 +215,7 @@
             }
         },
         {
-            "id": "l3_06",
+            "id": "l3_07",
             "properties": {
 
                 "title": "Zwellendam",
@@ -207,7 +240,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     20.4529284212358,
@@ -216,7 +249,7 @@
             }
         },
         {
-            "id": "l3_07",
+            "id": "l3_08",
             "properties": {
 
                 "title": "Bueffeljagd's Revier ",
@@ -240,7 +273,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     20.53375,
@@ -249,7 +282,7 @@
             }
         },
         {
-            "id": "l3_08",
+            "id": "l3_09",
             "properties": {
 
                 "title": "Zuurbrack",
@@ -273,7 +306,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     20.65275,
@@ -282,7 +315,7 @@
             }
         },
         {
-            "id": "l3_09",
+            "id": "l3_10",
             "properties": {
 
                 "title": "Groot Vader's Bosch",
@@ -306,7 +339,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     20.825761470789118,
@@ -315,7 +348,7 @@
             }
         },
         {
-            "id": "l3_10",
+            "id": "l3_11",
             "properties": {
 
                 "title": "Tygerfonteyn",
@@ -339,7 +372,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     21.68152,
@@ -348,7 +381,7 @@
             }
         },
         {
-            "id": "l3_11",
+            "id": "l3_12",
             "properties": {
 
                 "title": "Stinkrevier",
@@ -372,7 +405,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     21.8272125450827,
@@ -381,7 +414,7 @@
             }
         },
         {
-            "id": "l3_12",
+            "id": "l3_13",
             "properties": {
 
                 "title": "Kleinberg",
@@ -405,7 +438,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     21.91277811169705,
@@ -414,7 +447,7 @@
             }
         },
         {
-            "id": "l3_13",
+            "id": "l3_14",
             "properties": {
 
                 "title": "Mossel-Bay",
@@ -438,7 +471,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     22.14605,
@@ -447,7 +480,7 @@
             }
         },
         {
-            "id": "l3_14",
+            "id": "l3_15",
             "properties": {
 
                 "title": "Hartenbosch",
@@ -471,7 +504,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     22.1129,
@@ -480,7 +513,7 @@
             }
         },
         {
-            "id": "l3_15",
+            "id": "l3_16",
             "properties": {
 
                 "title": "Great Brak Revier",
@@ -504,7 +537,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     22.22109352500541,
@@ -513,7 +546,7 @@
             }
         },
         {
-            "id": "l3_16",
+            "id": "l3_17",
             "properties": {
 
                 "title": "Hoogtekraal",
@@ -537,7 +570,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     22.46666,
@@ -546,7 +579,7 @@
             }
         },
         {
-            "id": "l3_17",
+            "id": "l3_18",
             "properties": {
 
                 "title": "George",
@@ -570,7 +603,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     22.46173,
@@ -579,7 +612,7 @@
             }
         },
         {
-            "id": "l3_18",
+            "id": "l3_19",
             "properties": {
 
                 "title": "Kayman's Gat",
@@ -603,7 +636,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     22.55150373297926,
@@ -612,7 +645,7 @@
             }
         },
         {
-            "id": "l3_19",
+            "id": "l3_20",
             "properties": {
 
                 "title": "Trekata'kou",
@@ -636,7 +669,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     22.60542,
@@ -645,7 +678,7 @@
             }
         },
         {
-            "id": "l3_20",
+            "id": "l3_21",
             "properties": {
 
                 "title": "Melkhout Kraal",
@@ -669,7 +702,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     23.04713,
@@ -678,7 +711,7 @@
             }
         },
         {
-            "id": "l3_21",
+            "id": "l3_22",
             "properties": {
 
                 "title": "Jackal's Kraal",
@@ -702,7 +735,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     23.311894709006964,
@@ -712,7 +745,7 @@
         },
 
         {
-            "id": "l3_22",
+            "id": "l3_23",
             "properties": {
 
                 "title": "Wittedrift",
@@ -736,7 +769,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     23.340981746311947,
@@ -745,7 +778,7 @@
             }
         },
         {
-            "id": "l3_23",
+            "id": "l3_24",
             "properties": {
 
                 "title": "Paerdekop",
@@ -769,7 +802,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     23.169613521338068,
@@ -778,7 +811,7 @@
             }
         },
         {
-            "id": "l3_24",
+            "id": "l3_25",
             "properties": {
 
                 "title": "Welgelegen",
@@ -802,7 +835,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     23.30489048275748,
@@ -811,7 +844,7 @@
             }
         },
         {
-            "id": "l3_25",
+            "id": "l3_26",
             "properties": {
 
                 "title": "Ungelegen",
@@ -834,7 +867,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     23.405991113360436,
@@ -843,7 +876,7 @@
             }
         },
         {
-            "id": "l3_26",
+            "id": "l3_27",
             "properties": {
 
                 "title": "Kliphübel",
@@ -867,7 +900,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     23.43461,
@@ -876,7 +909,7 @@
             }
         },
         {
-            "id": "l3_27",
+            "id": "l3_28",
             "properties": {
 
                 "title": "Ellandsfonteyn",
@@ -900,7 +933,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     23.453064,
@@ -909,7 +942,7 @@
             }
         },
         {
-            "id": "l3_28",
+            "id": "l3_29",
             "properties": {
 
                 "title": "Mr. Mey's Farm",
@@ -933,7 +966,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     23.493925,
@@ -942,7 +975,7 @@
             }
         },
         {
-            "id": "l3_29",
+            "id": "l3_30",
             "properties": {
 
                 "title": "Jagerbosch",
@@ -966,7 +999,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     24.197195,
@@ -975,7 +1008,7 @@
             }
         },
         {
-            "id": "l3_30",
+            "id": "l3_31",
             "properties": {
 
                 "title": "Essenbosch",
@@ -999,7 +1032,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     24.42789,
@@ -1008,7 +1041,7 @@
             }
         },
         {
-            "id": "l3_31",
+            "id": "l3_32",
             "properties": {
 
                 "title": "Chamtoos Revier",
@@ -1032,7 +1065,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     24.863286186949967,
@@ -1041,7 +1074,7 @@
             }
         },
         {
-            "id": "l3_32",
+            "id": "l3_33",
             "properties": {
 
                 "title": "Van Staades Revier",
@@ -1065,7 +1098,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     25.198400245853655,
@@ -1074,7 +1107,7 @@
             }
         },
         {
-            "id": "l3_33",
+            "id": "l3_34",
             "properties": {
 
                 "title": "Uitenhagen",
@@ -1098,7 +1131,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     25.404531612429604,
@@ -1107,7 +1140,7 @@
             }
         },
         {
-            "id": "l3_34",
+            "id": "l3_35",
             "properties": {
 
                 "title": "Bethelsdorp",
@@ -1131,7 +1164,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     25.502500911290305,
@@ -1140,7 +1173,7 @@
             }
         },
         {
-            "id": "l3_35",
+            "id": "l3_36",
             "properties": {
 
                 "title": "Uitenhagen",
@@ -1164,7 +1197,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     25.404531612429604,
@@ -1173,7 +1206,7 @@
             }
         },
         {
-            "id": "l3_36",
+            "id": "l3_37",
             "properties": {
 
                 "title": "Geelhoutboom",
@@ -1197,7 +1230,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     25.53406704879386,
@@ -1206,7 +1239,7 @@
             }
         },
         {
-            "id": "l3_37",
+            "id": "l3_38",
             "properties": {
 
                 "title": "Zondag's Revier and Witte Revier Union",
@@ -1230,7 +1263,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     25.54789,
@@ -1239,7 +1272,7 @@
             }
         },
         {
-            "id": "l3_38",
+            "id": "l3_39",
             "properties": {
 
                 "title": "Witte Revier Valley",
@@ -1262,7 +1295,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     25.546174403449832,
@@ -1271,7 +1304,7 @@
             }
         },
         {
-            "id": "l3_39",
+            "id": "l3_40",
             "properties": {
 
                 "title": "Slagboom",
@@ -1295,7 +1328,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     25.66831, 
@@ -1304,7 +1337,7 @@
             }
         },
         {
-            "id": "l3_40",
+            "id": "l3_41",
             "properties": {
 
                 "title": "Zuurberg",
@@ -1328,7 +1361,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     25.76343,
@@ -1337,7 +1370,7 @@
             }
         },
         {
-            "id": "l3_41",
+            "id": "l3_42",
             "properties": {
 
                 "title": "Military Post at Great Fish River",
@@ -1361,7 +1394,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     25.97938,
@@ -1370,7 +1403,7 @@
             }
         },
         {
-            "id": "l3_41",
+            "id": "l3_43",
             "properties": {
 
                 "title": "Somerset Farm",
@@ -1394,7 +1427,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     25.584979539451204,
@@ -1403,7 +1436,7 @@
             }
         },
         {
-            "id": "l3_42",
+            "id": "l3_44",
             "properties": {
 
                 "title": "Mr. P.'s Farm",
@@ -1427,7 +1460,7 @@
 
             "geometry": {
 
-                "type": "point",
+                "type": "Point",
                 "coordinates": [
 
                     25.49549,
