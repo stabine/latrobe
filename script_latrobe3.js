@@ -396,4 +396,56 @@ legend3.onAdd = function () {
 // Legende zur Karte hinzufügen
 legend3.addTo(map3);
 
+//--------Outbound-Layer----------
+fetch('l3_lcp-master.geojson')
+.then(response => response.json())
+.then(data7 => {
+
+// load GeoJSON
+console.log(data7);
+
+// polyline from GeoJSON
+L.geoJSON(data7, {
+  style: function () {
+    return {
+      color: "#004641",
+      weight: 2,
+      opacity: 0.7      
+   };
+ }
+})
+.bindTooltip("Outbound-route (LCP)", { permanent: false, direction: "top", offset: [0, -10] })
+.bindPopup("<h3>Outbound-route assumed using Least-Cost-Path-Analysis in QGIS</h3><p>This line shows a likely outbound route, assumed by using a least-cost-path analysis in QGIS.</p>")
+.addTo(map3);
+})
+.catch(error => {
+console.error('Fehler beim Laden des GeoJSON:', error);
+});
+
+//--------Return-Layer----------
+fetch('l4_lcp-master.geojson')
+.then(response => response.json())
+.then(data8 => {
+
+// load GeoJSON
+console.log(data8);
+
+// polyline from GeoJSON
+L.geoJSON(data8, {
+  style: function () {
+    return {
+      color: "#8B0000",
+      weight: 2,
+      opacity: 0.7      
+   };
+ }
+})
+.bindTooltip("Return-route (LCP)", { permanent: false, direction: "top", offset: [0, -10] })
+.bindPopup("<h3>Return-route assumed using Least-Cost-Path-Analysis in QGIS</h3><p>This line shows a likely return route, assumed by using a least-cost-path analysis in QGIS.</p>")
+.addTo(map3);
+})
+.catch(error => {
+console.error('Fehler beim Laden des GeoJSON:', error);
+});
+
 });
