@@ -357,7 +357,7 @@
             "properties": {
 
                 "title": "Peak of Teneriffe, at about eighty miles distance",
-                "note": "The Ship is going south from the Ilhas Sevagens. Latrobe describes this point vaguely since he is not giving any direction towards which the peak is visible. Therefore the point set here is more of an estimation.", 
+                "note": "The Ship is going south from the Ilhas Selvagens. Latrobe describes this point vaguely since he is not giving any direction towards which the peak is visible. Therefore the point set here is more of an estimation.", 
                 "role": "visited",
                 "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 12", "https://archive.org/details/journalofvisitto00latr/page/12/mode/2up"],
                 "closeMatch": [
@@ -544,7 +544,7 @@
                     null
                 ],
 
-                "certainty": "certain" 
+                "certainty": "less-certain" 
             },
 
             "time": "1815-12-04", 
@@ -573,7 +573,7 @@
                     null
                 ],
 
-                "certainty": "certain" 
+                "certainty": "less-certain" 
             },
 
             "time": "1815-12-05", 
@@ -602,7 +602,7 @@
                     null
                 ],
 
-                "certainty": "certain" 
+                "certainty": "less-certain" 
             },
 
             "time": "1815-12-06", 
@@ -630,7 +630,7 @@
                     null
                 ],
 
-                "certainty": "certain" 
+                "certainty": "less-certain" 
             },
 
             "time": "1815-12-07", 
@@ -659,7 +659,7 @@
                     null
                 ],
 
-                "certainty": "certain" 
+                "certainty": "less-certain" 
             },
 
             "time": "1815-12-09", 

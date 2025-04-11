@@ -369,7 +369,7 @@ if (uniqueDates3.size > 0) {
 
   // Layer control for switching between base maps and overlay layers
   const baseMap3 = {
-    "OpenTopoMap": OpenTopoMap //naming the variables mit strings; add ',' after 'osm' when using more map-layers
+    "OpenTopoMap": OpenTopoMap 
   };
   // -----------------Create and add layer control to the map (still not sure wether I need it)--------------------------------------
   L.control.layers(baseMap3, certaintyLayers3, {

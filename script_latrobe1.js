@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// -------------------Map initialization, pre-set location for each map------------------------------
+// -------------------Map initialization, pre-set location and zoom------------------------------
 const map1 = L.map('map1', {
   center: [16.737222, -22.936111], // set to Gravesend
   zoom: 3,
@@ -18,16 +18,6 @@ var osm1 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 });
 osm1.addTo(map1);
 
-
-// Initialisation of Layer for all Markers 
-const allMarkersLayer1 = L.layerGroup(); // Layer for all Markers
-
-// Create LayerGroups for each certanty-type 
-const roleLayers1 = {
-    'Select All': allMarkersLayer1, // combined Layer for all markers
-    'Visited': L.layerGroup(),
-    'Visited nearby': L.layerGroup(),
-  };
 
 let markersWithDates1 = [];
 let uniqueDates1 = new Set();
@@ -83,8 +73,8 @@ fetch('latrobe1.json')
       
       const date1 = new Date(time1);
 
-      let radius1 = 35;
-      let color1 = "green";
+      let radius1 = 8000;
+      let color1 = "#09556B";
       let opacity1 = 1;
       
 
@@ -97,18 +87,18 @@ fetch('latrobe1.json')
           color1 = "#BF4D00";
           break;
         case 'uncertain':
-          color1 = "#5B215E";
+          color1 = "#97379E";
           break;
       }
 
 
       switch(role1) {
         case 'visited':
-          radius1 = 8000;
+          radius1 = 10000;
           opacity1 = 1; // opaque
           break;
         case 'visited_nearby':
-          radius1 = 15000
+          radius1 = 20000
           opacity1 = 0.4; // slightly translucent
           break;
         default:
@@ -163,31 +153,12 @@ fetch('latrobe1.json')
         .bindPopup(popupContent1) // Popup when clicking
         .bindTooltip(title1, { permanent: false, direction: "top", offset: [0, -10], className: 'custom-tooltip' }); // Tooltip when hovering;
 
-    // Add Marker to allMarkersLayer (for "Select All")
-    allMarkersLayer1.addLayer(marker1);
+    
     marker1.time = date1;
     markersWithDates1.push(marker1);
-    
-      
-
-      // -----------------------------Add marker to the appropriate LayerGroup based on role-type-------------------------------
-      switch (role1) {
-        case 'visited':
-          roleLayers1['Visited'].addLayer(marker1);
-          break;
-        case 'visited_nearby':
-          roleLayers1['Visited nearby'].addLayer(marker1);
-          break;        
-      }
+          
     });
       
-
-  // set "Select All"-Layer as default
-    map1.addLayer(allMarkersLayer1);
-
-    map1.addLayer(roleLayers1['Visited']);
-    map1.addLayer(roleLayers1['Visited nearby']);
-
     slider1.max = [...uniqueDates1].length - 1;
     slider1.oninput = function () {
       let selectedDate1 = [...uniqueDates1][this.value];
@@ -218,7 +189,7 @@ legend1.onAdd = function () {
         <div style="margin-bottom:5px;"><strong>Legend</strong></div>
         <div class="legend-item"><span class="legend-circle" style="background:#09556B;"></span> certain waypoint</div>
         <div class="legend-item"><span class="legend-circle" style="background:#BF4D00;"></span> less certain waypoint</div>
-        <div class="legend-item"><span class="legend-circle" style="background:#5B215E;"></span> uncertain waypoint</div>
+        <div class="legend-item"><span class="legend-circle" style="background:#97379E;"></span> uncertain waypoint</div>
         <div class="legend-item" style="margin-top:10px;"><span class="legend-line" style="background:#50052b;"></span> historical trade route</div>
         <div class="legend-item" style="margin-top:10px;"><span class="legend-line" style="background:#004641;"></span> likely route of Albion</div>
     `;
@@ -229,15 +200,7 @@ legend1.onAdd = function () {
 // Legende zur Karte hinzufügen
 legend1.addTo(map1);
 
-    // Layer control for switching between base maps and overlay layers
-    const baseMaps = {
-      "OpenStreetMap": osm1 //naming the variables mit strings; add ',' after 'osm' when using more map-layers
-    };
-
-    // -----------------Create and add layer control to the map (still not sure wether I need it)--------------------------------------
-    L.control.layers(baseMaps, roleLayers1, {
-      position: 'topright'
-    }).addTo(map1);
+    
 
     //----------------------------- Update marker radius and position when zooming or panning--------------------------------------------------------------
     function updateMarker() {
@@ -262,6 +225,12 @@ if (uniqueDates1.size > 0) {
   sliderValue1.textContent = `Date: ${formatDate(initialDateObj)}`;
 }
 
+// Create LayerGroups for each Route 
+const routeLayers1 = {
+  'Historical Trade Route': L.layerGroup(),
+  'Albions likely Route': L.layerGroup(),
+};
+
 //-----------historical trade route added-----------
   fetch('traderoute.json')
     .then(response => response.json())
@@ -271,7 +240,7 @@ if (uniqueDates1.size > 0) {
   console.log(data2);
 
   // polyline from GeoJSON
-    L.geoJSON(data2, {
+    const tradeLine = L.geoJSON(data2, {
       style: function () {
         return {
           color: "#50052b",
@@ -284,6 +253,8 @@ if (uniqueDates1.size > 0) {
     .bindTooltip("average Trade Ships", { permanent: false, direction: "top", offset: [0, -10] })
     .bindPopup("<h3>Historical Trade Route</h3><p>This line shows one of the most common routes sailing ships used during the 19th century due to the influence of currents and trade winds.</p>")
     .addTo(map1);
+
+    routeLayers1['Historical Trade Route'].addLayer(tradeLine);
   })
   .catch(error => {
     console.error('Fehler beim Laden des GeoJSON:', error);
@@ -298,7 +269,7 @@ if (uniqueDates1.size > 0) {
   console.log(data6);
 
   // polyline from GeoJSON
-    L.geoJSON(data6, {
+    const albionLine = L.geoJSON(data6, {
       style: function () {
         return {
           color: "#004641",
@@ -310,9 +281,26 @@ if (uniqueDates1.size > 0) {
     .bindTooltip("Albion", { permanent: false, direction: "top", offset: [0, -10] })
     .bindPopup("<h3>Likely route of the brig Albion</h3><p>This line is an assumption of the most likely route of the Albion, derived from a combination of close reading and automated evaluation of the travel journal of Christian Igantius Latrobe.</p>")
     .addTo(map1);
+
+    routeLayers1['Albions likely Route'].addLayer(albionLine);
   })
   .catch(error => {
     console.error('Fehler beim Laden des GeoJSON:', error);
   });
+
+ 
+  // add Layergroupes to map
+  map1.addLayer(routeLayers1['Historical Trade Route']);
+  map1.addLayer(routeLayers1['Albions likely Route']);
+
+  // Layer control for switching between base maps and overlay layers
+  const baseMaps = {
+    "OpenStreetMap": osm1 //naming the variables mit strings; add ',' after 'osm' when using more map-layers
+  };
+
+  // -----------------Create and add layer control to the map (still not sure wether I need it)--------------------------------------
+  L.control.layers(baseMaps, routeLayers1, {
+    position: 'topright'
+  }).addTo(map1);
 
 });
