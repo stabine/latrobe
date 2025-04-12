@@ -46,28 +46,34 @@ document.addEventListener('DOMContentLoaded', function() {
       uniqueDates3.add(date3);
 
       const popupContent3 = `
-        <h3>${title3}</h3>
+        
         <div class="info-group">
-          <p class="subtitle">Role: ${role3}</p>
-          ${closeMatch3[0] !== null || closeMatch3[1] !== null ? `
-            <p><strong>References:</strong><br>
-              ${closeMatch3[0] !== null ? `<a href="${closeMatch3[0]}" target="_blank">GeoNames</a>` : ''}
-              <br>
-              ${closeMatch3[1] !== null ? `<a href="${closeMatch3[1]}" target="_blank">WikiData</a>` : ''}
-            </p>
-          ` : ''}
-        </div>
-        <div class="info-group">
-          <p><strong>Certainty:</strong> <br>${certainty3}<br><br>
-          <strong>Role:</strong> <br>${role3}</p>
-        </div>
-        <div class="info-group">
-          <p><strong>Notes:</strong><br>${note3}</p>
-        </div>
-        <div class="info-group">
-          <p><strong>Coordinates:</strong><br> [${lat3}, ${lng3}]</p>
+          <h3>${title3}</h3>
+          <p><strong>Certainty:</strong> ${certainty3}<br>
+          ${role3 == "visited" ? `<strong>Role:</strong> visited`: ''}
+          ${role3 == "visited_nearby" ? `<strong>Role:</strong> visited nearby`: ''}<br>
           <p><strong>Date:</strong> ${time3}</p>
-          ${wasDerivedFrom3 ? `<p><strong>Source:</strong><br><a href="${wasDerivedFrom3[1]}" target="blank">${wasDerivedFrom3[0]}</a>` : ''}
+          </p>
+        </div>
+
+        <div class="info-group">
+          <p><strong>Notes:</strong></p>
+          <p>${note3}</p>
+        </div>
+
+        <div class="info-group">
+          <p><strong>Coordinates:</strong> ${lat3}, ${lng3}</p>
+          ${closeMatch3[0] !== null || closeMatch3[1] !== null ? `
+              <p><strong>References:</strong><br>
+                ${closeMatch3[0] !== null ? `<a href="${closeMatch3[0]}" target="_blank">GeoNames</a>` : ''}
+                <br>
+                ${closeMatch3[1] !== null ? `<a href="${closeMatch3[1]}" target="_blank">WikiData</a>` : ''}
+              </p>
+            ` : ''} 
+        </div>
+        
+        <div class="info-group">          
+          ${wasDerivedFrom3 ? `<p><strong>Source:</strong><br><a href="${wasDerivedFrom3[1]}" target="blank">${wasDerivedFrom3[0]}</a></p>`: ''}
         </div>
       `;
 
@@ -78,8 +84,14 @@ document.addEventListener('DOMContentLoaded', function() {
         case 'uncertain': color3 = "#50052b"; break;
       }
 
+      let radius3 = 500;
+      switch (role3) {
+        case 'visited': radius3 = 500; break;
+        case 'visited_nearby': radius3 = 1200; break;
+      }
+
       const marker3 = L.circle([lat3, lng3], {
-        radius: 500,
+        radius: radius3,
         color: color3,
         opacity: 0.5,
         fillOpacity: 0.5

@@ -82,36 +82,36 @@ document.addEventListener('DOMContentLoaded', function() {
   
       // set markers and popup
         const popupContent2 = `
-            <h3>${title2}</h3>
-            <div class="info-group">
-              <p class="subtitle">Role: ${role2}</p>
-  
-              ${closeMatch2[0] !== null || closeMatch2[1] !== null ? `
+        
+        <div class="info-group">
+          <h3>${title2}</h3>
+          <p><strong>Certainty:</strong> ${certainty2}<br>
+          ${role2 == "visited" ? `<strong>Role:</strong> visited`: ''}
+          ${role2 == "visited_nearby" ? `<strong>Role:</strong> visited nearby`: ''}<br>
+          <p><strong>Date:</strong> ${time2}</p>
+          </p>
+        </div>
+
+        <div class="info-group">
+          <p><strong>Notes:</strong></p>
+          <p>${note2}</p>
+        </div>
+
+        <div class="info-group">
+          <p><strong>Coordinates:</strong> ${lat2}, ${lng2}</p>
+          ${closeMatch2[0] !== null || closeMatch2[1] !== null ? `
               <p><strong>References:</strong><br>
                 ${closeMatch2[0] !== null ? `<a href="${closeMatch2[0]}" target="_blank">GeoNames</a>` : ''}
                 <br>
                 ${closeMatch2[1] !== null ? `<a href="${closeMatch2[1]}" target="_blank">WikiData</a>` : ''}
               </p>
-              ` : ''}
-            </div>
-  
-            <div class="info-group">
-              <p><strong>Certainty:</strong> <br>${certainty2}<br>
-              <strong>Role:</strong> <br>${role2}</p>
-            </div>
-  
-            <div class="info-group">
-              <h3>Notes:</h3>
-              <p>${note2}</p>
-            </div>
-  
-            <div class="info-group">
-              <p><strong>Coordinates:</strong> [${lng2}, ${lat2}]</p>
-              <p><strong>Date:</strong> ${time2}</p>
-              ${wasDerivedFrom2 ? `<p><strong>Source:</strong><br><a href="${wasDerivedFrom2[1]}" target="blank">${wasDerivedFrom2[0]}</a>`: ''}
-            </div>
-            
-          `;
+            ` : ''} 
+        </div>
+        
+        <div class="info-group">          
+          ${wasDerivedFrom2 ? `<p><strong>Source:</strong><br><a href="${wasDerivedFrom2[1]}" target="blank">${wasDerivedFrom2[0]}</a></p>`: ''}
+        </div>
+      `;
   
         // set marker based on certainty level 
         let radius2 = 25; // default

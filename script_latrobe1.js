@@ -1,7 +1,5 @@
-//Klammerfunktion, die Inhalte korrekt laden soll 
+//function-frame for whole script 
 document.addEventListener('DOMContentLoaded', function() {
-
-
 
 // -------------------Map initialization, pre-set location and zoom------------------------------
 const map1 = L.map('map1', {
@@ -113,30 +111,31 @@ fetch('latrobe1.json')
         
         <div class="info-group">
           <h3>${title1}</h3>
-          <p class="subtitle">Role: ${role1}</p>
-          ${closeMatch1[0] !== null || closeMatch1[1] !== null ? `
-            <p><strong>References:</strong><br>
-              ${closeMatch1[0] !== null ? `<a href="${closeMatch1[0]}" target="_blank">GeoNames</a>` : ''}
-              <br>
-              ${closeMatch1[1] !== null ? `<a href="${closeMatch1[1]}" target="_blank">WikiData</a>` : ''}
-            </p>
-          ` : ''}
+          <p><strong>Certainty:</strong> ${certainty1}<br>
+          ${role1 == "visited" ? `<strong>Role:</strong> visited`: ''}
+          ${role1 == "visited_nearby" ? `<strong>Role:</strong> visited nearby`: ''}<br>
+          <p><strong>Date:</strong> ${time1}</p>
+          </p>
         </div>
 
         <div class="info-group">
-          <p><strong>Certainty:</strong> <br>${certainty1}<br>
-          <strong>Role:</strong> <br>${role1}</p>
-        </div>
-
-        <div class="info-group">
-          <h3>Notes:</h3>
+          <p><strong>Notes:</strong></p>
           <p>${note1}</p>
         </div>
 
         <div class="info-group">
-          <p><strong>Coordinates:</strong> [${lng1}, ${lat1}]</p>
-          <p><strong>Date:</strong> ${time1}</p>
-          ${wasDerivedFrom1 ? `<p><strong>Source:</strong><br><a href="${wasDerivedFrom1[1]}" target="blank">${wasDerivedFrom1[0]}</a>`: ''}
+          <p><strong>Coordinates:</strong> ${lat1}, ${lng1}</p>
+          ${closeMatch1[0] !== null || closeMatch1[1] !== null ? `
+              <p><strong>References:</strong><br>
+                ${closeMatch1[0] !== null ? `<a href="${closeMatch1[0]}" target="_blank">GeoNames</a>` : ''}
+                <br>
+                ${closeMatch1[1] !== null ? `<a href="${closeMatch1[1]}" target="_blank">WikiData</a>` : ''}
+              </p>
+            ` : ''} 
+        </div>
+        
+        <div class="info-group">          
+          ${wasDerivedFrom1 ? `<p><strong>Source:</strong><br><a href="${wasDerivedFrom1[1]}" target="blank">${wasDerivedFrom1[0]}</a></p>`: ''}
         </div>
       `;
 
@@ -251,7 +250,7 @@ const routeLayers1 = {
      }
     })
     .bindTooltip("average Trade Ships", { permanent: false, direction: "top", offset: [0, -10] })
-    .bindPopup("<h3>Historical Trade Route</h3><p>This line shows one of the most common routes sailing ships used during the 19th century due to the influence of currents and trade winds.</p>")
+    .bindPopup("<h3>Historical Trade Route</h3><p>This line shows an educated guess of the most common routes sailing ships used during the 19th century due to the influence of currents and trade winds.</p>")
     .addTo(map1);
 
     routeLayers1['Historical Trade Route'].addLayer(tradeLine);
@@ -279,7 +278,7 @@ const routeLayers1 = {
      }
     })
     .bindTooltip("Albion", { permanent: false, direction: "top", offset: [0, -10] })
-    .bindPopup("<h3>Likely route of the brig Albion</h3><p>This line is an assumption of the most likely route of the Albion, derived from a combination of close reading and automated evaluation of the travel journal of Christian Igantius Latrobe.</p>")
+    .bindPopup("<h3>Likely route of the brig Albion</h3><p>This line is an assumption of the most likely route of the Albion, derived from a combination of close reading and automated evaluation of the travel journal of Christian Ignatius Latrobe.</p>")
     .addTo(map1);
 
     routeLayers1['Albions likely Route'].addLayer(albionLine);

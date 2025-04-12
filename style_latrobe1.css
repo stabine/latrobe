@@ -91,6 +91,10 @@ div#map3 {
   margin-right: 0.5%;
 }
 
+div.info-group {
+  padding-bottom: 2px;
+}
+
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 30px;
@@ -122,7 +126,6 @@ p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   color: #1B3852;
-  padding: 5px;
 }
 
 p#footer {
@@ -183,7 +186,7 @@ footer {
     border: 2px solid #004641;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    width: 600px; 
+    width: 400px; 
     max-height: 400px;  
     box-sizing: border-box;
     
@@ -193,7 +196,7 @@ footer {
   padding: 0;  
   background-color: #fff;
   max-height: 300px;
-  width: 550px !important;
+  width: 350px !important;
   overflow-y: auto;
   overflow-x: hidden;
   box-sizing: content-box;
@@ -209,7 +212,7 @@ footer {
   }
 
 .leaflet-popup-content h3 {
-    font-size: 14px;
+    font-size: 15px;
     color: #004641;
     
   }
@@ -222,7 +225,7 @@ footer {
   }
   
 .leaflet-popup-content a {
-    color: #00BAAD;
+    color: #00806b;
     text-decoration: none;
   }
   
@@ -237,17 +240,21 @@ footer {
 
 .info-group {
     margin-bottom: 0px;
-    padding-left: 10px;
+    padding-left: 5px;
     width: 100%;
   }
 
-.subtitle {
-    font-size: 13px;
-    letter-spacing: 0.8px;  
-    color: #666;         
-    margin-top: 0;       
-    margin-bottom: 10px; 
+.info-group h3 {
+  color: #264F73;
+  font-size: 16px;
+  padding-left: 9px;
+  padding-bottom: 5px;
+  letter-spacing: 0.8px;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 3px;
 }
+
 
 .custom-tooltip {
     z-index: 99 !important;  
