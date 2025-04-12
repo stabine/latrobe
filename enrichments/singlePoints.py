@@ -1,8 +1,8 @@
 import json
 import os
 
-input_file = "latrobe4.json"
-output_dir = "Latrobe4_singlePoints"  # Verzeichnis, in dem die neuen GeoJSON-Dateien gespeichert werden sollen
+input_file = "latrobe2.json"
+output_dir = "Latrobe2_singlePoints"  # Verzeichnis, in dem die neuen GeoJSON-Dateien gespeichert werden sollen
 
 def split_geojson(input_file, output_dir):
     # GeoJSON-Datei einlesen
@@ -40,7 +40,7 @@ def split_geojson(input_file, output_dir):
         }
         
         # Benenne die Datei nach dem Index oder einer Eigenschaft
-        output_file = os.path.join(output_dir, f"latrobe4_{i+1}.geojson")
+        output_file = os.path.join(output_dir, f"latrobe2_{i+1}.geojson")
         
         # Speichere die GeoJSON-Datei
         with open(output_file, 'w', encoding='utf-8') as f:

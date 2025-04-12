@@ -171,10 +171,31 @@ document.addEventListener('DOMContentLoaded', function() {
   
       });
   
-      // create polyline with collected coordinates
-      if (latlngs.length > 1) {  // to ensure more than 1 point
-        L.polyline(latlngs, { color: '#50052b', weight: 2 }).addTo(map2);
+      //--------Outbound-Layer----------
+      fetch('l2_lcp-master.geojson')
+      .then(response => response.json())
+      .then(data2_1 => {
+
+      // load GeoJSON
+      console.log(data2_1);
+
+      // polyline from GeoJSON
+      L.geoJSON(data2_1, {
+        style: function () {
+          return {
+            color: "#8B0000",
+            weight: 2,
+            opacity: 0.7      
+        };
       }
+      })
+      .bindTooltip("Outbound-route (LCP)", { permanent: false, direction: "top", offset: [0, -10] })
+      .bindPopup("<h3>Latrobe's path</h3><p>This line shows a likely path Latrobe could have used, assumed by using a least-cost-path analysis in QGIS.</p>")
+      .addTo(map2);
+      })
+      .catch(error => {
+      console.error('Fehler beim Laden des GeoJSON:', error);
+      });
   
       // set "Select All"-Layer as default
       map2.addLayer(allMarkersLayer2);

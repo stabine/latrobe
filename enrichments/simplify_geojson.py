@@ -1,7 +1,7 @@
 import json
 
-input_file = "latrobe3.json"
-output_file = "latrobe_points3.geojson"
+input_file = "latrobe2.json"
+output_file = "latrobe_points2.geojson"
 
 def simplify_geojson(input_file, output_file):
     # GeoJSON-Datei einlesen
