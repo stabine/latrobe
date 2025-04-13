@@ -417,7 +417,7 @@
             "properties": {
 
                 "title": "Palma",
-                "note": "The island of La Palma is described as in sight since 25th but to no specified direction. The ship passed it west of the island three days later and described as <i>so close [...] that we could distinctly discern every object on shore.</i>.", 
+                "note": "The island of La Palma is described as in sight since 25th but in no specified direction. The ship passed it west of the island three days later and Latrobe described it as <i>so close [...] that we could distinctly discern every object on shore</i>.", 
                 "role": "visited_nearby",
                 "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 12", "https://archive.org/details/journalofvisitto00latr/page/12/mode/2up"],
                 "closeMatch": [
