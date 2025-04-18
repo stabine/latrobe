@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     center: [-33.775120570267205, 22.333937355866688],
     zoom: 8,
     minZoom: 8,  // Voreingestellter Zoom-Bereich 
-    maxZoom: 13
+    maxZoom: 15
   });
 
   // OpenTopoMap als Basislayer hinzufügen
@@ -260,10 +260,10 @@ document.addEventListener('DOMContentLoaded', function() {
   legend3.onAdd = function () {
     const div = L.DomUtil.create("div", "legend-map3");
     div.innerHTML = `
-      <div style="margin-bottom:5px;"><strong>Certainty Levels</strong></div>
-      <div class="legend-item"><span class="legend-circle" style="background:#008078;"></span> Certain</div>
-      <div class="legend-item"><span class="legend-circle" style="background:#FF9800;"></span> Less certain</div>
-      <div class="legend-item"><span class="legend-circle" style="background:#50052b;"></span> Uncertain</div>
+      <div style="margin-bottom:5px;"><strong>Legend</strong></div>
+      <div class="legend-item"><span class="legend-circle" style="background:#008078;"></span> certain waypoint</div>
+      <div class="legend-item"><span class="legend-circle" style="background:#FF9800;"></span> less certain waypoint</div>
+      <div class="legend-item"><span class="legend-circle" style="background:#50052b;"></span> uncertain waypoint</div>
     `;
     return div;
   };

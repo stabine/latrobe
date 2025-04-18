@@ -153,10 +153,10 @@ document.addEventListener('DOMContentLoaded', function() {
   legend2.onAdd = function() {
     const div = L.DomUtil.create("div", "legend-map2");
     div.innerHTML = `
-      <div style="margin-bottom:5px;"><strong>Certainty Levels</strong></div>
-      <div class="legend-item"><span class="legend-circle" style="background:#008078;"></span> Certain</div>
-      <div class="legend-item"><span class="legend-circle" style="background:#FF9800;"></span> Less certain</div>
-      <div class="legend-item" style="margin-top:10px;"><span class="legend-line" style="background:#50052b;"></span> Route</div>
+      <div style="margin-bottom:5px;"><strong>Legend</strong></div>
+      <div class="legend-item"><span class="legend-circle" style="background:#008078;"></span> certain waypoint</div>
+      <div class="legend-item"><span class="legend-circle" style="background:#FF9800; opacity:0.6; width:15px; height: 15px;"></span> less certain waypoint</div>
+      <div class="legend-item" style="margin-top:10px;"><span class="legend-line" style="background:#8B0000;"></span> Latrobe's likely route</div>
     `;
     return div;
   };
@@ -310,7 +310,7 @@ document.addEventListener('DOMContentLoaded', function() {
           direction: "top", 
           offset: [0, -10] 
         })
-        .bindPopup("<h3>Latrobe's path</h3><p>This line shows a likely path Latrobe could have used, assumed by using a least-cost-path analysis in QGIS.</p>")
+        .bindPopup("<h3>Latrobe's path</h3><p>This line shows a likely path Latrobe could have used, assumed by using a <a href='https://greggsaldutti-jr.medium.com/multiple-step-least-cost-path-analysis-with-qgis-and-python-892feef692f6' target='_blank'>least-cost-path analysis in QGIS</a>.</p>")
         .addTo(map2);
     })
     .catch(error => {
