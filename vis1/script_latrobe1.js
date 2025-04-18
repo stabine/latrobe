@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // ===== 5. HAUPTDATEN LADEN UND VERARBEITEN =====
   
-  fetch('latrobe1.json')
+  fetch('vis1/latrobe1.json')
     .then(response => response.json())
     .then(data => {
 
@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // ===== 7. ROUTES LADEN =====
   
   // Handelsroute laden
-  fetch('traderoute.json')
+  fetch('vis1/traderoute.json')
     .then(response => response.json())
     .then(data2 => {
       console.log(data2);
@@ -263,7 +263,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   
   // Albion-Route laden
-  fetch('latrobe_route1.geojson')
+  fetch('vis1/latrobe_route1.geojson')
     .then(response => response.json())
     .then(data6 => {
       console.log(data6);

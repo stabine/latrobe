@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     center: [-34.03143020008334, 19.55655308951873], // Set to Gnadenthal
     zoom: 16.5,
     zoomSnap: 0.5,
-    minZoom: 15,
+    minZoom: 14,
     maxZoom: 20
   });
   
@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // ===== 6. HAUPTDATEN LADEN UND MARKER ERSTELLEN =====
   
-  fetch('latrobe2.json')
+  fetch('vis2/latrobe2.json')
     .then(response => response.json())
     .then(data3 => {
       const latlngs = []; // Für potenzielle Polyline-Erstellung
@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', function() {
             color2 = "#008078";
             break;
           case 'less-certain':
-            radius2 = 20; 
+            radius2 = 40; 
             opacity2 = 0.6;
             color2 = "#FF9800";
             break;
@@ -290,7 +290,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // ===== 7. ROUTE-DATEN LADEN =====
   
   // Route laden
-  fetch('l2_lcp-master.geojson')
+  fetch('vis2/l2_lcp-master.geojson')
     .then(response => response.json())
     .then(data2_1 => {
       console.log(data2_1);

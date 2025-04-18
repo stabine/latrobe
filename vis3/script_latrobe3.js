@@ -123,8 +123,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Beide GeoJSON-Dateien parallel laden
   Promise.all([
-    fetch('latrobe3.json').then(response => response.json()),
-    fetch('latrobe4.json').then(response => response.json())
+    fetch('vis3/latrobe3.json').then(response => response.json()),
+    fetch('vis3/latrobe4.json').then(response => response.json())
   ])
   .then(([data4, data5]) => {
     // Marker aus beiden Dateien verarbeiten
@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // ===== 8. ROUTEN-LAYER LADEN =====
   
   // Hinweg-Route laden
-  fetch('l3_lcp-master.geojson')
+  fetch('vis3/l3_lcp-master.geojson')
     .then(response => response.json())
     .then(data7 => {
       console.log(data7);
@@ -301,7 +301,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
   // Rückweg-Route laden
-  fetch('l4_lcp-master.geojson')
+  fetch('vis3/l4_lcp-master.geojson')
     .then(response => response.json())
     .then(data8 => {
       console.log(data8);
