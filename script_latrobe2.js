@@ -7,7 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
     let day = date.getDate().toString().padStart(2, '0');
     let month = (date.getMonth() + 1).toString().padStart(2, '0');
     let year = date.getFullYear();
-    return `${day}.${month}.${year}`;
+    let hours = date.getHours().toString().padStart(2, '0');
+    let minutes = date.getMinutes().toString().padStart(2, '0');
+
+    return `${hours}:${minutes}, ${day}.${month}.${year}`;
   }
   
   // ===== 2. KARTE INITIALISIEREN =====
@@ -17,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     zoom: 16.5,
     zoomSnap: 0.5,
     minZoom: 15,
-    maxZoom: 19
+    maxZoom: 20
   });
   
   // OSM Basislayer hinzufügen
@@ -26,23 +29,26 @@ document.addEventListener('DOMContentLoaded', function() {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   });
   osm2.addTo(map2);
+
+  // Staelliten-Layer
+  var StadiaSatellite = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.{ext}', {
+    minZoom: 0,
+    maxZoom: 20,
+    attribution: '&copy; CNES, Distribution Airbus DS, © Airbus DS, © PlanetObserver (Contains Copernicus Data) | &copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    ext: 'jpg'
+  });
+
   
-  // ===== 3. LAYER-GRUPPEN UND BASE MAPS DEFINIEREN =====
-  
-  // Layer für alle Marker erstellen
-  const allMarkersLayer2 = L.layerGroup();
-  
-  // Layer für verschiedene Gewissheitsgrade erstellen
-  const certaintyLayers2 = {
-    'Select All': allMarkersLayer2,
-    'Certain Waypoint': L.layerGroup(),
-    'Less certain Waypoint': L.layerGroup(),
-    'Uncertain Waypoint': L.layerGroup(),
-  };
+  // ===== 3. BASE MAP AND SATTELITE MAP DEFINIEREN =====
   
   // Base Map definieren
   const baseMap2 = {
     "OpenStreetMap": osm2
+  };
+
+  // Satelliten Map
+  const SatMap2 = {
+    "Stadia Sattelite View": StadiaSatellite
   };
   
   // ===== 4. TIME SLIDER SETUP =====
@@ -50,25 +56,38 @@ document.addEventListener('DOMContentLoaded', function() {
   // Variablen für Time Slider und Marker
   let markersWithDates2 = [];
   let uniqueDates2 = new Set();
+  let animationInterval = null; // Für die Animation
+  let isPlaying = false; // Status der Animation
+  const ANIMATION_SPEED = 1000; // Feste Animationsgeschwindigkeit (1 Sekunde)
   
-  // Time Slider und Display-Element erstellen
+  // Container für Slider und Controls erstellen
+  const sliderContainer = document.getElementById("slider-container2");
+  
+  // Play/Pause Button erstellen
+  const playButton = document.createElement("button");
+  playButton.innerHTML = "Play";
+  playButton.className = "play-button";
+  sliderContainer.appendChild(playButton);
+  
+  // Time Slider erstellen
   const slider2 = document.createElement("input");
   slider2.type = "range";
   slider2.min = 0;
   slider2.value = 0;
   slider2.className = "time-slider2";
-  document.getElementById("slider-container2").appendChild(slider2);
+  sliderContainer.appendChild(slider2);
   
+  // Anzeigeelement für den Slider-Wert
   const sliderValue2 = document.createElement("span");
   sliderValue2.id = "slider-value2";
-  document.getElementById("slider-container2").appendChild(sliderValue2);
+  sliderContainer.appendChild(sliderValue2);
   
-  // Time Slider Event-Handler - kombiniert beide Listener
-  slider2.addEventListener("input", function() {
+  // Funktion zum Aktualisieren der Karte basierend auf dem Slider-Wert
+  function updateMapBySlider() {
     if (uniqueDates2.size === 0) return;
     
     // Datum holen und anzeigen
-    let selectedDate2 = [...uniqueDates2][this.value];
+    let selectedDate2 = [...uniqueDates2][slider2.value];
     let dateObj2 = new Date(selectedDate2);
     let formattedDate2 = formatDate(dateObj2);
     sliderValue2.textContent = `Date: ${formattedDate2}`;
@@ -81,6 +100,50 @@ document.addEventListener('DOMContentLoaded', function() {
         map2.removeLayer(marker2);
       }
     });
+  }
+  
+  // Animation starten
+  function startAnimation() {
+    isPlaying = true;
+    playButton.innerHTML = "Pause";
+    
+    // Animation-Interval mit fester Geschwindigkeit
+    animationInterval = setInterval(() => {
+      // Slider-Wert erhöhen oder auf 0 zurücksetzen
+      if (parseInt(slider2.value) < parseInt(slider2.max)) {
+        slider2.value = parseInt(slider2.value) + 1;
+      } else {
+        slider2.value = 0;
+      }
+      
+      // Karte aktualisieren
+      updateMapBySlider();
+    }, ANIMATION_SPEED);
+  }
+  
+  // Animation stoppen
+  function stopAnimation() {
+    isPlaying = false;
+    playButton.innerHTML = "Play";
+    clearInterval(animationInterval);
+  }
+  
+  // Event-Handler für Play/Pause Button
+  playButton.addEventListener("click", function() {
+    if (isPlaying) {
+      stopAnimation();
+    } else {
+      startAnimation();
+    }
+  });
+  
+  // Time Slider Event-Handler 
+  slider2.addEventListener("input", function() {
+    // Wenn der Slider manuell bewegt wird, Animation stoppen
+    if (isPlaying) {
+      stopAnimation();
+    }
+    updateMapBySlider();
   });
   
   // ===== 5. LEGENDE ERSTELLEN =====
@@ -197,21 +260,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Marker mit Datum versehen und zur Liste hinzufügen
         marker2.time = date2;
         markersWithDates2.push(marker2);
-        
-        // Marker zur allMarkersLayer hinzufügen
-        allMarkersLayer2.addLayer(marker2);
-        
-        // Marker zu entsprechender Gewissheits-Layer hinzufügen
-        switch (certainty2) {
-          case 'certain':
-            certaintyLayers2['Certain Waypoint'].addLayer(marker2);
-            break;
-          case 'less-certain':
-            certaintyLayers2['Less certain Waypoint'].addLayer(marker2);
-            break;
-          case 'uncertain':
-            certaintyLayers2['Uncertain Waypoint'].addLayer(marker2);
-        }
       });
       
       // Time Slider konfigurieren
@@ -233,15 +281,9 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       
       // Layer-Control hinzufügen
-      L.control.layers(baseMap2, certaintyLayers2, {
+      L.control.layers(baseMap2, SatMap2, {
         position: 'topright'
       }).addTo(map2);
-      
-      // Default-Layer anzeigen
-      map2.addLayer(allMarkersLayer2);
-      map2.addLayer(certaintyLayers2['Certain Waypoint']);
-      map2.addLayer(certaintyLayers2['Less certain Waypoint']);
-      map2.addLayer(certaintyLayers2['Uncertain Waypoint']);
     })
     .catch(err => console.error('Fehler beim Laden der GeoJSON-Datei:', err));
   
