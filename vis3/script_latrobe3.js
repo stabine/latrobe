@@ -104,8 +104,8 @@ document.addEventListener('DOMContentLoaded', function() {
       const marker3 = L.circle([lat3, lng3], {
         radius: radius3,
         color: color3,
-        opacity: 0.5,
-        fillOpacity: 0.5
+        opacity: 0.7,
+        fillOpacity: 0.6
       }).bindPopup(popupContent3).bindTooltip(title3, { 
         permanent: false, 
         direction: "top", 
@@ -182,8 +182,8 @@ document.addEventListener('DOMContentLoaded', function() {
           }
     
           // Größe an Distanz anpassen
-          const maxSize = Math.min(2000, distance * 0.5);
-          const minSize = 300;
+          const maxSize = Math.min(5000, distance * 0.5);
+          const minSize = 500;
           let size = maxSize;
     
           if (nextMarker && selectedDate3 < nextMarker.time) {
@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function() {
           if (map3.hasLayer(marker3)) {
             map3.addLayer(marker3);
           }
-          marker3.setRadius(1200);
+          marker3.setRadius(radius3);
         }
       });
       
@@ -251,7 +251,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   })
-  .catch(err => console.error('Fehler beim Laden der GeoJSON-Dateien:', err));
+  .catch(err => console.error('Error loading GeoJSON:', err));
 
   // ===== 7. LEGENDE ERSTELLEN =====
   
@@ -264,6 +264,8 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="legend-item"><span class="legend-circle" style="background:#008078;"></span> certain waypoint</div>
       <div class="legend-item"><span class="legend-circle" style="background:#FF9800;"></span> less certain waypoint</div>
       <div class="legend-item"><span class="legend-circle" style="background:#50052b;"></span> uncertain waypoint</div>
+      <div class="legend-item" style="margin-top:10px;"><span class="legend-line" style="background:#004641; opacity: 0.7;"></span> outbound route</div>
+      <div class="legend-item" style="margin-top:10px;"><span class="legend-line" style="background:#8B0000; opacity: 0.7;"></span> return route</div>
     `;
     return div;
   };
@@ -272,7 +274,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // ===== 8. ROUTEN-LAYER LADEN =====
   
-  // Hinweg-Route laden
+  // loading outbound route
   fetch('vis3/l3_lcp-master.geojson')
     .then(response => response.json())
     .then(data7 => {
@@ -283,8 +285,8 @@ document.addEventListener('DOMContentLoaded', function() {
         style: function () {
           return {
             color: "#004641",
-            weight: 2,
-            opacity: 0.7      
+            weight: 3,
+            opacity: 0.6      
          };
        }
       })
@@ -297,10 +299,10 @@ document.addEventListener('DOMContentLoaded', function() {
       .addTo(map3);
     })
     .catch(error => {
-      console.error('Fehler beim Laden des GeoJSON:', error);
+      console.error('Error loading GeoJSON:', error);
     });
 
-  // Rückweg-Route laden
+  // loading return route
   fetch('vis3/l4_lcp-master.geojson')
     .then(response => response.json())
     .then(data8 => {
@@ -311,8 +313,8 @@ document.addEventListener('DOMContentLoaded', function() {
         style: function () {
           return {
             color: "#8B0000",
-            weight: 2,
-            opacity: 0.7      
+            weight: 3,
+            opacity: 0.6      
          };
        }
       })
@@ -325,6 +327,6 @@ document.addEventListener('DOMContentLoaded', function() {
       .addTo(map3);
     })
     .catch(error => {
-      console.error('Fehler beim Laden des GeoJSON:', error);
+      console.error('Error loading GeoJSON:', error);
     });
 });
