@@ -1,5 +1,5 @@
 // ---------------------Website-Setup--------------------------
-// Get the button:
+
 let BTTButton = document.getElementById("bttButton");
 
 // When scrolled down 20px from the top of the document, show the button
