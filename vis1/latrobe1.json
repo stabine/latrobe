@@ -25,7 +25,7 @@
             "properties": {
 
                 "title": "Gravesend",
-                "note": "Smal settlement on the english east coast. Starting point of the journey.", 
+                "note": "At this smal town on the english east coast near London Christian Ignatius Latrobe started his voyage to south africa. At the harbour he boarded the Albion, a brig that took him and several other missionaries on the journey to Cape Town.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -60,7 +60,7 @@
             "properties": {
 
                 "title": "Margate Roads",
-                "note": "Coast town, which is called Margate today. Anchoring place for overnight stay.", 
+                "note": "This coastal town is called Margate today. Here the Albion found an anchoring place for an overnight stay.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -94,7 +94,7 @@
             "properties": {
 
                 "title": "South Foreland",
-                "note": "Southeastern headland near Dover, England, Great Britain.", 
+                "note": "The southeastern headland near Dover was passed without any trouble “with a breeze at north-west” as Latrobe describes it.", 
                 "role": "visited_nearby",
                 "wasDerivedFrom": [
                     "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 1",
@@ -126,8 +126,8 @@
 
             "properties": {
 
-                "title": "Strait of Dover",
-                "note": "Described in the Journal by <i>the coasts of England and France as we passed between Dover and Calais</i>", 
+                "title": "between Dover and Calais",
+                "note": "Latrobe described perfect weather conditions while passing the Strait of Dover. In his journal he wrote that they could see <i>the coasts of England and France as we passed between Dover and Calais</i>.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -162,7 +162,7 @@
             "properties": {
 
                 "title": "Isle of Wight",
-                "note": "The ship passed the isle on the south.", 
+                "note": "The ship passed the island on the south proceeding further through the English Channel.", 
                 "role": "visited_nearby",
                 "wasDerivedFrom": [
                     "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 1",
@@ -231,7 +231,7 @@
             "properties": {
 
                 "title": "Porto Santo",
-                "note": "The Journal describes <i>Certain rocks, marked in our charts as lying to the north of Porto Santo, and called the eight stones</i>. The ship therefore probably passes the island in the north. However the mentioned rocks are by now proven to be a myth. Furthermore Latrobe describes the difficulties of navigation and mentiones that the dead reckoning differed from chronometer by around 100 to 140 Miles (admiralty miles).", 
+                "note": "In his journal Latrobe describes concerns towards <i>Certain rocks, marked in our charts as lying to the north of Porto Santo, and called the eight stones</i>. The ship therefore probably passes the island in the north. However, the mentioned rocks are by now proven to be a myth. In addition, Latrobe described the difficulties of navigation and mentioned that the dead reckoning differed from chronometer by around 100 to 140 Miles (admiralty miles).", 
                 "role": "visited_nearby",
                 "wasDerivedFrom": [
                     "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 9",
@@ -265,7 +265,7 @@
             "properties": {
 
                 "title": "Madeira",
-                "note": "The ship passes the island far east, but still in visible distance.", 
+                "note": "As Latrobe describes, the ship passes the island far east, but still in visible distance.", 
                 "role": "visited_nearby",
                 "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 9", "https://archive.org/details/journalofvisitto00latr/page/8/mode/2up"],
                 "closeMatch": [
@@ -324,8 +324,8 @@
 
             "properties": {
 
-                "title": "Piton Rocks",
-                "note": "Latrobe referes to these while describing the Ilhas Selvagens. It is possible, that he referes to the isles of Selvagem Pequena and Fora Islet, but sources for these names are very rare and ought to be questioned critically.", 
+                "title": "Piton rocks",
+                "note": "Latrobe referes to these rocks while describing the Ilhas Selvagens. It is possible that he referes to the isles of Selvagem Pequena and Fora Islet, but sources for these names are very rare and ought to be questioned critically.", 
                 "role": "visited_nearby",
                 "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 11","https://archive.org/details/journalofvisitto00latr/page/10/mode/2up"],
                 "closeMatch": [
@@ -356,7 +356,7 @@
             "properties": {
 
                 "title": "Peak of Teneriffe, at about eighty miles distance",
-                "note": "The Ship is going south from the Ilhas Selvagens. Latrobe describes this point vaguely since he is not giving any direction towards which the peak is visible. Therefore the point set here is more of an estimation.", 
+                "note": "The ship headed towards south, coming from the Ilhas Selvagens. Latrobe describes this point vaguely, not giving a second reference point. Therefore, the point set here is more of an estimation.", 
                 "role": "visited",
                 "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 12", "https://archive.org/details/journalofvisitto00latr/page/12/mode/2up"],
                 "closeMatch": [
@@ -386,7 +386,7 @@
             "properties": {
 
                 "title": "Teneriffe",
-                "note": "The Ship passes the island of Tenerife probably in the northwest within a distance of approximately 80 Miles (admiralty miles).", 
+                "note": "The ship passes the island of Tenerife probably in the northwest within a distance of approximately 80 Miles (admiralty miles).", 
                 "role": "visited_nearby",
                 "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 12", "https://archive.org/details/journalofvisitto00latr/page/12/mode/2up"],
                 "closeMatch": [
@@ -416,7 +416,7 @@
             "properties": {
 
                 "title": "Palma",
-                "note": "The island of La Palma is described as in sight since 25th but in no specified direction. The ship passed it west of the island three days later and Latrobe described it as <i>so close [...] that we could distinctly discern every object on shore</i>.", 
+                "note": "The island of La Palma is described as in sight since October 25th, but in no specified direction. The ship passed it west of the island three days later and Latrobe described it as <i>so close [...] that we could distinctly discern every object on shore</i>.", 
                 "role": "visited_nearby",
                 "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 12", "https://archive.org/details/journalofvisitto00latr/page/12/mode/2up"],
                 "closeMatch": [
@@ -446,7 +446,7 @@
             "properties": {
 
                 "title": "Sal",
-                "note": "The island of Sal as part of the Cape Verde was aproached, most likely from the north. An exact distance or direction however is not given.", 
+                "note": "The island of Sal as part of the Cape Verde was approached, most likely from the north. An exact distance or direction however is not given.", 
                 "role": "visited_nearby",
                 "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 15", "https://archive.org/details/journalofvisitto00latr/page/14/mode/2up"],
                 "closeMatch": [
@@ -476,7 +476,7 @@
             "properties": {
 
                 "title": "Bonavista",
-                "note": "The island today known as Boa Vista was passed by the Ship on its eastern coast. An exact distance or coordinates were not described. ", 
+                "note": "The island today known as Boa Vista or Ilha da Boa Vista was passed by the ship off its eastern coast. An exact distance or coordinates were not described.", 
                 "role": "visited_nearby",
                 "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 16", "https://archive.org/details/journalofvisitto00latr/page/16/mode/2up"],
                 "closeMatch": [
@@ -506,7 +506,7 @@
             "properties": {
 
                 "title": "Mayo",
-                "note": "The ship passes the isle of Maio without Latrobe beeing able to see the isle because of <i>thick mist</i> as he describes it.", 
+                "note": "The ship passes the isle of Maio without Latrobe being able to see the isle because of <i>thick mist</i> as he describes it.", 
                 "role": "visited_nearby",
                 "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 16", "https://archive.org/details/journalofvisitto00latr/page/16/mode/2up"],
                 "closeMatch": [
@@ -540,6 +540,7 @@
                 "role": "visited",
                 "wasDerivedFrom": ["Letters to my Children; written at sea during a Voyage to the Cape of Good Hope, in 1815, Containing a Memorial of some occurrences in my past life. - Page 1", "https://searchworks.stanford.edu/view/15032921"],
                 "closeMatch": [
+                    null,
                     null
                 ],
 
@@ -565,10 +566,11 @@
             "properties": {
 
                 "title": "Atlantic Ocean - Letter 2",
-                "note": "Latrobe has given these coordinates at the beginning of a letter dedicated to his eldest daugther Charlotte.", 
+                "note": "Latrobe has given these coordinates at the beginning of a letter dedicated to his eldest daughter Charlotte.", 
                 "role": "visited",
                 "wasDerivedFrom": ["Letters to my Children; written at sea during a Voyage to the Cape of Good Hope, in 1815, Containing a Memorial of some occurrences in my past life. - Page 13", "https://searchworks.stanford.edu/view/15032921"],
                 "closeMatch": [
+                    null,
                     null
                 ],
 
@@ -594,10 +596,11 @@
             "properties": {
 
                 "title": "Atlantic Ocean - Letter 3",
-                "note": "Latrobe has given these coordinates at the beginning of a letter dedicated to his second eldest daugther Agnes.", 
+                "note": "Latrobe has given these coordinates at the beginning of a letter dedicated to his second eldest daughter Agnes.", 
                 "role": "visited",
                 "wasDerivedFrom": ["Letters to my Children; written at sea during a Voyage to the Cape of Good Hope, in 1815, Containing a Memorial of some occurrences in my past life. - Page 26", "https://searchworks.stanford.edu/view/15032921"],
                 "closeMatch": [
+                    null,
                     null
                 ],
 
@@ -626,6 +629,7 @@
                 "role": "visited",
                 "wasDerivedFrom": ["Letters to my Children; written at sea during a Voyage to the Cape of Good Hope, in 1815, Containing a Memorial of some occurrences in my past life. - Page 46", "https://searchworks.stanford.edu/view/15032921"],
                 "closeMatch": [
+                    null,
                     null
                 ],
 
@@ -655,6 +659,7 @@
                 "role": "visited",
                 "wasDerivedFrom": ["Letters to my Children; written at sea during a Voyage to the Cape of Good Hope, in 1815, Containing a Memorial of some occurrences in my past life. - Page 66", "https://searchworks.stanford.edu/view/15032921"],
                 "closeMatch": [
+                    null,
                     null
                 ],
 
@@ -710,7 +715,7 @@
             "properties": {
 
                 "title": "Capetown",
-                "note": "On christmas eve 1815 Latrobe's ship reached the city of Cape Town, in the Colony of South Africa.", 
+                "note": "On Christmas Eve 1815 Latrobe's ship reached the city of Cape Town, in the Colony of South Africa.", 
                 "role": "visited",
                 "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 31", "https://archive.org/details/journalofvisitto00latr/page/30/mode/2up"],
                 "closeMatch": [

@@ -23,7 +23,7 @@
             "properties": {
 
                 "title": "Mission House",
-                "note": "This mark is pinned to the Mission House. Its western part was inhabited by Sister Kohrhammer who moved to a different place during Latrobes visit, so he could stay there at <i>a maximum of comfort</i>, as it is described by himself. It is a very likely starting point for Latrobes explorations of the village and the surroundings.", 
+                "note": "This mark is pinned to the Mission House. Its eastern part was inhabited by Sister Eva Dorothea Kohrhammer who moved to a different place during Latrobes visit, so he could stay there at <i>a maximum of comfort</i>, as it is described by himself. It is a very likely starting point for Latrobes explorations of the village and the surroundings.", 
                 "role": "visited",
                 "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 63", "https://archive.org/details/journalofvisitto00latr/page/62/mode/2up"],
                 "closeMatch": [
@@ -42,8 +42,8 @@
                 "type": "Point", 
                 "coordinates": [
 
-                    19.55725422607344, 
-                    -34.03353630266554
+                    19.557393687741808, 
+                    -34.033524137325706
                 ] 
             }
         },
@@ -52,7 +52,7 @@
             "properties": {
 
                 "title": "Khoikhoi Settlement",
-                "note": "In a historical map of the Missionary and Settlement of 1799, it shows this place to be where the huts of the Khoikhois where situated. Although only few huts are marked in the map, 17 Years later, Latrobe mentiones, that there were 256 huts with 1276 inhabitants.", 
+                "note": "In a historical map of the Missionary and settlement of 1799, it shows this place to be where the huts of the Khoikhois where situated. Although only few huts are marked in the map, 17 Years later, Latrobe mentioned that there were 256 huts with 1276 inhabitants.", 
                 "role": "visited",
                 "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 61", "https://archive.org/details/journalofvisitto00latr/page/60/mode/2up"],
                 "closeMatch": [
@@ -111,7 +111,7 @@
             "properties": {
 
                 "title": "Burial Ground",
-                "note": "The Burial Ground of Gnadenthal was moved several times due to too many tombs. While in a map of 1799 it is marked south of the great garden, Latrobe describes it 1816 as westward to it. There until today old gravestones can be found.", 
+                "note": "The Burial Ground of Gnadenthal was moved several times due to too many tombs. While on a plan of 1799 it is marked south of the great garden, Latrobe describes it 1816 as westward to it. There, until today old gravestones can be found.", 
                 "role": "visited",
                 "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 62", "https://archive.org/details/journalofvisitto00latr/page/62/mode/2up"],
                 "closeMatch": [
@@ -139,7 +139,7 @@
             "id": "l2_05",
             "properties": {
 
-                "title": "Bavians Kloof",
+                "title": "Baviaans Kloof",
                 "note": "The valley behind the Settlement is called Baviaans Kloof (Baboon valley) and was formed by the Baviaans River, which passes trhough the village and later joines into the River Sonderend.", 
                 "role": "visited",
                 "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 62", "https://archive.org/details/journalofvisitto00latr/page/62/mode/2up"],
@@ -169,7 +169,7 @@
             "properties": {
 
                 "title": "Church of Gnadenthal",
-                "note": "The Church is the central point of the village. Build in 1799 it lastet nearly a century and was rebuild at the very same place in 1891.", 
+                "note": "The church is the central point of the village's core, the so-called werf. Built in 1799, it lasted nearly a century and was rebuilt at the very same place in 1891.", 
                 "role": "visited",
                 "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 62", "https://archive.org/details/journalofvisitto00latr/page/62/mode/2up"],
                 "closeMatch": [
@@ -198,7 +198,7 @@
             "properties": {
 
                 "title": "Mission House",
-                "note": "After evening service Latrobe spend the night at the appartment given to him by sister Kohrhammer.", 
+                "note": "After evening service Latrobe spend the night at the appartment given to him by Sister Eva Dorothea Kohrhammer.", 
                 "role": "visited",
                 "wasDerivedFrom": ["Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 63", "https://archive.org/details/journalofvisitto00latr/page/62/mode/2up"],
                 "closeMatch": [
@@ -216,8 +216,8 @@
                 "type": "Point", 
                 "coordinates": [
 
-                    19.55725422607344,
-                    -34.03353630266554 
+                    19.557393687741808, 
+                    -34.033524137325706 
                     
                 ] 
             } 

@@ -30,8 +30,8 @@
                 ],
                 "closeMatch": [
 
-                    "https://www.wikidata.org/wiki/Q114720753",
-                    "https://www.geonames.org/3367707/genadendal.html"
+                    "https://www.geonames.org/3367707/genadendal.html",
+                    "https://www.wikidata.org/wiki/Q114720753"
                 ],
                 "certainty": "certain" 
 
@@ -54,7 +54,7 @@
             "properties": {
 
                 "title": "Mr. Von Helsland's farm on Bock Revier",
-                "note": "The first stopp was made on a local farm of a Mister Von Helsland on the Bock River. The farm's position is not described any further, therefore the position is more of a guess than a secured information, since the farm is not existing anymore today.", 
+                "note": "The first stop was made on a local farm of a Mister Von Helsland on the Bock River. The farm's position is not described any further, therefore the position is more of a guess than a secured information, since the farm is not existing anymore today.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -87,7 +87,7 @@
             "properties": {
 
                 "title": "Storm's Valley",
-                "note": "The travellers stopp at this place to rest in their tents, to avoid the sun. Latrobe describes this place as <i>near the banks of the Sonderend, without a tree to screen us by its shade from the burning rays of the sun.</i> They therefore call it the Hot Outspann. Today, the place is calles .", 
+                "note": "The travelers stop at this place to rest in their tents, to avoid the sun. Latrobe describes this place as <i>near the banks of the Sonderend, without a tree to screen us by its shade from the burning rays of the sun.</i> They therefore call it the Hot Outspann. Today, the place is called stormsvlei.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -120,7 +120,7 @@
             "properties": {
 
                 "title": "Union of River Sonderend and Breede Revier",
-                "note": "The Travellers rested at the Banks of the River Sonderend on a wasteland called Storms Valley, from which they could see the place where River Sonderend united with Breede Revier. The exact place can not be determined anymore.", 
+                "note": "The travelers rested at the banks of the river Sonderend on a wasteland, from which they could see the place where River Sonderend united with Breede Revier. The exact place cannot be determined anymore, therefore the union itself was marked.", 
                 "role": "visited_nearby",
                 "wasDerivedFrom": [
 
@@ -153,7 +153,7 @@
             "properties": {
 
                 "title": "Banks of the Breede Revier",
-                "note": "Latrobe and his traveller party forded the Breede Revier and restet the night of March 7th 1816 on the eastern Banks of the River.", 
+                "note": "Latrobe and his traveler party forded the Breede Revier and rested the night of March 7th, 1816 on the eastern Banks of the River.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -186,7 +186,7 @@
             "properties": {
 
                 "title": "Leuwe Revier",
-                "note": "The Travellers forded the Leuwe Revier (Leeurivier) near a farm. An exact position can not be determined since there are no further descriptions.", 
+                "note": "The travelers forded the Leuwe Revier (Leeurivier) near a farm. An exact position cannot be determined since there are no further descriptions.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -195,7 +195,7 @@
                 ],
                 "closeMatch": [
 
-                    null,
+                    "https://www.geonames.org/983844/leeurivier.html",
                     null
                 ],
                 "certainty": "uncertain" 
@@ -219,7 +219,7 @@
             "properties": {
 
                 "title": "Zwellendam",
-                "note": "Latrobe reached the settlement of Zwellendam (today written Swellendam) about 2 p.m. in the afternoon, where they stayed at the landdrost Mr. Von Buissini's house. The marker therefore is set on the drosty house which by today is a museum.", 
+                "note": "Latrobe reached the settlement of Zwellendam (today written Swellendam) about 2 p.m. in the afternoon, where they stayed at the landdrost Mr. Von Buissini's house. The marker therefore is set on the drosty house which today is a museum.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -252,8 +252,8 @@
             "id": "l3_08",
             "properties": {
 
-                "title": "Bueffeljagd's Revier ",
-                "note": "The Group fords the River today called Buffeljagsrivier after leaving Zwellendam to the east. The exact position was not described, therefore the marker remains less certain.", 
+                "title": "Bueffeljagd's Revier",
+                "note": "The group fords the river today called Buffeljagsrivier after leaving Zwellendam to the east. The exact position was not described therefore the marker remains less certain.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -286,7 +286,7 @@
             "properties": {
 
                 "title": "Zuurbrack",
-                "note": "The Mission Station of the London Missionary Society formed a settlement today calles Suurbaak. Latrobe and his travellers stayed there for only a few hours before continuing their journey.", 
+                "note": "The Mission Station of the London Missionary Society formed a settlement today calles Suurbraak. Latrobe and his travelers stayed there for only a few hours before continuing their journey.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -352,7 +352,7 @@
             "properties": {
 
                 "title": "Tygerfonteyn",
-                "note": "The Travellers stayed at Cornelius Snymans farm called Tygerfonteyn. The exact position is more of an estimation based on historical maps and therefore needs to be called very uncertain.", 
+                "note": "The travelers stayed at Cornelius Snymans farm called Tygerfonteyn. The exact position is more of an estimation based on historical maps and therefore needs to be called very uncertain.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -385,7 +385,7 @@
             "properties": {
 
                 "title": "Stinkrevier",
-                "note": "The farm called Stinkrevier was another halt on the travellers way to Mosselbay. The position is an estimation based on historical maps.", 
+                "note": "The farm on the banks of the Stinkrevier was another halt on the traveler's way to Mosselbay. The position is an estimation based on the historical map attached to the journal, since no river or stream called Stinkrevier is to be found in the area the travelers have been in.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -408,8 +408,8 @@
                 "type": "Point",
                 "coordinates": [
 
-                    21.8272125450827,
-                    -34.1780994817745
+                    21.78334625624592,
+                    -34.17933860953103
                 ]
             }
         },
@@ -418,7 +418,7 @@
             "properties": {
 
                 "title": "Kleinberg",
-                "note": "Latrobe and his passed the Kleinfarm of a Mister Muller and resupplied. Today there is still a farm called Kleinberg, unfortunately there are no records proofing that it is located at the very same place as the 19th century farm. Therefore this position is more of an estimation.", 
+                "note": "Latrobe and his fellows passed the farm of a Mister Muller called Kleinberg and resupplied. Today there is still a farm called Kleinberg, unfortunately there are no records proofing that it is located at the very same place as the 19th century farm. Therefore this position is more of an estimation.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -427,7 +427,7 @@
                 ],
                 "closeMatch": [
 
-                    null,
+                    "https://www.geonames.org/990632/kleinberg.html",
                     null
                 ],
                 "certainty": "less-certain" 
@@ -484,7 +484,7 @@
             "properties": {
 
                 "title": "Hartenbosch",
-                "note": "At Hartenbosch (Hartenbos) Latrobe and his compagnions stayed one night. Today the former farm is a small seaside town.", 
+                "note": "At Hartenbosch (Hartenbos) Latrobe and his companions stayed one night. Today the former farm is a small seaside town.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -517,7 +517,7 @@
             "properties": {
 
                 "title": "Great Brak Revier",
-                "note": "Latrobe describes at the further route, that after they forded the Little Sout Revier in two places, they halted on the banks of the great Brak Revier. The River today called Groot-brakrivier is enclosed by steep hills on each side. Fording is very likely on the place where today the citiy of Groot Brakrivier lies.", 
+                "note": "Latrobe describes at the further route, that after they forded the Little Sout Revier in two places, they halted on the banks of the great Brak Revier. The river today called Groot-brakrivier is enclosed by steep hills on each side. Fording is very likely at the place where today the citiy of Groot Brakrivier lies.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -583,7 +583,7 @@
             "properties": {
 
                 "title": "George",
-                "note": "As one of the bigger settlements George was seat of the landdrost who invited Latrobe and his compagnons to stay two days. They used the time to resupply and to get new oxen to proceed further.", 
+                "note": "As one of the bigger settlements George was seat of the landdrost who invited Latrobe and his companions to stay two days. They used the time to re-supply and to get new oxen to proceed further.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -616,7 +616,7 @@
             "properties": {
 
                 "title": "Kayman's Gat",
-                "note": "Latrobe describes this place as a beautiful glen which is very hard to pass. He writes of the Zwart Revier (Swartrivier) joining the glen too, which makes this point the most likely fording place of the travellers.", 
+                "note": "Latrobe describes this place as a beautiful glen which is very hard to pass. He writes of the Zwart Revier (Swartrivier) joining the glen too, which makes this point the most likely fording place of the travelers.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -625,8 +625,8 @@
                 ],
                 "closeMatch": [
 
-                    null,
-                    null
+                    "https://www.geonames.org/993488/kaaimansrivier.html",
+                    "https://www.wikidata.org/wiki/Q6343291"
                 ],
                 "certainty": "less-certain" 
 
@@ -658,7 +658,7 @@
                 ],
                 "closeMatch": [
 
-                    null,
+                    "https://www.geonames.org/948289/touwsrivier.html",
                     null
                 ],
                 "certainty": "uncertain" 
@@ -682,7 +682,7 @@
             "properties": {
 
                 "title": "Melkhout Kraal",
-                "note": "Latrobe and the missionairs reach the farm Melkhout Kraal on the eastern shore of th Knysna Revier, which is by today the town of Knysna. The farm belonged to a Mr. George Rex, an english entrepreneur.", 
+                "note": "Latrobe and the missionaries reach the farm Melkhout Kraal on the eastern shore of the Knysna Revier, which is by today the town of Knysna. The farm belonged to a Mr. George Rex, an english entrepreneur.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -758,8 +758,8 @@
                 ],
                 "closeMatch": [
 
-                    null,
-                    null
+                    "https://www.geonames.org/938640/wittedrif.html",
+                    "https://www.wikidata.org/wiki/Q3642593"
                 ],
                 "certainty": "less-certain" 
 
@@ -782,7 +782,7 @@
             "properties": {
 
                 "title": "Paerdekop",
-                "note": "The summit of the Paerdekop or Horse Head, as Latrobe translated it, had to be crossed by the travellers. He describes it as steep to all sides. Allthough searched for on historical cards, the exact position is hardly determined correctly due to the inaccuracy inherit to historical maps.", 
+                "note": "The summit of the Paerdekop or Horse Head, as Latrobe translated it, had to be crossed by the travelers. He describes it as steep to all sides. Allthough searched for on historical cards, the exact position is hardly determined correctly due to the inaccuracy inherit to historical maps.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -815,7 +815,7 @@
             "properties": {
 
                 "title": "Welgelegen",
-                "note": "This farm was passed by the travellers on their way through the Lange Kloof. A huge valley reaching all the way from Avontuur to Kareedouw. Since there are no remains of the former farm, the position was estimated, using historical maps.", 
+                "note": "This farm was passed by the travelers on their way through the Lange Kloof, a huge valley reaching all the way from Avontuur to Kareedouw. Since there are no remains of the former farm, the position was estimated, using historical maps. Assumption would be possible, that it is the former name of the farm Welgelee, listed by GeoNames database.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -824,7 +824,7 @@
                 ],
                 "closeMatch": [
 
-                    null,
+                    "https://www.geonames.org/941152/welgelee.html",
                     null
                 ],
                 "certainty": "uncertain" 
@@ -848,7 +848,7 @@
             "properties": {
 
                 "title": "Ungelegen",
-                "note": "This former farm was visited by Latrobe's travel party on their way to Kliphübel, the veldcornet's place. Today remains a small settlement called Ongelegen at the place. ", 
+                "note": "This former farm was visited by Latrobe's travel party on their way to Kliphübel, the veldcornet's place. Today remains a small settlement called Ongelegen at the place.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -857,7 +857,8 @@
                 ],
                 "closeMatch": [
 
-                    "https://www.geonames.org/967989/ongelegen.html"
+                    "https://www.geonames.org/967989/ongelegen.html",
+                    null
                 ],
                 "certainty": "certain" 
 
@@ -880,7 +881,7 @@
             "properties": {
 
                 "title": "Kliphübel",
-                "note": "The former farm of the veldcornet Stephen Fereira. The Travellers stayed there for some conversation with the veldcornet and his family and for changing their oxen. The exact place of the Farm can only be roughly estimated using historical maps.", 
+                "note": "The former farm of the veldcornet Stephen Fereira. The travelers stayed there for some conversation with the veldcornet and his family and for changing their oxen. The exact place of the farm can only be roughly estimated using historical maps.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -913,7 +914,7 @@
             "properties": {
 
                 "title": "Ellandsfonteyn",
-                "note": "Latrobe and two of his travelling compagnions - Brother and Sister Schmitt - visited Mr. Piet Fereira's farm Ellandsfonteyn to receive new oxen for their ongoing journey through the cape colony. Today there are no remains of the farm, therefore the position was estimated upon historical maps.", 
+                "note": "Latrobe and two of his travelling companions - Brother and Sister Schmitt - visited Mr. Piet Fereira's farm Ellandsfonteyn to receive new oxen for their ongoing journey through the cape colony. Today there are no remains of the farm, therefore the position was estimated upon historical maps.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -946,7 +947,7 @@
             "properties": {
 
                 "title": "Mr. Mey's Farm",
-                "note": "The travellers halted at the farmland belonging to Mr. Mey, both on their outbound and return routes. On their outbound here the party splitted to visit Mr. Mey and the farm Ellandsfonteyn in the close surrounding to get new oxen to proceed further. On the return they tried the same but could not get any new oxen. Comparing Latrobes map and a historical map of the same year, it shows that the farm has been called Miegunst. A small settlement of nearly the same name (Misgund) remains until today.", 
+                "note": "The travelers halted at the farmland belonging to Mr. Mey, both on their outbound and return routes. On their outbound here the party splitted to visit Mr. Mey and the farm Ellandsfonteyn in the close surrounding to get new oxen to proceed further. On the return they tried the same but could not get any new oxen. Comparing Latrobes map and a historical map of the same year, it shows that the farm has been called Miegunst. A small settlement of nearly the same name (Misgund) remains until today.", 
                 "role": "visited_nearby",
                 "wasDerivedFrom": [
 
@@ -979,7 +980,7 @@
             "properties": {
 
                 "title": "Jagerbosch",
-                "note": "Latrobe's party reached the farm Jagerbosch of a german settler, called Mr. Akkerman, where they stayed for a night and received new oxen for their journey. Today, only a trainstations name reminds of the former farm.", 
+                "note": "Latrobe's party reached the farm Jagerbosch of a german settler, called Mr. Akkerman, where they stayed for a night and received new oxen for their journey. Today, only a train stations name reminds of the former farm.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -988,8 +989,8 @@
                 ],
                 "closeMatch": [
 
-                    null,
-                    null
+                    "https://www.geonames.org/994269/jagersbos.html",
+                    "https://www.wikidata.org/wiki/Q31406724"
                 ],
                 "certainty": "less-certain" 
 
@@ -1012,7 +1013,7 @@
             "properties": {
 
                 "title": "Essenbosch",
-                "note": "The Travellers passed the farm and took a longer break in a valley nearby. Today, the exact positon can only be estimated upon historical maps.", 
+                "note": "The travelers passed the farm and took a longer break in a valley nearby. Today, the exact positon can be estimated upon historical maps and the remaining Essenbos train station of the Avontuur Railway.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -1022,7 +1023,7 @@
                 "closeMatch": [
 
                     null,
-                    null
+                    "https://www.geonames.org/1004989/essenbos.html"
                 ],
                 "certainty": "less-certain" 
 
@@ -1045,7 +1046,7 @@
             "properties": {
 
                 "title": "Chamtoos Revier",
-                "note": "The travel party forded the River today called Gamtoosrivier at it's union with Kleinrivier where there has been a farm. The position is an estimation.", 
+                "note": "The travel party forded the river today called Gamtoosrivier at its union with Kleinrivier where there has been a farm. The position is an estimation. A connection to the railway station wagon drift nearby is assumed.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -1054,8 +1055,8 @@
                 ],
                 "closeMatch": [
 
-                    null,
-                    null
+                    "https://www.geonames.org/942156/wagon-drift.html",
+                    "https://www.wikidata.org/wiki/Q3312383"
                 ],
                 "certainty": "less-certain" 
 
@@ -1078,7 +1079,7 @@
             "properties": {
 
                 "title": "Van Staades Revier",
-                "note": "Before reaching the Van Staades Revier or Van Stadensrivier, as it is called today, Latrobe and his fellows visited two farms - Klaarefonteyn and Kaffre Kraal - of two Brothers Neukirch. Both farms are marked in the map attached to Latrobe's journal but are not to determine on a recent map, since the rivers depickted are traced very poorly or have changed their course drastically since 1816. Thus not beeing able to determine, where the travellers might have been, it is nearly impossible to estimated the exact point, where they forded the Van Staades Revier. The only hint givin is suggesting it must have been south of the mountain range since the party was able to see the indian ocean for a very short periode of time.", 
+                "note": "Before reaching the Van Staades Revier or Van Stadensrivier, as it is called today, Latrobe and his fellows visited two farms - Klaarefonteyn and Kaffre Kraal - of two Brothers Neukirch. Both farms are marked in the map attached to Latrobe's journal but are not to determine on a recent map, since the rivers depicted are traced very poorly or have changed their course drastically since 1816. Thus, not being able to determine, where the travelers might have been, it is nearly impossible to estimate the exact point, where they forded the Van Staades Revier. The only hint given is suggesting it must have been south of the mountain range since the party was able to see the Indian Ocean for a very short period of time.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -1087,8 +1088,8 @@
                 ],
                 "closeMatch": [
 
-                    null,
-                    null
+                    "https://www.geonames.org/944842/vanstadensrivier.html",
+                    "https://www.wikidata.org/wiki/Q4788251"
                 ],
                 "certainty": "uncertain" 
 
@@ -1111,7 +1112,7 @@
             "properties": {
 
                 "title": "Uitenhagen",
-                "note": "Latrobe and his fellows reached the settlement and its drosty and stayed there where they met the landdrost, who helped them with their furtehr journey, but could not house them, since their group was too large. The former Drosty still exists and houses the Drosty Museum of Uitenhage, as the city is called today.", 
+                "note": "Latrobe and his fellows reached the settlement and its drosty and stayed there where they met the landdrost, who helped them with their further journey, but could not house them, since their group was too large. The former drosty still exists and houses the Drostdy Museum of Uitenhage, as the city is called today.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -1120,8 +1121,8 @@
                 ],
                 "closeMatch": [
 
-                    null,
-                    null
+                    "https://www.geonames.org/946877/kariega.html",
+                    "https://www.wikidata.org/wiki/Q1020192"
                 ],
                 "certainty": "certain" 
 
@@ -1144,7 +1145,7 @@
             "properties": {
 
                 "title": "Bethelsdorp",
-                "note": "here", 
+                "note": "Latrobe and the travelers visited the missionary station of the London Missionary Society called Bethelsdorp and were shown around by the missionaries Messer, Williams and Hooper. Latrobe described the place as <i>miserable and discouraging</i>.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -1153,8 +1154,8 @@
                 ],
                 "closeMatch": [
 
-                    null,
-                    null
+                    "https://www.geonames.org/1019721/bethelsdorp.html",
+                    "https://www.wikidata.org/wiki/Q3642944"
                 ],
                 "certainty": "certain" 
 
@@ -1374,7 +1375,7 @@
             "properties": {
 
                 "title": "Military Post at Great Fish River",
-                "note": "After passing the farm of a Mr. Engelbrecht, the burning remains of another farm and an abandond former military post, the travellers finally reach the military post at the banks of Great Fish River, at that time commanded by Lieutenant Forbes. They stayed there to restock. The post did not remain until today but was marked at Latrobe's map as laying in the fork of Small and Great Fish River. Therefore a decent estimation of the position could be made.", 
+                "note": "After passing the farm of a Mr. Engelbrecht, the burning remains of another farm and an abandond former military post, the travelers finally reach the military post at the banks of Great Fish River, at that time commanded by Lieutenant Forbes. They stayed there to restock. The post did not remain until today but was marked at Latrobe's map as laying in the fork of Small and Great Fish River. Therefore a decent estimation of the position could be made.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
