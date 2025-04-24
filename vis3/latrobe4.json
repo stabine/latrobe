@@ -16,7 +16,7 @@
             "properties": {
 
                 "title": "Mr. P.'s Farm",
-                "note": "Latrobes Party reached the last point on their travel into the cape colony at the Farm of a Mr. P. The landdrost asked them to have a look at the place, which they did. After examining the farm and talking to the farmer himselfe they decided, to having been traveled far enough and therefore not to proceed any further. Also all other places further to be investigated and proposed by the landdrost of Uitenhagen where either occupied or in Caffraria (Xhosa-Land) and therefore not inhabitable with Khoikhoi-Settlements. This last farm is only described as an hour away from Somerset Farm, following the mountain range and fording the Small Fish River twice. Therefore the position is more of an estimation.", 
+                "note": "Latrobes Party reached the last point on their travel into the cape colony at the farm of a Mr. P. The landdrost asked them to have a look at the place, which they did. After examining the farm and talking to the farmer himself they decided to having travelled far enough and therefore not to proceed any further. Also, all other places further to be investigated and proposed by the landdrost of Uitenhagen where either occupied or in Caffraria (Xhosa-Land) and therefore not inhabitable with Khoikhoi-Settlements. This last farm is only described as an hour away from Somerset Farm, following the mountain range and fording the Little Fish River twice. The position was estimated upon this description and the attached historical map.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -49,7 +49,7 @@
             "properties": {
 
                 "title": "Mr. Van Klerk's farm",
-                "note": "Latrobe and his fellows visited this farm after ending their exploration to the east. The farm is marked at Latrobes map as laying south of the union of Small Fish River and Brake River, which seem to not exist anymore today. An exact position is not givin, therefore the markers position is more of an estimation based on multiple historical maps.", 
+                "note": "Latrobe and his fellows visited this farm after ending their exploration into the east. The farm is marked at Latrobes map as laying south of the union of Small Fish River and Brake River, which seem to not exist anymore today. An exact position is not given, therefore the marker's position is more of an estimation based on historical and recent maps.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -91,8 +91,8 @@
                 ],
                 "closeMatch": [
 
-                    null,
-                    null
+                    "https://www.geonames.org/1005456/engelbrecht-se-kop.html",
+                    "https://www.wikidata.org/wiki/Q31505671"
                 ],
                 "certainty": "uncertain" 
 
@@ -115,7 +115,7 @@
             "properties": {
 
                 "title": "Zuurberg",
-                "note": "The travellers passed the Zuurberg on the same way they used on their outbound route. The Position is still an estimation since there are multiple passes over the mountain range.", 
+                "note": "The travelers passed the Zuurberg on the same way they used on their outbound route. The position is still an estimation since there are multiple passes over the mountain range.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -148,7 +148,7 @@
             "properties": {
 
                 "title": "Ado's Drift on Zondag's Revier",
-                "note": "Latrobe's party splits in two groupes. While Brother Stein and Sister Schmitt took the Khoikhoi to the Witte Revier Valley for them to have a look at the place, Latrobe proceedes further acoompanied by Mr. Melville and the Khoikhoi Leonhard Paerl and Johannes. They set out to Uitenhagen and halt at Ado's Drift on Zondags Revier. The exact position is hardly to estimate, but until today their remains a small settlement called Addo on Sondagsrivier or Sundays River, that might be named after that place. The position is therefore an optimisitc estimation.", 
+                "note": "Latrobe's party splits into two groups. While Brother Stein and Sister Schmitt took the Khoikhoi to the Witte Revier Valley for them to have a look at the place, Latrobe proceeded further accompanied by Mr. Melville and the Khoikhoi Leonhard Paerl and Johannes. They set out to Uitenhagen and halted at Ado's Drift on Zondags Revier. The exact position is hard to estimate, but until today their remains a small settlement called Addo on Sondagsrivier or Sundays River, that might be named after that place. The position is therefore an optimistic estimation.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -157,8 +157,8 @@
                 ],
                 "closeMatch": [
 
-                    null,
-                    null
+                    "https://www.geonames.org/12718753/nomathamasanqa.html",
+                    "https://www.wikidata.org/wiki/Q4681358"
                 ],
                 "certainty": "uncertain" 
 
@@ -181,7 +181,7 @@
             "properties": {
 
                 "title": "Uitenhagen",
-                "note": "Latrobe and his fellows reached the settlement and its drosty on their outbound as well as on their return route. They met the landdrost Colonel Cuyler, who helped them with their furtehr journey, Mr. Allen, the secretary of the Governer at Cape Town and a german Gentleman Mr. Von Buchenrode who supported the groupe by providing meals and supplies on both visits. The former Drosty still exists and houses the Drosty Museum of Uitenhage or Kariega, as the city is called today. (Descriptions of the retourn bound are found on page 239)", 
+                "note": "Latrobe and his fellows reached the settlement and its drosty on their outbound as well as on their return route. They met the landdrost Colonel Cuyler, who helped them with their further journey, Mr. Allen, the secretary of the Gouverneur at Cape Town and a German Gentleman Mr. Von Buchenrode who supported the group by providing meals and supplies on both visits. The former drosty still exists and houses the Drostdy Museum of Uitenhage or Kariega, as the city is called today. (Descriptions of the return bound are found on page 239).", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -190,8 +190,8 @@
                 ],
                 "closeMatch": [
 
-                    null,
-                    null
+                    "https://www.geonames.org/946877/kariega.html",
+                    "https://www.wikidata.org/wiki/Q1020192"
                 ],
                 "certainty": "certain" 
 
@@ -213,7 +213,7 @@
             "id": "l4_07",
             "properties": {
 
-                "title": "Van Stadensrivier",
+                "title": "Van Staades Revier",
                 "note": "Latrobes travel groupe passes the Van Stadens River on their return route to Kaffre Kraal and Klaarefonteyn, the farms of the Brothers Neukirch. Since the farms did not remain and the exact point of crossing the river is not mentioned, the position of the marker is an estimation.", 
                 "role": "visited",
                 "wasDerivedFrom": [
@@ -223,8 +223,8 @@
                 ],
                 "closeMatch": [
 
-                    null,
-                    null
+                    "https://www.geonames.org/944842/vanstadensrivier.html",
+                    "https://www.wikidata.org/wiki/Q4788251"
                 ],
                 "certainty": "uncertain" 
 
@@ -247,7 +247,7 @@
             "properties": {
 
                 "title": "Chamtoos Wagedrift on Klein Revier",
-                "note": "Latrobe and his fellow Mr. Melville reached this location after the rest of the travellers, because they made an extra halt at a farm of a Mr. Van Roy on the banks of the Lorie River or Loeriespruit, as it is called today. Since the farm is not marked, this is the next point that can be estimated upon the historical map attached to the journal.", 
+                "note": "Latrobe and his fellow Mr. Melville reached this location after the rest of the travelers, because they made an extra halt at a farm of a Mr. Van Roy on the banks of the Lorie River or Loeriespruit, as it is called today. Since the farm is not marked, this is the next point that can be estimated upon the historical map attached to the journal.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -256,8 +256,9 @@
                 ],
                 "closeMatch": [
 
-                    null,
-                    null
+                    "https://www.geonames.org/942156/wagon-drift.html",
+                    "https://www.wikidata.org/wiki/Q3312383"
+
                 ],
                 "certainty": "less-certain" 
 
@@ -280,7 +281,7 @@
             "properties": {
 
                 "title": "Klein Revier Farm",
-                "note": "While passing the Chamtoose Revier Wagendrift, Latrobe, Brother Schmitt and the Khoikhoi Marcus made a short detour to a farm on Klein Revier recommended to them as a possibly fitting place for a new mission by the landdrost of Uitenhagen. Latrobe therefore feels the urge to at least have a look at it, although he describes that there is already a farmer applying for the land. He describes the position as 2 to 3 english miles up the river. Based on this description, the position of the former farm was estimated.", 
+                "note": "While passing the Chamtoose Revier Wagendrift, Latrobe, Brother Schmitt and the Khoikhoi Marcus made a short detour to a farm on Klein Revier recommended to them as a possibly fitting place for a new mission by the landdrost of Uitenhagen. Latrobe therefore feels the urge to at least have a look at it, although he describes that there is already a farmer applying for the land. He describes the position as 2 to 3 english miles up the river. Based on this description, the position of the former farm could be found.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -289,10 +290,10 @@
                 ],
                 "closeMatch": [
 
-                    null,
+                    "https://www.geonames.org/990135/kleinrivier.html",
                     null
                 ],
-                "certainty": "less-certain" 
+                "certainty": "certain" 
 
             },
 
@@ -303,8 +304,8 @@
                 "type": "Point",
                 "coordinates": [
 
-                    24.893549860692545,
-                    -33.81642918207885
+                    24.93912,
+                    -33.80138 
                 ]
             }
         },
@@ -313,7 +314,7 @@
             "properties": {
 
                 "title": "Chamtoos Wagedrift on Klein Revier",
-                "note": "Latrobe and his fellow Mr. Melville reached this location after the rest of the travellers, because they made an extra halt at a farm of a Mr. Van Roy on the banks of the Lorie River or Loeriespruit, as it is called today. Since the farm is not marked, this is the next point that can be estimated upon the historical map attached to the journal.", 
+                "note": "Latrobe and his fellow Mr. Melville reached this location after the rest of the travelers, because they made an extra halt at a farm of a Mr. Van Roy on the banks of the Lorie River or Loeriespruit, as it is called today. Since the farm is not marked in recent maps, this is the next point that can be estimated upon the historical map attached to the journal.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -322,8 +323,8 @@
                 ],
                 "closeMatch": [
 
-                    null,
-                    null
+                    "https://www.geonames.org/942156/wagon-drift.html",
+                    "https://www.wikidata.org/wiki/Q3312383"
                 ],
                 "certainty": "less-certain" 
 
@@ -355,8 +356,8 @@
                 ],
                 "closeMatch": [
 
-                    null,
-                    null
+                    "https://www.geonames.org/987592/kougarivier.html",
+                    "https://www.wikidata.org/wiki/Q4788044"
                 ],
                 "certainty": "uncertain" 
 
@@ -379,7 +380,7 @@
             "properties": {
 
                 "title": "Essenbosch",
-                "note": "Latrobe and his compagnions passed the Essenbosch farm as they did on their outbound route. They stayed only a few hours before proceeding. The position is estimated upon historical maps.", 
+                "note": "Latrobe and his companions passed the Essenbosch farm as they did on their outbound route. They stayed only a few hours before proceeding. The position is estimated upon historical maps.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -388,7 +389,7 @@
                 ],
                 "closeMatch": [
 
-                    null,
+                    "https://www.geonames.org/1004989/essenbos.html",
                     null
                 ],
                 "certainty": "less-certain" 
@@ -421,8 +422,8 @@
                 ],
                 "closeMatch": [
 
-                    null,
-                    null
+                    "https://www.geonames.org/994269/jagersbos.html",
+                    "https://www.wikidata.org/wiki/Q31406724"
                 ],
                 "certainty": "less-certain" 
 
@@ -445,7 +446,7 @@
             "properties": {
 
                 "title": "Mr. Mey's Farm",
-                "note": "The travellers halted at the farmland belonging to Mr. Mey, both on their outbound and return routes. On their outbound here the party splitted to visit Mr. Mey and the farm Ellandsfonteyn in the close surrounding to get new oxen to proceed further. On the return they tried the same but could not get any new oxen. Comparing Latrobes map and a historical map of the same year, it shows that the farm has been called Miegunst. A small settlement of nearly the same name (Misgund) remains until today.", 
+                "note": "The travelers halted at the farmland belonging to Mr. Mey, both on their outbound and return routes. On their outbound here the party split to visit Mr. Mey and the farm Ellandsfonteyn in the close surroundings to get new oxen to proceed further. On the return they tried the same but could not get any new oxen. Comparing Latrobes map and a historical map of the same year, it shows that the farm has been called Miegunst. A small settlement of nearly the same name (Misgund) remains until today.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -511,7 +512,7 @@
             "properties": {
 
                 "title": "Kliphübel",
-                "note": "The Travellers visited the former farm of the veldcornet Stephen Fereira again on their return route. The exact place of the Farm can only be roughly estimated using historical maps.", 
+                "note": "The travelers visited the former farm of the veldcornet Stephen Fereira again on their return route. The exact place of the farm can only be roughly estimated using historical maps.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -544,7 +545,7 @@
             "properties": {
 
                 "title": "Wellgelegen",
-                "note": "The Travellers breefly haltet at the former farm for some tea and supplies before continuing their return journey. The exact place of the farm can only be roughly estimated using historical maps.", 
+                "note": "The travelers briefly halted at the former farm for some tea and supplies before continuing their return journey. The exact location of the farm can only be roughly estimated using historical maps.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -553,7 +554,7 @@
                 ],
                 "closeMatch": [
 
-                    null,
+                    "https://www.geonames.org/941152/welgelee.html",
                     null
                 ],
                 "certainty": "uncertain" 
@@ -610,7 +611,7 @@
             "properties": {
 
                 "title": "Gaensekraal",
-                "note": "Latrobe and the fellow travellers spend a night on the farm Gaensekraal of the veldcornet Michael Rendsberg, where they were welcomed very hospitally. Although the farm did not remain until today, the position was estimated upon historical maps and a small stream called Gansekraalrivier or Gansrivier still existing today.", 
+                "note": "Latrobe and the fellow travelers spend a night on the farm Gaensekraal of the veldcornet Michael Rendsberg, where they were welcomed very hospitably. Although the farm did not remain until today, the position could be determined upon historical maps and a small stream called Gansekraalrivier or Gansrivier which still exists today.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -619,7 +620,7 @@
                 ],
                 "closeMatch": [
 
-                    null,
+                    "https://www.geonames.org/1002978/ganse-kraal.html",
                     "https://www.wikidata.org/wiki/Q64704684"
                 ],
                 "certainty": "less-certain" 
@@ -642,8 +643,8 @@
             "id": "l4_20",
             "properties": {
 
-                "title": "Eseljagd River",
-                "note": "Latrobe and his travelling compagnions haltet at the banks of the Eseljagd or Zebra Hunt River (today called Eseljagdrivier).The position of their halt was estimated upon historical maps and assumptions about the most likely route.", 
+                "title": "Eselsjagd River",
+                "note": "Latrobe and his traveling companions halted at the banks of the Eseljagd or Zebra Hunt River (today called Eseljagdrivier).The position of their halt was estimated upon historical maps and assumptions about the most likely route.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -676,7 +677,7 @@
             "properties": {
 
                 "title": "Great Dorn River",
-                "note": "The travel party passes several waypoints described in a way that suggests that they were mooving northward of George from east to west, passing several kloofs, likely parallel to the Olifants River, which was visible from time to time. Since nearly all waypoints were farms that do not exist anymore, the next position, that can be estimated is the Great Dorn River or Groot-Doringrivier as it is called today.The position of their fording point was estimated roughly.", 
+                "note": "The travel party passed several waypoints described in a way that suggests that they were moving northward of George from east to west, passing several kloofs, likely parallel to the Olifants River, which was visible from time to time. Since nearly all waypoints were farms that do not exist anymore, the next position, that can be estimated, is the Great Dorn River or Groot-Doringrivier as it is called today. The position of their fording point was estimated roughly.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -709,7 +710,7 @@
             "properties": {
 
                 "title": "Groote Paerdekraal",
-                "note": "This farm of a Mr. Rutter was situated in the mountaisn towards the Attaquas Kloof, which today is likely called the Attakwaskloof Nature Reserve. Latrobe and his fellows stayed their on their return route. There is little to no way to mark the exact position of the former farm. A cautious estimation was made using the historical attached to his Journal, a historical map of 1815 and recent maps. Still this point is one of the most vague estimations made mostly to ensure some kind of trace of the travellers way.", 
+                "note": "This farm of a Mr. Rutter was situated in the mountains towards the Attaquas Kloof, which today is likely called the Attakwaskloof Nature Reserve. Latrobe and his fellows stayed there on their return route. There is little to no way to mark the exact position of the former farm. A cautious estimation was made using the historical map attached to his Journal, a historical map of 1815 and recent maps. Still this point is one of the most vague estimations made mostly to ensure some kind of trace of the traveler's way.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -718,8 +719,8 @@
                 ],
                 "closeMatch": [
 
-                    "https://www.geonames.org/999554/groot-doringrivier.html",
-                    "https://www.wikidata.org/wiki/Q64704580"
+                    null,
+                    null
                 ],
                 "certainty": "uncertain" 
 
@@ -742,7 +743,7 @@
             "properties": {
 
                 "title": "Attaquas Kloof",
-                "note": "The group around Latrobe is moving through the Attaquas Kloof or Attakwaskloof Pass as it is called today. The pass is more of a tableland which takes several days to cross. Latrobe visits a farm called Haagekraal in this area. Unfortunately no remaining data refernig to this farm was found, therefore the position is kept vaguely.", 
+                "note": "The group around Latrobe is moving through the Attaquas Kloof or Attakwaskloof Pass as it is called today. The pass is more of a tableland which takes several days to cross.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -751,7 +752,7 @@
                 ],
                 "closeMatch": [
 
-                    "https://www.geonames.org/942946/voor-attakwaskloof.html",
+                    null,
                     "https://www.wikidata.org/wiki/Q4818077"
                 ],
                 "certainty": "less-certain" 
@@ -774,8 +775,41 @@
             "id": "l4_24",
             "properties": {
 
+                "title": "Haagekraal",
+                "note": "Latrobe and his companions visited a farm called Haagekraal in the Attaqua area. Today the farm is very likely called Hagelkraal. Latrobe describes it as “watered by a large brook” which most likely refers to the Haelkraalrivier.", 
+                "role": "visited",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 261",
+                    "https://archive.org/details/journalofvisitto00latr/page/260/mode/2up"
+                ],
+                "closeMatch": [
+
+                    "https://www.geonames.org/998266/hagelkraal.html",
+                    null
+                ],
+                "certainty": "less-certain" 
+
+            },
+
+            "time": "1816-05-04", 
+
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    21.93338,
+                    -33.96868
+                ]
+            }
+        },
+        {
+            "id": "l4_25",
+            "properties": {
+
                 "title": "Hunykliff Kloof",
-                "note": "Latrobe and his fellows reached a farm called Hunykliff Kloof belonging to a german called Mr. Krieg, after passing the Attakwaskloof. Although the farm is not remaining, the position was estimated upon the historical map attached to the Journal.", 
+                "note": "Latrobe and his fellows reached a farm called Hunykliff Kloof belonging to a german called Mr. Krieg, after passing the Attakwaskloof. The farm is likely the one remaining as Honing Klips Koolf. The position fits the mark in the historical map attached to the journal.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -784,7 +818,7 @@
                 ],
                 "closeMatch": [
 
-                    null,
+                    "https://www.geonames.org/995708/honing-klips-kloof.html",
                     null
                 ],
                 "certainty": "uncertain" 
@@ -798,13 +832,13 @@
                 "type": "Point",
                 "coordinates": [
 
-                    21.74349233301635,
-                    -34.06389720440011
+                    21.85418,
+                    -34.04001
                 ]
             }
         },
         {
-            "id": "l4_25",
+            "id": "l4_26",
             "properties": {
 
                 "title": "Gowritz River",
@@ -837,11 +871,11 @@
             }
         },
         {
-            "id": "l4_26",
+            "id": "l4_27",
             "properties": {
 
                 "title": "Duivenhoeks Revier",
-                "note": "Latrobes groupe moved westwards from the Gowritz River towards the Duivenhoeks Revier or Duiwenhoksrivier passing several farms that did not remain until today. Therefore an exact position, where the travellers forded the river can only be vaguely estimated upon historical maps, manly the map attached to the journal.", 
+                "note": "Latrobes group moved westwards from the Gowritz River towards the Duivenhoeks Revier or Duiwenhoksrivier passing several farms that did not remain until today. Therefore, an exact position, where the travelers crossed the river can only be vaguely estimated upon historical maps, mainly the map attached to the journal.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -870,11 +904,11 @@
             }
         },
         {
-            "id": "l4_27",
+            "id": "l4_28",
             "properties": {
 
                 "title": "Bueffeljagd's Revier",
-                "note": "The travellers turned to Mr. Buissini's farm on Bueffeljagd' revier or Buffeljagsrivier, as it is called today. Since there are no remains of the former farm, the postion was estimated using historical maps.", 
+                "note": "The travelers turned to Mr. Buissini's farm on Bueffeljagd' revier or Buffeljagsrivier, as it is called today. Since there are no remains of the former farm, the position was estimated upon the historical map attached to the journal.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -883,8 +917,8 @@
                 ],
                 "closeMatch": [
 
-                    null,
-                    null
+                    "https://www.geonames.org/1015226/buffeljagsrivier.html",
+                    "https://www.wikidata.org/wiki/Q4787901"
                 ],
                 "certainty": "less-certain" 
 
@@ -903,11 +937,11 @@
             }
         },
         {
-            "id": "l4_28",
+            "id": "l4_29",
             "properties": {
 
                 "title": "Zwellendam",
-                "note": "After fording the Buffeljagsrivier at lower water level, the travellers reached Zwellendam (Swellendam) at noon, where they stayed at the drosty again. They than took some tours at the settlement, visiting important persons and buildings.", 
+                "note": "After fording the Buffeljagsrivier at lower water level, the travelers reached Zwellendam (Swellendam) at noon, where they stayed at the drosty again. They then took some tours at the settlement, visiting important people and buildings.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -936,11 +970,11 @@
             }
         },
         {
-            "id": "l4_29",
+            "id": "l4_30",
             "properties": {
 
                 "title": "Breede River",
-                "note": "The travellers forded the Breede River in the forenoon, having some trouble, because it started raining and not only the water level started rising, but the way to the banks of the river became slippery. Using a Ferry for their waggons and letting the oxen swim freely, they managed to cross the Breede River again. Since no exact place of said ferry is mentioned, the location is an estimation based upon the historical map attached to the journal.", 
+                "note": "The travelers crossed the Breede River in the forenoon, having some trouble, because it started raining and not only the water level rose, but the way to the banks of the river became slippery. Using a ferry for their wagons and letting the oxen swim freely, they managed to cross the Breede River again. Since no exact place of said ferry is mentioned, the location is an estimation based upon the historical map attached to the journal.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -952,7 +986,7 @@
                     "https://www.geonames.org/1015748/bree.html",
                     "https://www.wikidata.org/wiki/Q904992"
                 ],
-                "certainty": "certain" 
+                "certainty": "less-certain" 
 
             },
 
@@ -969,15 +1003,48 @@
             }
         },
         {
-            "id": "l4_30",
+            "id": "l4_31",
             "properties": {
 
-                "title": "Mr. Van Helsland's Farm",
-                "note": "The travellers forded the Breede River in the forenoon, having some trouble, because it started raining and not only the water level started rising, but the way to the banks of the river became slippery. Using a Ferry for their waggons and letting the oxen swim freely, they managed to cross the Breede River again. Since no exact place of said ferry is mentioned, the location is an estimation based upon the historical map attached to the journal.", 
+                "title": "Hot Outspann",
+                "note": "As on march 7th, 1816, the travelers passed the Storm's Valley, but proceeded further to reach the farm of Mr. Van Helsland on Boksrivier soon. The place is referred to only by its nickname Hot Outspann.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
-                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 268",
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 269",
+                    "https://archive.org/details/journalofvisitto00latr/page/268/mode/2up"
+                ],
+                "closeMatch": [
+
+                    "https://www.geonames.org/951902/stormsvlei.html",
+                    "https://www.wikidata.org/wiki/Q13036112"
+                ],
+                "certainty": "certain" 
+
+            },
+
+            "time": "1816-05-10", 
+
+            "geometry": {
+
+                "type": "Point",
+                "coordinates": [
+
+                    20.09329,
+                    -34.07920
+                ]
+            }
+        },
+        {
+            "id": "l4_32",
+            "properties": {
+
+                "title": "Mr. Van Helsland's Farm",
+                "note": "On their way back to Gnadenthal, the group again halted on the farm of Mister Van Helsland on the Bock River. The farm's position is not described any further, therefore the position is more of an educated guess, since the farm is not existing anymore today.", 
+                "role": "visited",
+                "wasDerivedFrom": [
+
+                    "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 269",
                     "https://archive.org/details/journalofvisitto00latr/page/268/mode/2up"
                 ],
                 "closeMatch": [
@@ -1002,7 +1069,7 @@
             }
         },
         {
-            "id": "l4_31",
+            "id": "l4_33",
             "properties": {
 
                 "title": "Hartebeestkraal",
@@ -1015,8 +1082,8 @@
                 ],
                 "closeMatch": [
 
-                    "https://www.geonames.org/997582/hartebeest.html",
-                    "https://www.wikidata.org/wiki/Q31499437"
+                    "https://www.geonames.org/3366992/hartbeesberg.html",
+                    null
                 ],
                 "certainty": "uncertain" 
 
@@ -1035,11 +1102,11 @@
             }
         },
         {
-            "id": "l4_32",
+            "id": "l4_34",
             "properties": {
 
                 "title": "Gnadenthal",
-                "note": "Endingpoint of C. I. Latrobes easternmost excursion throughout the Cape Colony of 1816 nearly to the borders of former so called Kaffraria. Latrobe returned 1 Month and 6 Days later.", 
+                "note": "Ending point of C. I. Latrobes easternmost excursion throughout the Cape Colony of 1816 nearly to the borders of the former so-called Kaffraria. Latrobe returned 1 Month and 6 Days after he set out for the journey.", 
                 "role": "visited",
                 "wasDerivedFrom": [
                     "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Page 270",
@@ -1047,9 +1114,9 @@
                 ],
                 "closeMatch": [
 
-                    "https://www.wikidata.org/wiki/Q114720753",
-                    "https://www.geonames.org/3367707/genadendal.html"
-                ],
+                    "https://www.geonames.org/3367707/genadendal.html",
+                    "https://www.wikidata.org/wiki/Q114720753"
+                                    ],
                 "certainty": "certain" 
 
             },

@@ -1022,8 +1022,8 @@
                 ],
                 "closeMatch": [
 
-                    null,
-                    "https://www.geonames.org/1004989/essenbos.html"
+                    "https://www.geonames.org/1004989/essenbos.html",
+                    null
                 ],
                 "certainty": "less-certain" 
 
@@ -1211,7 +1211,7 @@
             "properties": {
 
                 "title": "Geelhoutboom",
-                "note": "The place called Geelhoutboom was an resting place for the travelling party. The name can be translated to yellowwood tree and is very likely to describe the main species of trees found in the area. Unfortunately no further marks were errected that could have remained until today, so the position is estimated upon historical maps as the one attached to the journal.", 
+                "note": "The place called Geelhoutboom was a resting place for the travelling party. The name can be translated to yellowwood tree and is very likely to describe the main species of trees found in the area. Unfortunately, no further marks were errected that could have remained until today, so the position is estimated upon historical maps as the one attached to the journal.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -1244,7 +1244,7 @@
             "properties": {
 
                 "title": "Zondag's Revier and Witte Revier Union",
-                "note": "Latrobe visited the area with Mr. Melville, Brother Schmitt, the Khoikhoi Old Paerl and an unknown Khoikhoi soldier. They examined the former farmland to wether it would be fitting for the third moravian settlement. The landdrost of Uitenhagen, Coloney Cuely insistet in them having a look at it, although the party was rather sure, it would not be their place, since it was already occupied by a farmer called Mr. Scheper.", 
+                "note": "Latrobe visited the area with Mr. Melville, Brother Schmitt, the Khoikhoi Old Paerl and an unknown Khoikhoi soldier. They examined the former farmland to see whether it would be fitting for the third Moravian settlement. The landdrost of Uitenhagen, Coloney Culey insisted in them having a look at it, although the party was rather sure, it would not be their place, since it was already occupied by a farmer called Mr. Scheper.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -1253,8 +1253,8 @@
                 ],
                 "closeMatch": [
 
-                    null,
-                    null
+                    "https://www.geonames.org/954109/sondagsrivier.html",
+                    "https://www.wikidata.org/wiki/Q3357257"
                 ],
                 "certainty": "less-certain" 
 
@@ -1277,7 +1277,7 @@
             "properties": {
 
                 "title": "Witte Revier Valley",
-                "note": "Latrobe and his fellows examined this place to a large extend and talked to the owner Mr. Scheper about it beeing a suitable place for a moravian settlement. Although first approached with some reluctance due to it already beeing inhabitated, Latrobe soon found out, that the farmer was rather willing to leave it to the Moravians, since it was frequently encountered by Xhosa (called Caffres in the Journal) and wild animals, mostly elefants who did a lot of damage and prevented the farm from thriving. Latrobes group not yet announced it to be the third settlement, but the extend of his descriptions hints already its futur meaning as Witterivier or later Enon.", 
+                "note": "Latrobe and his fellows examined this place to a large extend and talked to the owner, Mr. Scheper about it being a suitable place for a Moravian settlement. Although first approached with some reluctance due to it already being inhabited, Latrobe soon found out, that the farmer was rather willing to leave it to the Moravians, since it was frequently encountered by Xhosa (called <i>Caffres</i> in the Journal) and wild animals, mostly elephants who did a lot of damage and prevented the farm from thriving. Latrobes group did not yet announce it to be the third settlement, but the extent of his descriptions hints already its future meaning as Witterivier or later Enon.", 
                 "role": "visited",
                 "wasDerivedFrom": [
                     "Journal of a Visit to South Africa, in 1815, and 1816. with some Account of the missionary Settlements of the United Bretheren, near the Cape of Good Hope. - Pages 215-220",
@@ -1285,8 +1285,8 @@
                 ],
                 "closeMatch": [
 
-                    null,
-                    null
+                    "https://www.geonames.org/1005341/enon-mission-reserve.html",
+                    "https://www.wikidata.org/wiki/Q5379390"
                 ],
                 "certainty": "certain" 
 
@@ -1309,7 +1309,7 @@
             "properties": {
 
                 "title": "Slagboom",
-                "note": "On there way from the Witte Revier to Kourney, Latrobe's party passed a place called Slagboom, a remaining name from the kaffre wars. Today, the name of a dam at the Witrivier reminds of the position.", 
+                "note": "On their way from the Witte Revier to Kourney, Latrobe's party passed a place called Slagboom, a remaining name from the Xhosa Wars. Today, the name of a dam at the Witrivier reminds of the position.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -1318,7 +1318,7 @@
                 ],
                 "closeMatch": [
 
-                    null,
+                    "https://www.geonames.org/954814/slagboomdam.html",
                     null
                 ],
                 "certainty": "uncertain" 
@@ -1342,7 +1342,7 @@
             "properties": {
 
                 "title": "Zuurberg",
-                "note": "Latrobe's travel party passes the steep mountain today called Suurberg slowly and very carefully, while their oxen are barrely convicable to pass the Mountain. It takes so much time, the party has to stay on a barren and dry place over night and is not ablle to reach the next point the same day.Since the Suurberg is a mountain range, the exact position of the passing is an estimation.", 
+                "note": "Latrobe's travel party passes the steep mountain today called Suurberg slowly and very carefully, while their oxen are barely convincible to pass the Mountain. It takes so much time, the party had to stay on a barren and dry place over night and is not able to reach the next point the same day. Since the Suurberg is a mountain range, the exact position of the passing is an estimation.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -1351,8 +1351,8 @@
                 ],
                 "closeMatch": [
 
-                    null,
-                    null
+                    "https://www.geonames.org/951246/suurberge.html",
+                    "https://www.wikidata.org/wiki/Q31686007"
                 ],
                 "certainty": "uncertain" 
 
@@ -1375,7 +1375,7 @@
             "properties": {
 
                 "title": "Military Post at Great Fish River",
-                "note": "After passing the farm of a Mr. Engelbrecht, the burning remains of another farm and an abandond former military post, the travelers finally reach the military post at the banks of Great Fish River, at that time commanded by Lieutenant Forbes. They stayed there to restock. The post did not remain until today but was marked at Latrobe's map as laying in the fork of Small and Great Fish River. Therefore a decent estimation of the position could be made.", 
+                "note": "After passing the farm of a Mr. Engelbrecht, the burning remains of another farm and an abandoned former military post, the travelers finally reach the military post at the banks of Great Fish River, at that time commanded by Lieutenant Forbes. They stayed there to restock. The post did not remain until today but was marked at Latrobe's map as laying in the fork of Small and Great Fish River. Therefore, a decent estimation of the position could be made.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -1384,8 +1384,8 @@
                 ],
                 "closeMatch": [
 
-                    null,
-                    null
+                    "https://www.geonames.org/989995/klein-visrivier.html",
+                    "https://www.wikidata.org/wiki/Q13035176"
                 ],
                 "certainty": "less-certain" 
 
@@ -1408,7 +1408,7 @@
             "properties": {
 
                 "title": "Somerset Farm",
-                "note": "After an additional Night in the Banks of the Small Fish River, the Travellers reached Dr. Mackrill's Somerset Farm at foot of Boschberg. At the very same place today the Settlement Somerset East is found, that was founded around 1825.", 
+                "note": "After an additional night in the banks of the Little Fish River, the travelers reached Dr. Mackrill's property, Somerset Farm at foot of the Boschberg. At the very same place today the settlement KwaNojoli, formerly known as Somerset East, is situated that was founded around 1825.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
@@ -1441,7 +1441,7 @@
             "properties": {
 
                 "title": "Mr. P.'s Farm",
-                "note": "Latrobes Party reached the last point on their travel into the cape colony at the Farm of a Mr. P. The landdrost asked them to have a look at the place, which they did. After examining the farm and talking to the farmer himselfe they decided, to having been traveled far enough and therefore not to proceed any further. Also all other places further to be investigated and proposed by the landdrost of Uitenhagen where either occupied or in Caffraria (Xhosa-Land) and therefore not inhabitable with Khoikhoi-Settlements. This last farm is only described as an hour away from Somerset Farm, following the mountain range and fording the Small Fish River twice. Therefore the position is more of an estimation.", 
+                "note": "Latrobes Party reached the last point on their travel into the cape colony at the farm of a Mr. P. The landdrost asked them to have a look at the place, which they did. After examining the farm and talking to the farmer himself they decided to having travelled far enough and therefore not to proceed any further. Also, all other places further to be investigated and proposed by the landdrost of Uitenhagen where either occupied or in Caffraria (Xhosa-Land) and therefore not inhabitable with Khoikhoi-Settlements. This last farm is only described as an hour away from Somerset Farm, following the mountain range and fording the Little Fish River twice. The position was estimated upon this description and the attached historical map.", 
                 "role": "visited",
                 "wasDerivedFrom": [
 
