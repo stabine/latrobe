@@ -674,6 +674,13 @@ img#latrobeMap {
   height: 60%;
 }
 
+img#arrowsmithMap {
+  position: relative;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+}
+
 /*===footer===*/
 footer {
   text-align: left;
@@ -684,4 +691,5 @@ footer {
 
 p#footer {
   font-size: 12px;
+  margin-right: 10%;
 }
