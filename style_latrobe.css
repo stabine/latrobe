@@ -99,7 +99,7 @@ a:hover {
   color: #50052b;
 }
 
-/*---back-to-top button*/
+/*---back-to-top button---*/
 button#bttButton {  
   border-radius: 12px;
   border: 1px dashed #50052b;
@@ -664,6 +664,14 @@ div#map3 {
   height: 5px;
   display: inline-block;
   margin-right: 8px;
+}
+
+/*---enrichments 3---*/
+img#latrobeMap {
+  position: relative;
+  left: 20%;
+  width: 60%;
+  height: 60%;
 }
 
 /*===footer===*/
