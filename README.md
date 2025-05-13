@@ -25,4 +25,18 @@ Furthermore, the "schema" and "img" folders were created, which, as their names 
 
 The project demonstrates a way to digitally prepare historical text sources and, at the same time, is only a beginning with great potential.
 
+### External Libraries
+
+This project uses the [Leaflet](https://leafletjs.com/) library, which is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+### License
+
+This project is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html).
+
+You can freely use, modify, and distribute this code, as long as any modified versions are also distributed under the same GPL-3.0 license.
+
+For more detailed information, see the [LICENSE](LICENSE.txt) file.
+
+This project also uses the [Leaflet](https://leafletjs.com/) library, which is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
 

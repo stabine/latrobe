@@ -1,3 +1,18 @@
+/*!
+ * Copyright (C) 2025 Max Mustermann
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License, Version 3,
+ * as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * For the full GPL-3.0 license, see: https://www.gnu.org/licenses/gpl-3.0.html
+ */
+
 // ---------------------Website-Setup--------------------------
 
 let BTTButton = document.getElementById("bttButton");
