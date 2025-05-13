@@ -1,6 +1,6 @@
 # latrobe
 
-##Visualization of excursions made during Christian Ignatius Latrob's visit to South Africa in 1815 and 1816.
+## Visualization of excursions made during Christian Ignatius Latrob's visit to South Africa in 1815 and 1816.
 
 This repository contains the *Latrobe* project, a visualization of stages of Christian Ignatius Latrobe's trip to South Africa in 1815 and 1816 using leaflet maps.
 [Christian Ignatius Latrobe](https://www.wikidata.org/wiki/Q2965351) was a clergyman and Sectretary of the [Moravian Church in England](https://en.wikipedia.org/wiki/Moravian_Church_of_the_British_Province), thus an important representative of the religious and missionary community. This religious community is also called Unitas Fratum and was engaged in missionary work worldwide from the beginning of the 18th century. More information on the Moravians worldwide and research on this community can be found in the [Moravian Knowledge Network](https://www.moravianknowledgenetwork.org/)
