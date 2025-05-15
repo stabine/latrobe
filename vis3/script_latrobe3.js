@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function() {
           if (map3.hasLayer(marker3)) {
             map3.addLayer(marker3);
           }
-          marker3.setRadius(radius3);
+          marker3.setRadius(1200);
         }
       });
       
